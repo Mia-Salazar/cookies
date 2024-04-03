@@ -1,2 +1,53 @@
 @import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
 
+.home {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+
+    border: toRem(10) solid $primary;
+    background: $light;
+
+    overflow: hidden;
+
+    &:after, &:before {
+        content: "";
+        position: absolute;
+        height: toRem(100);
+        width: toRem(100);
+        background: $primary;
+        transform: rotate(135deg);
+        top: toRem(-51);
+        left: toRem(-51);
+    }
+
+    &:after {
+        top: unset;
+        right: toRem(-51);
+        bottom: toRem(-51);
+        left: unset;
+    }
+
+    &__title {
+        margin: toRem(8) 0 0 0;
+
+        color: $primary;
+        font-family: "Lilita One", sans-serif;
+        font-size: toRem(48);
+    }
+
+    &__img-container {
+        width: toRem(200);
+    }
+
+    &__img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
