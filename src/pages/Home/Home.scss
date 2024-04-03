@@ -35,7 +35,7 @@
     }
 
     &__title {
-        margin: toRem(8) 0 0 0;
+        margin: toRem(8) 0 toRem(16) 0;
 
         color: $primary;
         font-family: "Lilita One", sans-serif;

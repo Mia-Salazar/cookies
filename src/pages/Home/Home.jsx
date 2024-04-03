@@ -12,7 +12,7 @@ export const Home = () => {
                 <img className="home__img" src={logo} alt="logo" />
             </div>
             <p className="home__title">Mia Salazar</p>
-            <ButtonLink />
+            <ButtonLink href="/home" text="Continuar" />
         </div>
 	);
 };
