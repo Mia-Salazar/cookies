@@ -1,8 +1,14 @@
 import React from "react";
 
+import logo from '../../assets/img/logo.png';
+
+
 export const Home = () => {
 	return (
-		<p>Hola</p>
+		<div className="home">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>Mia Salazar</p>
+        </div>
 	);
 };
 
