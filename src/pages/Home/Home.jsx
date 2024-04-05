@@ -3,16 +3,13 @@ import React from "react";
 import logo from '../../assets/img/logo-no-eyes.png';
 import "./Home.scss";
 
-import { ButtonLink } from "../../components";
-
 export const Home = () => {
 	return (
-		<div className="home">
-            <div className="home__img-container">
-                <img className="home__img" src={logo} alt="logo" />
+		<div className="Intro">
+            <div className="Intro__img-container">
+                <img className="Intro__img" src={logo} alt="logo" />
             </div>
-            <p className="home__title">Mia Salazar</p>
-            <ButtonLink href="/home" text="Continuar" />
+            <p className="Intro__title">Mia Salazar</p>
         </div>
 	);
 };
