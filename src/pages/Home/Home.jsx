@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo-no-eyes.png';
 import "./Home.scss";
 
 import { ButtonLink } from "../../components";
