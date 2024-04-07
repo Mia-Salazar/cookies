@@ -101,5 +101,9 @@
         font-size: toRem(18);
         font-family: "Roboto", sans-serif;
         text-decoration: none;
+
+        &:hover {
+            background-color: $secondary;
+        }
     }
 }
