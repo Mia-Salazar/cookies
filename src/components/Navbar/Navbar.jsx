@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Navbar.scss";
 
@@ -16,6 +17,11 @@ export const Navbar = () => {
                 <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
                 <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
             </div>
+            <ul className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
+                <li>
+                    <Link className={"navbar__link"} to="/home">Inicio</Link>
+                </li>
+            </ul>
         </div>
 	);
 };

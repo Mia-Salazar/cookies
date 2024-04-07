@@ -29,7 +29,7 @@
         position: absolute;
         top: toRem(8);
         right: toRem(8);
-        
+
         width: toRem(40);
         height: toRem(6);
 
@@ -56,5 +56,34 @@
         &:last-of-type {
             top: toRem(34);
         }
+    }
+
+    &__container {
+        display: none;
+        
+        padding: toRem(80) 0 0 0;
+        margin: 0;
+        list-style-type: none;
+        
+        height: 100vh;
+        width: 100%;
+        
+        background-color: $primary;
+        transition: opacity 0.5s, left 1s;
+
+        &--is-open {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        padding: toRem(16);
+
+        color: $white;
+        font-size: toRem(18);
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
     }
 }
