@@ -15,7 +15,18 @@
 
     @media (min-width: 768px) {
         margin-top: toRem(48);
+
+        &--is-sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            margin-top: 0;
+        }
     }
+
+
 
     &__hamburguer {
         width: toRem(50);

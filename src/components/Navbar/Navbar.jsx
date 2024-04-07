@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Navbar.scss";
@@ -9,6 +9,19 @@ export const Navbar = () => {
     const handleClick = () => {
         setToggle(!toggle)
     }
+
+    const isSticky = (e) => {
+        const header = document.querySelector('.navbar');
+        const scrollTop = window.scrollY;
+        scrollTop >= 650 ? header.classList.add('navbar--is-sticky') : header.classList.remove('navbar--is-sticky');
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', isSticky);
+        return () => {
+            window.removeEventListener('scroll', isSticky);
+        };
+    });
 
 	return (
 		<div className={toggle ? "navbar navbar--is-open": "navbar"}>
