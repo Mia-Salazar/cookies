@@ -12,7 +12,7 @@ export const Intro = () => {
                 <img className="intro__img" src={logo} alt="logo" />
             </div>
             <p className="intro__title">Mia Salazar</p>
-            <ButtonLink href="/intro" text="Continuar" />
+            <ButtonLink href="/home" text="Continuar" />
         </div>
 	);
 };

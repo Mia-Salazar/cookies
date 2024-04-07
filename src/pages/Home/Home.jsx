@@ -6,10 +6,7 @@ import "./Home.scss";
 export const Home = () => {
 	return (
 		<div className="Intro">
-            <div className="Intro__img-container">
-                <img className="Intro__img" src={logo} alt="logo" />
-            </div>
-            <p className="Intro__title">Mia Salazar</p>
+            <iv>ol</iv>
         </div>
 	);
 };
