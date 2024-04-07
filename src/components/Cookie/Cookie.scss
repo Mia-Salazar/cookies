@@ -1,0 +1,58 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+@keyframes eyesMovingRight {
+    0% {top: 23%; left: 15%}
+    16% {top: 24%; left: 16%}
+    32% {top: 28%; left: 17%}
+    48% {top: 30%; left: 20%}
+    64% {top: 32%; left: 19%}
+    80% {top: 28%; left: 17%}
+    100% {top: 23%; left: 15%}
+}
+
+@keyframes eyesMovingLeft {
+    0% {top: 31%; left: 60%}
+    16% {top: 28%; left: 61%}
+    32% {top: 25%;left: 65%}
+    48% {top: 30%;left: 66%}
+    64% {top: 23%;left: 65%}
+    80% {top: 27%;left: 62%}
+    100% {top: 31%;left: 60%}
+}
+
+.cookie {
+    position: relative;
+    width: toRem(200);
+
+    &:after, &:before {
+        content: "";
+        position: absolute;
+        height: toRem(40);
+        width: toRem(40);
+        background-color: $black;
+        border-radius: 50%;
+        bottom: toRem(100);
+        left: toRem(40);
+        animation: eyesMovingRight 2s infinite;
+
+        @media (min-width: 992px) {
+            height: toRem(60);
+            width: toRem(60);
+        }
+    }
+
+    &:after {
+        left: toRem(125); 
+        animation: eyesMovingLeft 2s infinite;
+    }
+
+    @media (min-width: 992px) {
+        width: toRem(300);
+    }
+
+    &__img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+.layout {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: toRem(40);
+    min-height: 100vh;
+
+    border: toRem(10) solid $primary;
+    background: $light;
+
+    overflow: hidden;
+
+    @media (min-width: 992px) {
+        padding-top: toRem(80);     
+    }
+
+    &--intro {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    &:after, &:before {
+        content: "";
+        position: absolute;
+        height: toRem(155);
+        width: toRem(155);
+        background: $primary;
+        transform: rotate(135deg);
+        top: toRem(-77);
+        right: toRem(-77);
+    }
+
+    &:after {
+        top: unset;
+        left: toRem(-77);
+        bottom: toRem(-77);
+        right: unset;
+    }
+}

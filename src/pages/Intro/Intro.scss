@@ -1,0 +1,36 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+
+.intro {
+    &__title {
+        margin: toRem(8) 0 0 0;
+
+        color: $primary;
+        font-family: "Lilita One", sans-serif;
+        font-size: toRem(48);
+
+        @media (min-width: 992px) {
+            font-size: toRem(80);
+        }
+    }
+
+    &__subtitle {
+        max-width: toRem(200);
+        margin: toRem(4) 0 toRem(16) 0;
+
+        color: $secondary;
+        font-family: "Lilita One", sans-serif;
+        font-size: toRem(20);
+        text-align: center;
+
+        @media (min-width: 992px) {
+            max-width: toRem(370);
+            margin: toRem(4) 0 toRem(40) 0;
+
+            font-size: toRem(40);
+            line-height: toRem(34);
+
+        } 
+    }
+}

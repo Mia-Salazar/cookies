@@ -1,0 +1,109 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    @media (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: toRem(48);
+    }
+
+    &__hamburguer {
+        width: toRem(50);
+        height: toRem(50);
+        position: relative;
+        border: none;
+        border-radius: 50%;
+        appearance: none;
+        z-index: 1;
+    
+        @media (min-width: 768px) {
+          display: none;
+        }
+    }
+
+    &__hamburguer-icon {
+        position: absolute;
+        top: toRem(8);
+        right: toRem(8);
+
+        width: toRem(40);
+        height: toRem(6);
+
+        transition: 0.3s;
+        background-color: $white;
+    
+        &--is-open {
+            top: toRem(20);
+            transform: rotate(48deg);
+        
+            &:nth-last-child(2) {
+                transform: rotate(133deg);
+            }
+        
+            &:last-of-type {
+                opacity: 0;
+            }
+        }
+
+        &:nth-last-child(2) {
+            top: toRem(21);
+        }
+      
+        &:last-of-type {
+            top: toRem(34);
+        }
+    }
+
+    &__container {
+        display: none;        
+        padding: toRem(80) 0 0 0;
+        margin: 0;
+        list-style-type: none;
+        
+        width: 100%;
+        
+        background-color: $primary;
+        transition: opacity 0.5s, left 1s;
+
+        &--is-open {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            padding: toRem(16) toRem(16) toRem(16) toRem(16);
+        }
+
+        @media (max-width: 767px) {
+            height: 100vh;
+        }
+    }
+
+    &__link {
+        padding: toRem(16);
+
+        color: $white;
+        font-size: toRem(18);
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+}
