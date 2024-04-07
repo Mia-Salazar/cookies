@@ -3,17 +3,21 @@ import PropTypes from 'prop-types';
 
 import "./Layout.scss";
 
-export const Layout = ({children}) => {
+export const Layout = ({children, isIntro}) => {
 	return (
-		<div className="layout">
+		<div className={`layout ${isIntro ? 'layout--intro' : ''}`}>
             {children}
         </div>
 	);
 };
 
+Layout.defaultProps = {
+	isIntro: false
+};
+
 Layout.propTypes = {
-	href: PropTypes.string.isRequired,
-	text: PropTypes.string.isRequired,
+	children: PropTypes.node.isRequired,
+	isIntro: PropTypes.bool
 }
 
 export default Layout;

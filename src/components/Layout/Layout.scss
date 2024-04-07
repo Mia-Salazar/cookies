@@ -8,12 +8,22 @@
     align-items: center;
     flex-direction: column;
 
+    padding-top: toRem(40);
     min-height: 100vh;
 
     border: toRem(10) solid $primary;
     background: $light;
 
     overflow: hidden;
+
+    @media (min-width: 992px) {
+        padding-top: toRem(80);     
+    }
+
+    &--intro {
+        justify-content: center;
+        padding-top: 0;
+    }
 
     &:after, &:before {
         content: "";

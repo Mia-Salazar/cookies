@@ -1,12 +1,12 @@
 import React from "react";
 
 import "./Home.scss";
-import { Layout } from "../../components";
+import { Cookie, Layout } from "../../components";
 
 export const Home = () => {
 	return (
 		<Layout>
-
+            <Cookie />
         </Layout>
 	);
 };

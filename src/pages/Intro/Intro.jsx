@@ -2,16 +2,16 @@ import React from "react";
 
 import "./Intro.scss";
 
-import { ButtonLink, Cookie } from "../../components";
+import { ButtonLink, Cookie, Layout } from "../../components";
 
 export const Intro = () => {
 	return (
-		<div className="intro">
+		<Layout isIntro>
             <Cookie />
             <p className="intro__title">Mia Salazar</p>
             <p className="intro__subtitle">Front-end developer & cookie monster</p>
             <ButtonLink href="/home" text="Continuar" />
-        </div>
+        </Layout>
 	);
 };
 
