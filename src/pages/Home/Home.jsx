@@ -1,11 +1,10 @@
 import React from "react";
 
-import logo from '../../assets/img/logo-no-eyes.png';
 import "./Home.scss";
 
 export const Home = () => {
 	return (
-		<div className="Intro">
+		<div className="home">
             <iv>ol</iv>
         </div>
 	);
