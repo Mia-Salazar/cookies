@@ -21,6 +21,15 @@ export const Navbar = () => {
                 <li>
                     <Link className={"navbar__link"} to="/home">Inicio</Link>
                 </li>
+                <li>
+                    <Link className={"navbar__link"} to="/things">Fregaos</Link>
+                </li>
+                <li>
+                    <Link className={"navbar__link"} to="/portfolio">Portfolio</Link>
+                </li>
+                <li>
+                    <Link className={"navbar__link"} to="/contact">Contacto</Link>
+                </li>
             </ul>
         </div>
 	);
