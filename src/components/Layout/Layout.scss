@@ -1,0 +1,36 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+.layout {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    border: toRem(10) solid $primary;
+    background: $light;
+
+    overflow: hidden;
+
+    &:after, &:before {
+        content: "";
+        position: absolute;
+        height: toRem(100);
+        width: toRem(100);
+        background: $primary;
+        transform: rotate(135deg);
+        top: toRem(-51);
+        left: toRem(-51);
+    }
+
+    &:after {
+        top: unset;
+        right: toRem(-51);
+        bottom: toRem(-51);
+        left: unset;
+    }
+}

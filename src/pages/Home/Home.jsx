@@ -1,12 +1,13 @@
 import React from "react";
 
 import "./Home.scss";
+import { Layout } from "../../components";
 
 export const Home = () => {
 	return (
-		<div className="home">
-            <iv>ol</iv>
-        </div>
+		<Layout>
+
+        </Layout>
 	);
 };
 
