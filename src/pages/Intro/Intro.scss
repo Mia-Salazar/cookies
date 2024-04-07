@@ -55,7 +55,7 @@
     }
 
     &__title {
-        margin: toRem(8) 0 toRem(16) 0;
+        margin: toRem(8) 0 0 0;
 
         color: $primary;
         font-family: "Lilita One", sans-serif;
@@ -63,8 +63,24 @@
 
         @media (min-width: 992px) {
             font-size: toRem(80);
-            margin: toRem(8) 0 toRem(32) 0;
         }
+    }
+
+    &__subtitle {
+        max-width: toRem(200);
+        margin: toRem(4) 0 toRem(16) 0;
+
+        color: $secondary;
+        font-family: "Lilita One", sans-serif;
+        font-size: toRem(20);
+        text-align: center;
+
+        @media (min-width: 992px) {
+            max-width: toRem(370);
+            margin: toRem(4) 0 toRem(40) 0;
+
+            font-size: toRem(40);
+        } 
     }
 
     &__img-container {
