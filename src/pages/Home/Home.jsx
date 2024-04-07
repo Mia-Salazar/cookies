@@ -1,12 +1,12 @@
 import React from "react";
 
+import { Header, Layout, Navbar } from "../../components";
 import "./Home.scss";
-import { Cookie, Layout, Navbar } from "../../components";
 
 export const Home = () => {
 	return (
 		<Layout>
-            <Cookie />
+            <Header />
             <Navbar />
         </Layout>
 	);
