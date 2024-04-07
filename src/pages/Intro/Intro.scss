@@ -80,7 +80,7 @@
             border-radius: 50%;
             bottom: toRem(100);
             left: toRem(40);
-            animation: eyesMovingRight 3s infinite;
+            animation: eyesMovingRight 2s infinite;
 
             @media (min-width: 992px) {
                 height: toRem(60);
@@ -90,7 +90,7 @@
 
         &:after {
             left: toRem(125); 
-            animation: eyesMovingLeft 3s infinite;
+            animation: eyesMovingLeft 2s infinite;
         }
 
         @media (min-width: 992px) {
