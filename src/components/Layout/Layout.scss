@@ -28,18 +28,18 @@
     &:after, &:before {
         content: "";
         position: absolute;
-        height: toRem(100);
-        width: toRem(100);
+        height: toRem(155);
+        width: toRem(155);
         background: $primary;
         transform: rotate(135deg);
-        top: toRem(-51);
-        left: toRem(-51);
+        top: toRem(-77);
+        right: toRem(-77);
     }
 
     &:after {
         top: unset;
-        right: toRem(-51);
-        bottom: toRem(-51);
-        left: unset;
+        left: toRem(-77);
+        bottom: toRem(-77);
+        right: unset;
     }
 }
