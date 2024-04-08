@@ -26,12 +26,10 @@
         }
     }
 
-
-
     &__hamburguer {
         width: toRem(50);
         height: toRem(50);
-        position: relative;
+        position: fixed;
         border: none;
         border-radius: 50%;
         appearance: none;
@@ -87,6 +85,9 @@
         transition: opacity 0.5s, left 1s;
 
         &--is-open {
+            position: fixed;
+            top: 0;
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -94,10 +95,11 @@
 
         @media (min-width: 768px) {
             display: flex;
+            align-items: center;
             flex-direction: row;
             justify-content: center;
 
-            padding: toRem(16) toRem(16) toRem(16) toRem(16);
+            padding: 0 toRem(16);
         }
 
         @media (max-width: 767px) {
@@ -106,6 +108,7 @@
     }
 
     &__link {
+        display: block;
         padding: toRem(16);
 
         color: $white;
@@ -116,5 +119,32 @@
         &:hover {
             background-color: $secondary;
         }
+    }
+
+    &__img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    &__container-name {
+        display: none;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+
+        margin: 0;
+        padding-left: toRem(10);
+
+        background-color: $primary;
+        color: $white;
+        font-family: "Lilita One", sans-serif;
+        font-size: toRem(16);
+    }
+
+    &__img-container {
+        display: flex;
+        background-color: $primary;
     }
 }
