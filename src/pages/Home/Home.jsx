@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Header, Heading, Layout, Navbar, Text } from "../../components";
+import { Container, Header, Heading, Layout, Navbar, StrengthItem, Text } from "../../components";
 import "./Home.scss";
 
 export const Home = () => {
@@ -15,7 +15,33 @@ export const Home = () => {
                     Soy una persona inquieta, a la que le gusta meterse 'fregaos' y que siempre está aprendiendo algo nuevo.</Text>
                 <Text>Friki por naturaleza, cuando no estoy programando algo en mi tiempo libre, veo series, juego a juegos de mesa o de rol o voy al cine.</Text>
                 <Heading text="Algunos fregaos" type={2} />
+                <div className="home__container">
+                    <StrengthItem 
+                        title="6"
+                        subtitle="Años de experiencia"
+                    />
+                    <StrengthItem 
+                        title="Accesibilidad"
+                        subtitle="de especialización"
+                    />
+                    <StrengthItem 
+                        title="Mentora"
+                        subtitle="en Step4ward"
+                    />
 
+                    <StrengthItem 
+                        title="+40"
+                        subtitle="artículos"
+                    />
+                    <StrengthItem 
+                        title="6"
+                        subtitle="charlas"
+                    />
+                    <StrengthItem 
+                        title="2"
+                        subtitle="idiomas"
+                    />
+                </div>
             </Container>
         </Layout>
 	);
