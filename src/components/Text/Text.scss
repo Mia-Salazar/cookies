@@ -2,5 +2,6 @@
 @import "../../assets/stylesheets/settings/variables";
 
 .text {
+    max-width: toRem(700);
     font-family: $font-family-secondary;
 }
