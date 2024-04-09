@@ -13,4 +13,12 @@
     @media (min-width: 768px) {
         font-size: toRem(48); 
     }
+
+    &--h2 {
+        font-size: toRem(24);
+    
+        @media (min-width: 768px) {
+            font-size: toRem(32); 
+        } 
+    }
 }
