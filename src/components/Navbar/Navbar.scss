@@ -113,7 +113,7 @@
 
         color: $white;
         font-size: toRem(18);
-        font-family: "Roboto", sans-serif;
+        font-family: $font-family-secondary;
         text-decoration: none;
 
         &:hover {
@@ -139,7 +139,7 @@
 
         background-color: $primary;
         color: $white;
-        font-family: "Lilita One", sans-serif;
+        font-family: $font-family-primary;
         font-size: toRem(16);
     }
 
