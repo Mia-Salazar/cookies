@@ -27,13 +27,15 @@
     }
 
     &__hamburguer {
-        width: toRem(50);
-        height: toRem(50);
+        width: toRem(64);
+        height: toRem(64);
         position: fixed;
         border: none;
         border-radius: 50%;
         appearance: none;
         z-index: 1;
+        padding: toRem(8);
+        background-color: $primary;
     
         @media (min-width: 768px) {
           display: none;
@@ -42,8 +44,8 @@
 
     &__hamburguer-icon {
         position: absolute;
-        top: toRem(8);
-        right: toRem(8);
+        top: toRem(16);
+        right: toRem(12);
 
         width: toRem(40);
         height: toRem(6);
@@ -52,7 +54,7 @@
         background-color: $white;
     
         &--is-open {
-            top: toRem(20);
+            top: toRem(27);
             transform: rotate(48deg);
         
             &:nth-last-child(2) {
@@ -65,11 +67,11 @@
         }
 
         &:nth-last-child(2) {
-            top: toRem(21);
+            top: toRem(29);
         }
       
         &:last-of-type {
-            top: toRem(34);
+            top: toRem(42);
         }
     }
 
