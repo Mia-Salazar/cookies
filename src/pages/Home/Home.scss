@@ -1,0 +1,33 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+.home {
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: toRem(700);
+        margin-top: toRem(24);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(16);
+
+        margin-bottom: toRem(32);
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+
+        @media (min-width: 1100px) {
+            gap: toRem(24);
+        }
+    }
+}
