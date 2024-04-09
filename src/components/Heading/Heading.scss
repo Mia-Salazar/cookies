@@ -1,0 +1,16 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+.heading {
+    width: 100%;
+    margin: toRem(24) 0;
+
+    color: $primary;
+    font-family: $font-family-primary;
+    font-size: toRem(32);
+    text-align: left;
+
+    @media (min-width: 768px) {
+        font-size: toRem(48); 
+    }
+}
