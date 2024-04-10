@@ -1,6 +1,6 @@
 import React from "react";
 
-import Cookie from "../Cookie/Cookie";
+import Cookie from "../../atoms/Cookie/Cookie";
 import "./Header.scss";
 
 export const Header = () => {
