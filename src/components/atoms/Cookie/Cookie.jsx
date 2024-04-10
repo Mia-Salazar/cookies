@@ -6,7 +6,7 @@ import "./Cookie.scss";
 export const Cookie = () => {
 	return (
         <div className="cookie">
-            <img className="cookie__img" src={logo} />
+            <img className="cookie__img" src={logo} fetchPriority="high" />
         </div>
 	);
 };
