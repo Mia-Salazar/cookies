@@ -5,7 +5,7 @@ import "./Contact.scss";
 
 export const Contact = () => {
 	return (
-		<Layout>
+		<Layout styles="contact">
             <Header />
             <Navbar />
             <Container>

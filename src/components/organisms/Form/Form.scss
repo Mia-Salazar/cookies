@@ -1,0 +1,8 @@
+@import "../../../assets/stylesheets/settings/toRem";
+@import "../../../assets/stylesheets/settings/variables";
+
+.form {
+    @media (min-width: 768px) {
+        max-width: toRem(600);
+    }
+}
