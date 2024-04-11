@@ -3,3 +3,7 @@
 
 @import './settings/toRem';
 @import './settings/variables';
+
+* {
+    outline: none;
+}
