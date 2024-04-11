@@ -1,0 +1,20 @@
+@import "../../../assets/stylesheets/settings/toRem";
+@import "../../../assets/stylesheets/settings/variables";
+
+.input {
+    width: 100%;
+
+    margin-bottom: toRem(24);
+    padding: toRem(8) toRem(8) toRem(8) toRem(8);
+
+    color: $primary;
+    background-color: transparent;
+    font-family: $font-family-secondary;
+
+    border: 2px solid $primary;
+    border-radius: toRem(4);
+    
+    &:focus {
+        outline: 1px solid $primary;
+    }
+}
