@@ -8,4 +8,8 @@
     &:hover, &:disabled {
         background-color: $primary;
     }
+
+    &:disabled {
+        cursor:not-allowed;
+    }
 }
