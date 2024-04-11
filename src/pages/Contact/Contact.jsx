@@ -10,7 +10,7 @@ export const Contact = () => {
             <Navbar />
             <Container>
                 <Heading text="Contacto" />
-                <Text>Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme</Text>
+                <Text>Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!</Text>
                 <Form />
             </Container>
         </Layout>
