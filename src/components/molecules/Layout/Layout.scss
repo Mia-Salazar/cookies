@@ -17,7 +17,12 @@
     overflow: hidden;
 
     @media (min-width: 992px) {
-        padding-top: toRem(80);     
+        padding-top: toRem(80);
+        
+        background-image: url("../../../assets/img/logo-rotate.png");
+        background-repeat: no-repeat;
+        background-position: 117% 89%;
+        background-size: 25%;
     }
 
     &--intro {
