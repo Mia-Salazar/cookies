@@ -2,6 +2,7 @@ import React from "react";
 
 import logo from '../../../assets/img/logo.png';
 import "./Footer.scss";
+import SocialNetwork from "../../atoms/SocialNetwork/SocialNetwork";
 
 export const Footer = () => {
     const socialNetwork = [
@@ -13,20 +14,20 @@ export const Footer = () => {
 	];
 	return (
 		<div className="footer">
-            <div className="footer__left">
+            <div className="footer__logo">
                 <div className="footer__img-container">
                     <img className="footer__img" src={logo} />
                 </div>
                 <p className="footer__title">Mia Salazar</p>
+            </div>
+			<div className="footer__list">
+				{
+					socialNetwork.map((social) => {
+						return <SocialNetwork key={social.icon} icon={social.icon} link={social.link}></SocialNetwork>;
+					})
+				}
+            </div>
 
-            </div>
-            <div>
-            {
-				socialNetwork.map((social) => {
-					return <SocialNetwork key={social.icon} icon={social.icon} link={social.link} ariaLabel={social.aria}></SocialNetwork>;
-				})
-			}
-            </div>
 		</div>
 	);
 };

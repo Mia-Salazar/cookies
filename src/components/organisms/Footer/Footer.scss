@@ -15,14 +15,21 @@
     }
 
     &__title {
-        margin: 0 0 0 toRem(8);
+        margin: toRem(8) 0 0 toRem(8);
         color: $white;
         font-family: $font-family-primary;
     }
 
-    &__left {
+    &__logo {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        margin: toRem(48) auto toRem(8) auto;
     }
 }
