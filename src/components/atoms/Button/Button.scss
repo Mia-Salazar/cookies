@@ -2,10 +2,14 @@
 @import "../../../assets/stylesheets/settings/variables";
 @import "../../../assets/stylesheets/settings/mixins";
 
-.link {
+.button {
     @include button;
 
-    &:hover {
+    &:hover, &:disabled {
         background-color: $primary;
+    }
+
+    &:disabled {
+        cursor:not-allowed;
     }
 }

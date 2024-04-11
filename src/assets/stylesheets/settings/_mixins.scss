@@ -1,0 +1,28 @@
+@import '../settings/variables';
+@import '../settings/toRem';
+
+@mixin button {
+    padding: toRem(8) toRem(24);
+
+    background: $secondary;
+
+    color: $white;
+    text-decoration: none;
+    font-family: $font-family-secondary;
+    border: none;
+    border-radius: toRem(2);
+}
+
+@mixin input-styles {
+    width: 100%;
+
+    margin-bottom: toRem(24);
+    padding: toRem(8) toRem(8) toRem(8) toRem(8);
+
+    color: $primary;
+    background-color: transparent;
+    font-family: $font-family-secondary;
+
+    border: 2px solid $primary;
+    border-radius: toRem(2);
+}

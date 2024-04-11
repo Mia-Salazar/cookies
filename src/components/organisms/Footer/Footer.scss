@@ -7,6 +7,8 @@
 
     @media (min-width: 768px) {
         display: flex;
+        align-items: center;
+        justify-content:space-between;
     }
 
     &__img-container {
@@ -24,7 +26,7 @@
         font-family: $font-family-primary;
 
         @media (min-width: 768px) {
-            margin-top: 0;
+            margin: 0 0 0 toRem(10);
         }
     }
 

@@ -1,0 +1,10 @@
+@import "../../../assets/stylesheets/settings/mixins";
+@import "../../../assets/stylesheets/settings/variables";
+
+.textarea {
+    @include input-styles;
+    
+    &:focus {
+        outline: 1px solid $primary;
+    }
+}

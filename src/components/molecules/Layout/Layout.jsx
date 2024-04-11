@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import "./Layout.scss";
 import Footer from "../../organisms/Footer/Footer";
 
-export const Layout = ({children, isIntro}) => {
+export const Layout = ({children, isIntro, styles = ""}) => {
 	return (
 		<>
-			<div className={`layout ${isIntro ? 'layout--intro' : ''}`}>
+			<div className={`layout ${isIntro ? 'layout--intro' : styles}`}>
 				{children}
 			</div>
 			{!isIntro && <Footer />}
@@ -21,7 +21,8 @@ Layout.defaultProps = {
 
 Layout.propTypes = {
 	children: PropTypes.node.isRequired,
-	isIntro: PropTypes.bool
+	isIntro: PropTypes.bool,
+	styles: PropTypes.string
 }
 
 export default Layout;
