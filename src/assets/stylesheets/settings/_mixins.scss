@@ -1,6 +1,16 @@
 @import '../settings/variables';
 @import '../settings/toRem';
 
+@mixin button {
+    padding: toRem(8) toRem(24);
+
+    background: $secondary;
+
+    color: $white;
+    text-decoration: none;
+    font-family: $font-family-secondary;
+}
+
 @mixin input-styles {
     width: 100%;
 
