@@ -5,6 +5,10 @@
     padding: toRem(16);
     background-color: $primary;
 
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
     &__img-container {
         width: toRem(40);
     }
@@ -18,12 +22,20 @@
         margin: toRem(8) 0 0 toRem(8);
         color: $white;
         font-family: $font-family-primary;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+        }
     }
 
     &__logo {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
     }
 
     &__list {
@@ -31,5 +43,10 @@
         justify-content: center;
 
         margin: toRem(48) auto toRem(8) auto;
+
+        @media (min-width: 768px) {
+            margin: 0;
+            align-items: flex-end;
+        }
     }
 }
