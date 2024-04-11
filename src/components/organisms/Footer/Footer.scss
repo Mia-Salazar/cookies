@@ -1,0 +1,52 @@
+@import "../../../assets/stylesheets/settings/toRem";
+@import "../../../assets/stylesheets/settings/variables";
+
+.footer {
+    padding: toRem(16);
+    background-color: $primary;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    &__img-container {
+        width: toRem(40);
+    }
+
+    &__img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    &__title {
+        margin: toRem(8) 0 0 toRem(8);
+        color: $white;
+        font-family: $font-family-primary;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        margin: toRem(48) auto toRem(8) auto;
+
+        @media (min-width: 768px) {
+            margin: 0;
+            align-items: flex-end;
+        }
+    }
+}

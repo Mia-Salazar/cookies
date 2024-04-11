@@ -72,5 +72,3 @@ export const Home = () => {
 };
 
 export default Home;
-
-//role="navigation" aria-label="Webdev tag cloud"

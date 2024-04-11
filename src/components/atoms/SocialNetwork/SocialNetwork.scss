@@ -1,0 +1,14 @@
+@import "../../../assets/stylesheets/settings/toRem";
+@import "../../../assets/stylesheets/settings/variables";
+
+.social-network {
+    margin-right: toRem(16);
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    &__icon {
+        color: $white;
+    }
+}
