@@ -19,8 +19,8 @@ export const PortfolioItem = ({href, image, text}) => {
 				<p className="portfolio-item__img-text">{text} </p>
 			</div>
 			<div className="portfolio-item__button-container">
-				<ButtonLink styles="ghost" text="Visitar" href={href} target="_blank" />
 				<Button styles="secondary" text="Más info" functionality={getMoreInfo}/>
+				<ButtonLink styles="ghost" text="Visitar" href={href} target="_blank" />
 			</div>
 		</div>
 	);
