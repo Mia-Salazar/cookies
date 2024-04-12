@@ -1,6 +1,15 @@
 import React from "react";
 
-import { CloudItem, Container, Header, Heading, Layout, Navbar, StrengthItem, Text } from "../../components";
+import { 
+        Container,
+        Header,
+        Heading,
+        Layout,
+        Navbar,
+        PortfolioItem,
+        Text 
+    } from "../../components";
+    import foodiesaurus from "../../assets/img/foodiesaurus.png";
 import "./Portfolio.scss";
 
 export const Portfolio = () => {
@@ -10,6 +19,8 @@ export const Portfolio = () => {
             <Navbar />
             <Container>
                 <Heading text="Portfolio" />
+                <Text>Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado</Text>
+                <PortfolioItem href="https://foodiesaurus.com/" text="HTML5, CSS3, Javascript, PHP, MySQL, phpMyAdmin" image={foodiesaurus} />
             </Container>
         </Layout>
 	);
