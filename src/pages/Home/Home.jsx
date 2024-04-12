@@ -28,9 +28,8 @@ export const Home = () => {
                         title="Mentora"
                         subtitle="en Step4ward"
                     />
-
                     <StrengthItem 
-                        title="+40"
+                        title="+30"
                         subtitle="artículos"
                     />
                     <StrengthItem 
