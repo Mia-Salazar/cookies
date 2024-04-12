@@ -6,7 +6,7 @@ import "./ButtonLink.scss";
 
 export const ButtonLink = ({href, text, styles}) => {
 	return (
-		<Link className={`link ${styles ? `style--${styles}` : ''}`} to={href}>{text}</Link>
+		<Link className={`link ${styles ? `link--${styles}` : ''}`} to={href}>{text}</Link>
 	);
 };
 
