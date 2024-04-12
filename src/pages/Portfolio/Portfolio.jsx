@@ -9,6 +9,7 @@ export const Portfolio = () => {
             <Header />
             <Navbar />
             <Container>
+                <Heading text="Portfolio" />
             </Container>
         </Layout>
 	);
