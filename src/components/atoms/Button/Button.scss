@@ -17,6 +17,31 @@
         }
     }
 
+    &--ghost {
+        background: $white;
+    
+        color: $primary;
+        border: 2px solid $primary;
+
+        &:hover {
+            color: $white;
+            border: 2px solid $primary;
+        }
+    }
+
+    &--ghost-secondary {
+        background: $white;
+    
+        color: $secondary;
+        border: 2px solid $secondary;
+
+        &:hover {
+            background-color: $secondary;
+            color: $white;
+            border: 2px solid $secondary;
+        }
+    }
+
     &:disabled {
         cursor:not-allowed;
     }
