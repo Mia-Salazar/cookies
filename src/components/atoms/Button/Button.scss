@@ -9,6 +9,14 @@
         background-color: $primary;
     }
 
+    &--secondary {
+        background: $primary;
+
+        &:hover, &:disabled {
+            background: $secondary;
+        }
+    }
+
     &:disabled {
         cursor:not-allowed;
     }
