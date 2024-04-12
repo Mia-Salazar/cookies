@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Container, Form, Header, Heading, Layout, Navbar, Text } from "../../components";
-import "./Things.scss";
+import { Container, Header, Heading, Layout, Navbar, Text } from "../../components";
+import "./Activities.scss";
 
-export const Things = () => {
+export const Activities = () => {
 	return (
-		<Layout styles="contact">
+		<Layout styles="activities">
             <Header />
             <Navbar />
             <Container>
@@ -16,4 +16,4 @@ export const Things = () => {
 	);
 };
 
-export default Things;
+export default Activities;
