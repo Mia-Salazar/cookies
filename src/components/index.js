@@ -1,6 +1,7 @@
 export { default as Navbar } from './organisms/Navbar/Navbar';
 export { default as Footer } from './organisms/Footer/Footer';
 export { default as Form } from './organisms/Form/Form';
+export { default as PortfolioContent } from './organisms/PortfolioContent/PortfolioContent';
 
 export { default as Layout } from './molecules/Layout/Layout';
 export { default as Header } from './molecules/Header/Header';

@@ -6,6 +6,7 @@ import {
         Heading,
         Layout,
         Navbar,
+        PortfolioContent,
         PortfolioItem,
         Text 
     } from "../../components";
@@ -20,7 +21,7 @@ export const Portfolio = () => {
             <Container>
                 <Heading text="Portfolio" />
                 <Text>Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado</Text>
-                <PortfolioItem href="https://foodiesaurus.com/" text="HTML5, CSS3, Javascript, PHP, MySQL, phpMyAdmin" image={foodiesaurus} />
+                <PortfolioContent />
             </Container>
         </Layout>
 	);
