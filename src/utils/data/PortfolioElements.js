@@ -23,8 +23,8 @@ import old from "../../assets/img/old.jpg";
 import galactic from "../../assets/img/galatic.png";
 
 export const oldPortfolio = [
+	{href: "https://condescending-borg-99e8cc.netlify.app/", text:"React, HTML5, CSS3, SASS, Flexbox, Grid, BEM, i18n", image: galactic},
 	{href: "https://lucid-goldberg-035a3f.netlify.app/", text:"Angular, Typescript, HTML5, CSS3, SASS, Flexbox, Grid, BEM, i18n", image: old},
-	{href: "https://condescending-borg-99e8cc.netlify.app/", text:"React, HTML5, CSS3, SASS, Flexbox, Grid, BEM, i18n", image: galactic}
 ]
 
 export const portfolioArray = [
