@@ -9,9 +9,8 @@ export const Things = () => {
             <Header />
             <Navbar />
             <Container>
-                <Heading text="Thingso" />
-                <Text>Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!</Text>
-                <Form />
+                <Heading text="Fregaos" />
+                <Text>Aquí puedes ver todos los fregaos en los que me he metido: desde charlas a Game Jams</Text>
             </Container>
         </Layout>
 	);

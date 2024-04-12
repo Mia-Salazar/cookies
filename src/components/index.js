@@ -20,6 +20,10 @@ export { default as Heading } from './atoms/Heading/Heading';
 export { default as Input } from './atoms/Input/Input';
 export { default as Textarea } from './atoms/Textarea/Textarea';
 export { default as Button } from './atoms/Button/Button';
+export { default as ActivityItem } from './atoms/ActivityItem/ActivityItem';
+
+
+
 
 
 
