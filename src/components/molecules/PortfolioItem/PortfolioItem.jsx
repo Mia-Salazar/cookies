@@ -20,7 +20,7 @@ export const PortfolioItem = ({href, image, text}) => {
 			</div>
 			<div className="portfolio-item__button-container">
 				<ButtonLink styles="ghost" text="Visitar" href={href} target="_blank" />
-				<Button text="Más info" functionality={getMoreInfo}/>
+				<Button styles="secondary" text="Más info" functionality={getMoreInfo}/>
 			</div>
 		</div>
 	);
