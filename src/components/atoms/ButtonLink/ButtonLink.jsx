@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 
 import "./ButtonLink.scss";
 
-export const ButtonLink = ({href, text}) => {
+export const ButtonLink = ({href, text, style}) => {
 	return (
-		<Link className={"link"} to={href}>{text}</Link>
+		<Link className={`link ${style ? `style--${style}` : ''}`} to={href}>{text}</Link>
 	);
 };
 
 ButtonLink.propTypes = {
 	href: PropTypes.string.isRequired,
+	style: PropTypes.string,
 	text: PropTypes.string.isRequired,
 }
 

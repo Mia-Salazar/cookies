@@ -5,6 +5,13 @@
 .link {
     @include button;
 
+    &--ghost {
+        background: $white;
+    
+        color: $primary;
+        border: 2px solid $primary;
+    }
+
     &:hover {
         background-color: $primary;
     }
