@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-// import { portfolioFilter } from "../../../utils/data/portfolioFilter";
 import { portfolioArray } from "../../../utils/data/PortfolioElements";
-// import { Button } from "../../atoms/Button/Button";
-// import { PortfolioItem } from "../../molecules/PortfolioItem/PortfolioItem";
-// import { Filter } from "../../molecules/Filter/Filter";
-
 import PortfolioItem from "../../molecules/PortfolioItem/PortfolioItem";
 import Button from "../../atoms/Button/Button";
 import "./PortfolioContent.scss";
+import Filter from "../../molecules/Filter/Filter";
 
 export const PortfolioContent = () => {
 	const [portfolioContent, setPortfolioContent] = useState(portfolioArray.slice(0, 6));
@@ -61,7 +57,7 @@ export const PortfolioContent = () => {
 
 	return (
 		<div className="portfolio-items">
-			{/* <Filter buttonFunctionality={changeFilter} filterActive={filter} array={portfolioFilter}/> */}
+			<Filter buttonFunctionality={changeFilter} filterActive={filter} />
 			<div className="portfolio-items__container">
 				{
 					portfolioContent.map(({text, image, href}, index) => {
