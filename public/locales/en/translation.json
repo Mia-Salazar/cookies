@@ -1,35 +1,48 @@
 {
     "home": {
-        "continue": "Continue"
+        "continue": "Continue",
+        "hello": "Hello there!",
+        "textOne": "I'm Mia Salazar, a Front-end developer and cookie monster.",
+        "textTwo": "In 2018, I started in computer science and have been in love with it ever since. Currently, I'm specializing in accessibility, a topic that I'm passionate about. I'm a curious person who enjoys diving into challenges and always learning something new.",
+        "textThree": "Naturally geeky, when I'm not coding in my free time, I watch series, play board games or role-playing games, or go to the movies.",
+        "activities": "Some challenges",
+        "experience": "years of experience",
+        "accesibility": "Accessibility",
+        "specialized": "specialization",
+        "mentor": "Mentor",
+        "step4ward": "at Step4ward",
+        "articles": "articles",
+        "speeches": "talks",
+        "lang": "languages",
+        "tech": "Technologies",
+        "textFour": "I love developing products that focus on accessibility and people. Although I currently work as a Front-end developer and am passionate about layout, I also enjoy back-end development.",
+        "textFive": "Here you can see some of the technologies I've worked with."
     },
     "nav": {
-        
-    },
-    "footer": "Follow me on {{key}}",
-    "skip": "Skip to content",
-    "theme": "Change theme",
-    "navbar": {
-        "continue": "Continue",
-        "about": "About me",
+        "home": "Home",
         "portfolio": "Portfolio",
-        "skills": "Skills",
-        "awards": "Articles & others",
-        "contact": "Contact",
-        "lang": "Change language",
-        "back": "Back",
-        "menu": "Menu"
+        "articles": "Articles",
+        "activities": "Challenges",
+        "contact": "Contact"
     },
-    "about": {
-        "textOne": "I'm Mía Salazar, a galactic Front-End developer who has been navigating the galaxy doing good code since 2018, terrestrial calendar. ",
-        "textTwo": "As a spacecraft pilot for the Galatic Programmers Alliance, I enjoy learning about the languages ​​that exist in the universe, discovering better ways to solve problems, working as a team with the other crew members of the spacecraft, and being in constant learning."
+    "contact": {
+        "text": "If you have something to tell me or an interesting challenge, don't hesitate to write to me!",
+        "send": "Send",
+        "email": "Email",
+        "name": "Name",
+        "country": "Country",
+        "street": "Street",
+        "province": "Province",
+        "city": "City",
+        "comment": "What do you want to tell me?"
     },
     "skills": {
-        "textOne": "Besides, as part of this alliance, I have a number of skills and knowledge in languages.",
-        "textTwo": "In the Galactic Alliance of Programmers, we value creating scalable architectures, clean, maintainable and reusable code, active listening to new ways of programming and constant improvement.",
+        "textOne": "Additionally, as part of this alliance, I have a series of skills and knowledge in languages.",
+        "textTwo": "Within the Galactic Programmers Alliance, we value creating scalable architectures, clean, maintainable, and reusable code, actively listening to new programming methods, and constant improvement.",
         "low": "Low",
         "medium": "Medium",
         "high": "High",
-        "veryHigh": "Very high",
+        "veryHigh": "Very High",
         "html": "HTML5, CSS3, SCSS, SASS, Responsive Web Design",
         "js": "Javascript & Typescript",
         "framework": "Angular & React",
@@ -39,16 +52,16 @@
         "testing": "Testing library, Jest"
     },
     "portfolio": {
+        "text": "Here you can see some of the projects I've worked on professionally, and many of the personal projects I've done.",
+        "textTwo": "Before being a cookie monster, I was an intergalactic traveler and a superheroine. You can see my projects here.",
+        "past": "My past",
         "visit": "Visit",
-        "info": "Info",
+        "info": "More info",
         "load": "Load more",
         "all": "All",
         "vue": "Vuejs",
         "react": "Reactjs",
-        "angular": "Angular",
-        "old": "My past before space",
-        "oldText":"Before I became a Galactic Front-end and joined the Galatian Programmers Alliance, I used to watch out for good code on Planet Earth as a superhero. If you are curious to know that past, take a look at my old portfolio.",
-        "subtitle": "In this panel you can see the missions in which I have participated within the Galactic Alliance of Programmers. Some missions happened in React's star cluster, others in Angular, and some less in Vue's. Within each mission, I have used different languages ​​and skills."
+        "angular": "Angular"
     },
     "awards": {
         "t3chfest2024": "Sppech at T3ch Fest. Web accesibility: Guide for newbies",
@@ -105,15 +118,5 @@
         "talks": "Talks",
         "talksOne": "Participation in a Science and Technology Program in Women and talks in high schools",
         "talksTwo": "Discovering Tech Stories: Interview on Opground"
-    },
-    "contact": {
-        "error": "This field has error",
-        "success": "The message was sent successfully",
-        "required": "* This fields are mandatory",
-        "send": "Send",
-        "email": "Write your email",
-        "name": "Write your name",
-        "comment": "Write your message",
-        "textOne": "In the Galactic Alliance of Programmers we are always navigating the Universe solving code problems and making improvements, but you can contact me through this form or at:"
     }
 } 
