@@ -1,0 +1,16 @@
+export const activitiesArray = [
+	{ lang: "es", aria: "awards.talks", icon: "venus", target: "_blank", text: "awards.t3chfest2024", href: "https://www.youtube.com/watch?v=gKBTMnxLGvc&list=PLqgZDFdwyB8YYRsd91u4zsPsoQ1pflWO4&index=44", type: "others" },
+	{ lang: "es", aria: "awards.talks", icon: "venus", target: "_blank", text: "awards.techshessionsThree", href: "https://www.youtube.com/watch?v=QUllvzs_KWM&ab_channel=CommitConf", type: "others" },
+	{ lang: "es", aria: "awards.talks", icon: "venus", target: "_blank", text: "awards.techshessionsTwo", href: "https://www.youtube.com/watch?v=d7NcHxRH8zU&feature=youtu.be", type: "others" },
+	{ lang: "es", aria: "awards.talks", icon: "venus", target: "_blank", text: "awards.techshessionsOne", href: "https://www.youtube.com/watch?v=CpuxfoV71E0&feature=youtu.be&ab_channel=CommitConf", type: "others" },
+	{ lang: "es", aria: "awards.talks", icon: "venus", target: "_blank", text: "awards.talksOne", href: "https://eventos.uc3m.es/70884/section/33597/ciencia-y-tecnologia-en-femenino.-programa-e-inauguracion-exposicion.html", type: "others" },
+	{ lang: "es", aria: "awards.interviewText", icon: "venus", target: "_blank", text: "awards.interviewTwo", href: "https://www.youtube.com/watch?v=I2jBvdtMNmE&ab_channel=ITgals", type: "others" },
+	{ lang: "es", aria: "awards.interviewText", icon: "venus", target: "_blank", text: "awards.interview", href: "https://www.youtube.com/watch?v=ljT-Zwobxos&feature=emb_title&ab_channel=ITgals", type: "others" },
+	{ lang: "es", aria: "awards.mentor", icon: "venus", target: "_blank", text: "awards.mentor", href: "https://step4ward.notion.site/2356c1e9894740da94da6fe491d15408?v=60faee110e404a97a5aa448190d36c63", type: "others" },
+	{ lang: "es", aria: "awards.mentorTwo", icon: "venus", target: "_blank", text: "awards.mentorTwo", href: "https://step4ward.notion.site/PulpoCon-23-1d6548ce4f2a4f938455f753fdd4a4c1", type: "others" },
+	{ lang: "en", aria: "awards.paper", icon: "atom", target: "_blank", text: "awards.corea", href: "https://institucional.us.es/revistas/comunicacion/16/A3.%20GarciaRosales_An%C3%A1lisis_semi%C3%B3tica_profunda_propaganda_Corea.pdf", type: "scientific"},
+	{ lang: "en", aria: "awards.paper", icon: "atom", target: "_blank", text: "awards.coreaTwo", href: "https://institucional.us.es/revistas/publicidad/14/A5_Salazar%20Garcia-Rosales.pdf", type: "scientific" },
+	{ lang: "es", aria: "awards.paper", icon: "atom", target: "_blank", text: "awards.coreaThree", href: "https://drive.google.com/file/d/1vTwR7VHkjjmAU4i1XJxg7NnVgAm40l0Z/view?usp=sharing", type: "scientific" },
+	{ lang: "es", aria: "awards.talks", icon: "microphone", target: "_blank", text: "awards.talksTwo", href: "https://www.youtube.com/watch?v=3S9at2lYPjA", type: "others" },
+	{ lang: "es", aria: "awards.talks", icon: "microphone", target: "_blank", text: "awards.talksThree", href: "https://www.youtube.com/watch?v=oG3iu4LgzeY&t=4113s", type: "others" },
+]
