@@ -22,8 +22,15 @@
         "home": "Home",
         "portfolio": "Portfolio",
         "articles": "Articles",
-        "activities": "Activities",
+        "activities": "Challenges",
         "contact": "Contact"
+    },
+    "activities":  {
+        "text": "In addition to being a cookie monster, I am a person who loves to get into trouble and look for new activities. Here you can see all the challenges I've gotten into: from talks to Game Jams.",
+        "interview": "Interviews",
+        "game": "Game Jams",
+        "others": "Others",
+        "speeches": "Speeches"
     },
     "contact": {
         "text": "If you have something to tell me or an interesting challenge, don't hesitate to write to me!",
@@ -64,12 +71,12 @@
         "angular": "Angular"
     },
     "awards": {
-        "t3chfest2024": "Sppech at T3ch Fest. Web accesibility: Guide for newbies",
-        "techshessionsThree": "TechSHEssions third speech: Foodiesaurus, designing an accesible project",
-        "techshessionsTwo": "TechSHEssions second speech: Foodiesaurus, project with sticks and stones",
+        "t3chfest2024": "T3ch Fest 2024. Web accesibility: Guide for newbies",
+        "techshessionsThree": "TechSHEssions third speech. Foodiesaurus, designing an accesible project",
+        "techshessionsTwo": "TechSHEssions second speech. Foodiesaurus, project with sticks and stones",
         "interviewTwo": "IT Gals: Interview about my evolution in the world of technology",
-        "talksThree": "Interview about accesibility at DiscoDurodeRoer",
-        "techshessionsOne": "TechSHEssions first speech: May the allergy be with you",
+        "talksThree": "DiscoDurodeRoer. Interview about accesibility",
+        "techshessionsOne": "TechSHEssions first speech. May the allergy be with you",
         "otherOne": "Participation in Telemadrid on a board game event",
         "mentor": "Mentor at Step4Ward",
         "mentorTwo": "Short talk at Pulpocon 2023 ",

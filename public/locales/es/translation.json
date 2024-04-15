@@ -25,6 +25,13 @@
         "activities": "Fregaos",
         "contact": "Contacto"
     },
+    "activities":  {
+        "text": "Además de un mosntruo de las galletas, soy una persona a la que le encanta meterse en fregaos y buscar actividades nuevas. Aquí puedes ver todos los fregaos en los que me he metido: desde charlas a Game Jams.",
+        "interview": "Entrevistas",
+        "game": "Game Jams",
+        "others": "Otros",
+        "speeches": "Charlas"
+    },
     "contact": {
         "text": "Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!",
         "send": "Enviar",
@@ -64,12 +71,12 @@
         "angular": "Angular"
     },
     "awards": {
-        "t3chfest2024": "Charla en el T3ch Fest. Accesibilidad web: Guía para noobies",
-        "talksThree": "Entrevista sobre accesibilidad en DiscoDurodeRoer",
-        "techshessionsThree": "TechSHEssions tercera charla: Foodiesaurus, diseñando un proyecto accesible",
-        "techshessionsTwo": "TechSHEssions segunda charla: Foodiesaurus, un proyecto con palos y piedras",
+        "t3chfest2024": "T3ch Fest 2024. Accesibilidad web: Guía para noobies",
+        "talksThree": "DiscoDurodeRoer. Entrevista sobre accesibilidad",
+        "techshessionsThree": "TechSHEssions tercera charla. Foodiesaurus, diseñando un proyecto accesible",
+        "techshessionsTwo": "TechSHEssions segunda charla. Foodiesaurus, un proyecto con palos y piedras",
         "interviewTwo": "IT Gals: Entrevista sobre mi evolución en el mundo de la tecnología",
-        "techshessionsOne": "TechSHEssions primera charla: Que la alergia te acompañe",
+        "techshessionsOne": "TechSHEssions primera charla. Que la alergia te acompañe",
         "otherOne": "Participación en Telemadrid sobre un evento de juegos de mesa",
         "mentor": "Mentora en Step4Ward",
         "mentorTwo": "Mini charla en la Pulpocon 2023",
