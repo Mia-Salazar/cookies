@@ -1,6 +1,6 @@
 export const portfolioFilter = [
-	{ text: "Todos", value: "all" },
-	{ text: "Angular", value: "angular" },
-	{ text: "React", value: "reactjs" },
-	{ text: "Vue", value: "vuejs" }
+	{ text: "portfolio.all", value: "all" },
+	{ text: "portfolio.angular", value: "angular" },
+	{ text: "portfolio.react", value: "reactjs" },
+	{ text: "portfolio.vue", value: "vuejs" }
 ];

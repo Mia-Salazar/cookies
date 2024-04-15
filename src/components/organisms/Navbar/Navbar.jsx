@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import logo from '../../../assets/img/logo.png';
+import LanguageButton from "../../molecules/LanguageButton/LanguageButton";
 import "./Navbar.scss";
 
 export const Navbar = () => {
+    const { t } = useTranslation();
+
     const [toggle, setToggle] = useState(false);
 
     const handleClick = () => {
@@ -38,21 +42,16 @@ export const Navbar = () => {
                 <p className="navbar__title">Mia Salazar</p>
             </div>
 
-            <ul className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
+            <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
+                <div className="navbar__list">
+                    <Link className={"navbar__link"} to="/home">{t('nav.home')}</Link>
+                    <Link className={"navbar__link"} to="/activities">{t('nav.activities')}</Link>
+                    <Link className={"navbar__link"} to="/portfolio">{t('nav.portfolio')}</Link>
+                    <Link className={"navbar__link"} to="/contact">{t('nav.contact')}</Link>
+                </div>
+                <LanguageButton />
+            </div>
 
-                <li>
-                    <Link className={"navbar__link"} to="/home">Inicio</Link>
-                </li>
-                <li>
-                    <Link className={"navbar__link"} to="/things">Fregaos</Link>
-                </li>
-                <li>
-                    <Link className={"navbar__link"} to="/portfolio">Portfolio</Link>
-                </li>
-                <li>
-                    <Link className={"navbar__link"} to="/contact">Contacto</Link>
-                </li>
-            </ul>
         </div>
 	);
 };

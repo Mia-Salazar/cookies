@@ -1,0 +1,37 @@
+@import "../../../assets/stylesheets/settings/toRem";
+@import "../../../assets/stylesheets/settings/variables";
+
+.list-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: toRem(24) toRem(48) 1fr;
+    list-style-type: none;
+
+    margin-bottom: toRem(12);
+
+    .fas {
+        color: $primary;
+        font-size: toRem(14);
+    }
+
+    &__year {
+        padding: 0 toRem(6);
+        background-color: $primary;
+        color: $white;
+        font-family: $font-family-secondary;
+    }
+
+    &__icon-container {
+        display: grid;
+        grid-template-columns: toRem(12) toRem(24);
+        grid-gap: toRem(4);
+    }
+
+    &__link {
+        margin-left: toRem(8);
+
+        color: $black;
+        font-family: $font-family-secondary;
+        text-decoration: none;
+    }
+}
