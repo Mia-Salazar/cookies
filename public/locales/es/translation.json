@@ -52,8 +52,11 @@
         "testing": "Testing library, Jest"
     },
     "portfolio": {
+        "text": "Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado.",
+        "textTwo": "Antes de ser una monstrua de las galletas, fui una viajera intergaláctica y una superheroína. Puedes ver mis proyectos aquí.",
+        "past": "Mi pasado",
         "visit": "Visitar",
-        "info": "Info",
+        "info": "Más info",
         "load": "Cargar más",
         "all": "Todos",
         "vue": "Vuejs",
