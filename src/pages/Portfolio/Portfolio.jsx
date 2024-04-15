@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import { oldPortfolio } from "../../utils/data/PortfolioElements";
 import { 
@@ -14,16 +15,18 @@ import {
 import "./Portfolio.scss";
 
 export const Portfolio = () => {
+    const { t } = useTranslation();
+
 	return (
 		<Layout>
             <Header />
             <Navbar />
             <Container>
-                <Heading text="Portfolio" />
-                <Text>Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado</Text>
+                <Heading text="nav.portfolio" />
+                <Text>{t('portfolio.text')}</Text>
                 <PortfolioContent />
-                <Heading text="Mi pasado" type={2} />
-                <Text>Antes de ser una monstrua de las galletas, fui una viajera intergaláctica y una superheroína. Puedes ver mis proyectos aquí</Text>
+                <Heading text="portfolio.past" type={2} />
+                <Text>{t('portfolio.textTwo')}</Text>
                 <div className="portfolio__list">
                     {
                         oldPortfolio.map(({text, image, href}, index) => {

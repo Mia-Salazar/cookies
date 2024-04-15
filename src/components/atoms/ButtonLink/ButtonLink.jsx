@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./ButtonLink.scss";
 
 export const ButtonLink = ({href, text, styles}) => {
+	const { t } = useTranslation();
+
 	return (
-		<Link className={`link ${styles ? `link--${styles}` : ''}`} to={href}>{text}</Link>
+		<Link className={`link ${styles ? `link--${styles}` : ''}`} to={href}>{t(text)}</Link>
 	);
 };
 

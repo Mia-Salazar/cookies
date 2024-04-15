@@ -69,7 +69,7 @@ export const PortfolioContent = () => {
 			</div>
 			{
 				loadMore &&
-                    <Button text="Cargar más" functionality={loadMoreFunc}/>
+                    <Button text="portfolio.load" functionality={loadMoreFunc}/>
 			}
 		</div>
 	);

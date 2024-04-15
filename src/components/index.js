@@ -8,6 +8,7 @@ export { default as Header } from './molecules/Header/Header';
 export { default as FormElement } from './molecules/FormElement/FormElement';
 export { default as PortfolioItem } from './molecules/PortfolioItem/PortfolioItem';
 export { default as Filter } from './molecules/Filter/Filter';
+export { default as LanguageButton } from './molecules/LanguageButton/LanguageButton';
 
 export { default as ButtonLink } from './atoms/ButtonLink/ButtonLink';
 export { default as CloudItem } from './atoms/CloudItem/CloudItem';
@@ -21,6 +22,7 @@ export { default as Input } from './atoms/Input/Input';
 export { default as Textarea } from './atoms/Textarea/Textarea';
 export { default as Button } from './atoms/Button/Button';
 export { default as ActivityItem } from './atoms/ActivityItem/ActivityItem';
+ 
 
 
 

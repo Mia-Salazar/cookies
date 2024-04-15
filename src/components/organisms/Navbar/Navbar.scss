@@ -80,7 +80,6 @@
         display: none;        
         padding: toRem(80) 0 0 0;
         margin: 0;
-        list-style-type: none;
         
         width: 100%;
         
@@ -110,6 +109,12 @@
         }
     }
 
+    &__list {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
     &__link {
         display: block;
         padding: toRem(16);
@@ -118,6 +123,7 @@
         font-size: toRem(18);
         font-family: $font-family-secondary;
         text-decoration: none;
+        text-align: center;
 
         &:hover {
             background-color: $secondary;

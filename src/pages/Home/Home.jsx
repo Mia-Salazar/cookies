@@ -1,49 +1,51 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import { CloudItem, Container, Header, Heading, Layout, Navbar, StrengthItem, Text } from "../../components";
 import "./Home.scss";
 
 export const Home = () => {
+    const { t } = useTranslation();
+
 	return (
 		<Layout>
             <Header />
             <Navbar />
             <Container>
-                <Heading text="¡Hola hola!" />
-                <Text>Soy Mia Salazar, Front-end developer y monstrua de las galletas.</Text>
-                <Text>En 2018 empecé en informática y llevo enamorada desde entonces. Actualmente me estoy especializando en accesibilidad, un tema que me apasiona.
-                    Soy una persona inquieta, a la que le gusta meterse 'fregaos' y que siempre está aprendiendo algo nuevo.</Text>
-                <Text>Friki por naturaleza, cuando no estoy programando algo en mi tiempo libre, veo series, juego a juegos de mesa o de rol o voy al cine.</Text>
-                <Heading text="Algunos fregaos" type={2} />
+                <Heading text="home.hello" />
+                <Text>{t('home.textOne')}</Text>
+                <Text>{t('home.textTwo')}</Text>
+                <Text>{t('home.textThree')}</Text>
+                <Heading text="home.activities" type={2} />
                 <div className="home__container">
                     <StrengthItem 
                         title="6"
-                        subtitle="Años de experiencia"
+                        subtitle="home.experience"
                     />
                     <StrengthItem 
-                        title="Accesibilidad"
-                        subtitle="de especialización"
+                        title="home.accesibility"
+                        subtitle="home.specialized"
                     />
                     <StrengthItem 
-                        title="Mentora"
-                        subtitle="en Step4ward"
+                        title="home.mentor"
+                        subtitle="home.step4ward"
                     />
                     <StrengthItem 
                         title="+30"
-                        subtitle="artículos"
+                        subtitle="home.articles"
                     />
                     <StrengthItem 
                         title="6"
-                        subtitle="charlas"
+                        subtitle="home.speeches"
                     />
                     <StrengthItem 
                         title="2"
-                        subtitle="idiomas"
+                        subtitle="home.lang"
                     />
                 </div>
-                <Heading text="Tecnologías" type={2} />
-                <Text>Me encanta desarrollar productos que pongan el foco en la accesibilidad y en las personas. Aunque actualmente trabajo como desarrolladora Front-end y soy una apasionada de la maquetación, también disfruto haciendo desarrollo back-end.</Text>
-                <Text>Aquí puedes ver algunas de las tecnologías con las que he trabajado.</Text>
+                <Heading text="home.tech" type={2} />
+                <Text>{t('home.textFour')}</Text>
+                <Text>{t('home.textFive')}</Text>
                 <div className="home__list">
                     <CloudItem href="https://jestjs.io/es-ES/" size="high" text="Jest" />
                     <CloudItem href="https://www.w3schools.com/css/" size="reallyHigh" text="CSS" />
@@ -51,7 +53,7 @@ export const Home = () => {
                     <CloudItem href="https://angular.io/" size="medium" text="Angular" />
                     <CloudItem href="https://playwright.dev/" size="low" text="Playwright" />
                     <CloudItem href="https://www.w3schools.com/sql/" size="reallyLow" text="SQL" />
-                    <CloudItem href="https://www.w3schools.com/typescript/" size="high" text="Accesibilidad" />
+                    <CloudItem href="https://www.w3schools.com/typescript/" size="high" text="Accesibility" />
                     <CloudItem href="https://tailwindcss.com/" size="low" text="Tailwind" />
                     <CloudItem href="https://www.w3schools.com/js/" size="reallyHigh" text="Javascript" />
                     <CloudItem href="https://git-scm.com/" size="medium" text="Git" />
