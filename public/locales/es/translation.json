@@ -75,11 +75,11 @@
         "talksThree": "DiscoDurodeRoer. Entrevista sobre accesibilidad",
         "techshessionsThree": "TechSHEssions tercera charla. Foodiesaurus, diseñando un proyecto accesible",
         "techshessionsTwo": "TechSHEssions segunda charla. Foodiesaurus, un proyecto con palos y piedras",
-        "interviewTwo": "IT Gals: Entrevista sobre mi evolución en el mundo de la tecnología",
+        "interviewTwo": "IT Gals. Entrevista sobre mi evolución en el mundo de la tecnología",
         "techshessionsOne": "TechSHEssions primera charla. Que la alergia te acompañe",
-        "otherOne": "Participación en Telemadrid sobre un evento de juegos de mesa",
-        "mentor": "Mentora en Step4Ward",
-        "mentorTwo": "Mini charla en la Pulpocon 2023",
+        "otherOne": "Telemadrid. Participación en un evento de juegos de mesa",
+        "mentor": "Mentora actual en Step4Ward",
+        "mentorTwo": "Pulpocon. Mini charla en el Open Space",
         "textOne": "A lo largo de mi carrera en la Alianza, he  he escrito informes sobre las diferentes misiones que he realizado y he participado en varios proyectos terrestres con otros miembros de la Alianza",
         "scientificText": "Aquí puedes ver los artículos científicos que escribí durante mi etapa pre-galáctica.",
         "articlesText": "Aquí puedes ver los diferentes informes que he escrito, tanto los de programación como los de ciberseguridad.",
@@ -87,7 +87,7 @@
         "corea": "Análisis de la estructura semiótica profunda de los mensajes propagandísticos de Corea",
         "coreaTwo": "Análisis de los elementos estéticoexpresivos en la propaganda de Corea del Sur y Corea del Norte",
         "coreaThree": "Revisora de artículos científicos para la Universiad de Costa Rica",
-        "interview": "IT Gals: Entrevista sobre mujeres en el sector tecnológico",
+        "interview": "IT Gals. Entrevista sobre mujeres en el sector tecnológico",
         "articleOne": "La pesadilla del desarrollador: Accesibilidad Web",
         "articleTwo": "¿Por qué, Icomoon, por qué?",
         "articleThree": "Cómo estructurar CSS en VUE como una persona Pro",
@@ -124,6 +124,7 @@
         "paper": "Artículo científico",
         "talks": "Charlas",
         "talksOne": "Participación en un Programa de Ciencia y Tecnología en Femenino y charlas en institutos",
-        "talksTwo": "Discovering Tech Stories: Entrevista para Opground"
+        "talksTwo": "Discovering Tech Stories: Entrevista para Opground",
+        "mentorAdalab": "Mentora en Adalab durante dos promociones"
     }
 }  

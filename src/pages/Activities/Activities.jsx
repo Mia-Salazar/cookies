@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { ActivityItem, Container, Header, Heading, Layout, Navbar, Text } from "../../components";
-import { gameArray, interviewsArray, speechesArray } from "../../utils/data/ActivitiesElements";
+import { gameArray, interviewsArray, otherArray, speechesArray } from "../../utils/data/ActivitiesElements";
 import "./Activities.scss";
 
 export const Activities = () => {
@@ -45,6 +45,17 @@ export const Activities = () => {
                         })
                     }
                 </div>
+                <Heading text="activities.others" type={2} />
+                <div className="activities__list">
+                    {
+                        otherArray.map(({aria, href, icon, lang, text, year}, index) => {
+                            return(
+                                <ActivityItem aria={aria} href={href} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            );
+                        })
+                    }
+                </div>
+
             </Container>
         </Layout>
 	);
