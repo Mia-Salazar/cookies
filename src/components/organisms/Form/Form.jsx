@@ -7,7 +7,7 @@ import FormElement from "../../molecules/FormElement/FormElement";
 import Button from "../../atoms/Button/Button";
 
 export const Form = () => {
-    const [values, setValues] = useState({name: "", email:"", street: "", city: "", country: "", comment: ""});
+    const [values, setValues] = useState({name: "", email:"", street: "", city: "", country: "", comment: "", province: ""});
 	const [serverState, setServerState] = useState({
 		submitting: false,
 		status: null
@@ -26,7 +26,7 @@ export const Form = () => {
                 city: "",
                 country: "",
                 comment: "",
-
+				province: ""
             })
 		}
 	};
@@ -56,13 +56,14 @@ export const Form = () => {
 
 	return (
 		<form className="form" onSubmit={handleOnSubmit}>
-            <FormElement type="text" id="name" text="Nombre" value={values.name} functionality={inputChange("name")} />
-            <FormElement type="email" id="email" text="Email" value={values.email} functionality={inputChange("email")} />
-            <FormElement type="text" id="street" text="Calle" value={values.street} functionality={inputChange("street")} />
-            <FormElement type="text" id="city" text="Ciudad" value={values.city} functionality={inputChange("city")} />
-            <FormElement type="text" id="country" text="País" value={values.country} functionality={inputChange("country")} />
-            <FormElement  id="comment" text="Mensaje" value={values.comment} functionality={inputChange("comment")} />
-			<Button text="Enviar" disabled={serverState.submitting || !values.email === "" || values.comment === ""} type="submit"/>
+            <FormElement type="text" id="name" text="contact.name" value={values.name} functionality={inputChange("name")} />
+            <FormElement type="email" id="email" text="contact.email" value={values.email} functionality={inputChange("email")} />
+            <FormElement type="text" id="country" text="contact.country" value={values.country} functionality={inputChange("country")} />
+			<FormElement type="text" id="province" text="contact.province" value={values.province} functionality={inputChange("province")} />
+            <FormElement type="text" id="city" text="contact.city" value={values.city} functionality={inputChange("city")} />
+            <FormElement type="text" id="street" text="contact.street" value={values.street} functionality={inputChange("street")} />
+            <FormElement  id="comment" text="contact.comment" value={values.comment} functionality={inputChange("comment")} />
+			<Button text="contact.send" disabled={serverState.submitting || !values.email === "" || values.comment === ""} type="submit"/>
 		</form>
 	);
 };

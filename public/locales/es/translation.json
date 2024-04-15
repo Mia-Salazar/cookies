@@ -25,23 +25,16 @@
         "activities": "Fregaos",
         "contact": "Contacto"
     },
-    "footer": "Sígueme en {{key}}",
-    "skip": "Saltar al contenido",
-    "theme": "Cambiar tema",
-    "navbar": {
-        "continue": "Continuar",
-        "about": "Sobre mí",
-        "portfolio": "Portfolio",
-        "skills": "Habilidades",
-        "awards": "Artículos & otros",
-        "contact": "Contacto",
-        "lang": "Cambiar idioma",
-        "back": "Atrás",
-        "menu": "Menú"
-    },
-    "about": {
-        "textOne": "Soy Mía Salazar, una desarrolladora Front-End galáctica que lleva navegando por la galaxia realizando buen código desde 2018, calendario terrestre.",
-        "textTwo": "Como desarrolladora principal de una nave espacial de la Alianza Galáctica de Programadores, disfruto conociendo los lenguajes que existen en el universo, descubriendo mejores formas de solucionar problemas, trabajando en equipo con los demás tripulantes de la nave espacial y estando en constante aprendizaje."
+    "contact": {
+        "text": "Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!",
+        "send": "Enviar",
+        "email": "Email",
+        "name": "Nombre",
+        "country": "País",
+        "street": "Calle",
+        "province": "Provincia",
+        "city": "Ciudad",
+        "comment": "¿Qué me quieres contar?"
     },
     "skills": {
         "textOne": "Además, como parte de esta alianza, cuento con una serie de habilidades y conocimientos en lenguajes.",
@@ -125,15 +118,5 @@
         "talks": "Charlas",
         "talksOne": "Participación en un Programa de Ciencia y Tecnología en Femenino y charlas en institutos",
         "talksTwo": "Discovering Tech Stories: Entrevista para Opground"
-    },
-    "contact": {
-        "error": "Este campo tiene errores",
-        "success": "El mensaje se envió con éxito",
-        "required": "* Estos campos son obligatorios",
-        "send": "Enviar",
-        "email": "Escribe tu email",
-        "name": "Escribe tu nombre",
-        "comment": "Escribe tu mensaje",
-        "textOne": "En la Alianza Galáctica de Programadores siempre estamos navegando por el Universo solucionando problemas de código y realizando mejoras, pero puedes contactarme a través de este formulario o en:"
     }
 }  
