@@ -1,14 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { Container, Header, Heading, Layout, Navbar, Text } from "../../components";
+import { Container, Header, Heading, Frame, Navbar, Text } from "../../components";
 import "./Articles.scss";
 
 export const Articles = () => {
     const { t } = useTranslation();
 
 	return (
-		<Layout>
+		<Frame>
             <Header />
             <Navbar />
             <Container>
@@ -18,7 +18,7 @@ export const Articles = () => {
                 <Text>{t('home.textThree')}</Text>
                 <Heading text="home.activities" type={2} />
             </Container>
-        </Layout>
+        </Frame>
 	);
 };
 

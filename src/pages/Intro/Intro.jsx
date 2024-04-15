@@ -1,14 +1,14 @@
 import React from "react";
 
-import { ButtonLink, Header, Layout } from "../../components";
+import { ButtonLink, Header, Frame } from "../../components";
 
 
 export const Intro = () => {
 	return (
-		<Layout isIntro>
+		<Frame isIntro>
             <Header />
             <ButtonLink href="/home" text="home.continue" />
-        </Layout>
+        </Frame>
 	);
 };
 

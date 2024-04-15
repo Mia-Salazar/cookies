@@ -1,14 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { CloudItem, Container, Header, Heading, Layout, Navbar, StrengthItem, Text } from "../../components";
+import { CloudItem, Container, Header, Heading, Frame, Navbar, StrengthItem, Text } from "../../components";
 import "./Home.scss";
 
 export const Home = () => {
     const { t } = useTranslation();
 
 	return (
-		<Layout>
+		<Frame>
             <Header />
             <Navbar />
             <Container>
@@ -68,7 +68,7 @@ export const Home = () => {
                     <CloudItem href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/" size="high" text="Aria" />
                 </div>
             </Container>
-        </Layout>
+        </Frame>
 	);
 };
 

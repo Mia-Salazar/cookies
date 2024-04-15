@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-import "./Layout.scss";
+import "./Frame.scss";
 import Footer from "../../organisms/Footer/Footer";
 
-export const Layout = ({children, isIntro, styles = ""}) => {
+export const Frame = ({children, isIntro, styles = ""}) => {
 	return (
 		<>
-			<div className={`layout ${isIntro ? 'layout--intro' : styles}`}>
+			<div className={`Frame ${isIntro ? 'Frame--intro' : styles}`}>
 				{children}
 			</div>
 			{!isIntro && <Footer />}
@@ -15,14 +15,14 @@ export const Layout = ({children, isIntro, styles = ""}) => {
 	);
 };
 
-Layout.defaultProps = {
+Frame.defaultProps = {
 	isIntro: false
 };
 
-Layout.propTypes = {
+Frame.propTypes = {
 	children: PropTypes.node.isRequired,
 	isIntro: PropTypes.bool,
 	styles: PropTypes.string
 }
 
-export default Layout;
+export default Frame;

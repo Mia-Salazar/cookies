@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { ActivityItem, Container, Header, Heading, Layout, Navbar, Text } from "../../components";
+import { ActivityItem, Container, Header, Heading, Frame, Navbar, Text } from "../../components";
 import { gameArray, interviewsArray, otherArray, speechesArray } from "../../utils/data/ActivitiesElements";
 import "./Activities.scss";
 
@@ -9,7 +9,7 @@ export const Activities = () => {
     const { t } = useTranslation();
 
 	return (
-		<Layout styles="activities">
+		<Frame styles="activities">
             <Header />
             <Navbar />
             <Container>
@@ -57,7 +57,7 @@ export const Activities = () => {
                 </div>
 
             </Container>
-        </Layout>
+        </Frame>
 	);
 };
 

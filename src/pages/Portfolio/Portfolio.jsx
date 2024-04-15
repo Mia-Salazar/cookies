@@ -6,7 +6,7 @@ import {
         Container,
         Header,
         Heading,
-        Layout,
+        Frame,
         Navbar,
         PortfolioContent,
         PortfolioItem,
@@ -18,7 +18,7 @@ export const Portfolio = () => {
     const { t } = useTranslation();
 
 	return (
-		<Layout>
+		<Frame>
             <Header />
             <Navbar />
             <Container>
@@ -38,7 +38,7 @@ export const Portfolio = () => {
                 </div>
                 
             </Container>
-        </Layout>
+        </Frame>
 	);
 };
 

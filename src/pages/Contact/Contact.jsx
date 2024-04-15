@@ -1,14 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { Container, Form, Header, Heading, Layout, Navbar, Text } from "../../components";
+import { Container, Form, Header, Heading, Frame, Navbar, Text } from "../../components";
 import "./Contact.scss";
 
 export const Contact = () => {
     const { t } = useTranslation();
 
 	return (
-		<Layout styles="contact">
+		<Frame styles="contact">
             <Header />
             <Navbar />
             <Container>
@@ -16,7 +16,7 @@ export const Contact = () => {
                 <Text>{t('contact.text')}</Text>
                 <Form />
             </Container>
-        </Layout>
+        </Frame>
 	);
 };
 
