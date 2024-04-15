@@ -7,7 +7,7 @@ export const Intro = () => {
 	return (
 		<Layout isIntro>
             <Header />
-            <ButtonLink href="/home" text="Continuar" />
+            <ButtonLink href="/home" text="home.continue" />
         </Layout>
 	);
 };

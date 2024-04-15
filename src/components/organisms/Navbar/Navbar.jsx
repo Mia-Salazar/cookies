@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import logo from '../../../assets/img/logo.png';
 import "./Navbar.scss";
 
 export const Navbar = () => {
+    const { t } = useTranslation();
+
     const [toggle, setToggle] = useState(false);
 
     const handleClick = () => {
@@ -39,18 +42,17 @@ export const Navbar = () => {
             </div>
 
             <ul className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
-
                 <li>
-                    <Link className={"navbar__link"} to="/home">Inicio</Link>
+                    <Link className={"navbar__link"} to="/home">{t('nav.home')}</Link>
                 </li>
                 <li>
-                    <Link className={"navbar__link"} to="/activities">Fregaos</Link>
+                    <Link className={"navbar__link"} to="/activities">{t('nav.activities')}</Link>
                 </li>
                 <li>
-                    <Link className={"navbar__link"} to="/portfolio">Portfolio</Link>
+                    <Link className={"navbar__link"} to="/portfolio">{t('nav.portfolio')}</Link>
                 </li>
                 <li>
-                    <Link className={"navbar__link"} to="/contact">Contacto</Link>
+                    <Link className={"navbar__link"} to="/contact">{t('nav.contact')}</Link>
                 </li>
             </ul>
         </div>
