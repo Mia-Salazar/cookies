@@ -8,6 +8,7 @@
     border: 4px solid $white;
 
     @media (min-width: 768px) {
+        margin: 0;
         border: none;
     }
 
