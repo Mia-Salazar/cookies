@@ -48,6 +48,7 @@ export const Home = () => {
                 <CloudItem href="https://www.w3schools.com/css/" size="reallyHigh" text="CSS" />
                 <CloudItem href="https://es.react.dev/" size="high" text="React" />
                 <CloudItem href="https://angular.io/" size="medium" text="Angular" />
+                <CloudItem href="https://www.sketch.com/" size="low" text="Sketch" />
                 <CloudItem href="https://playwright.dev/" size="low" text="Playwright" />
                 <CloudItem href="https://www.w3schools.com/sql/" size="reallyLow" text="SQL" />
                 <CloudItem href="https://www.w3schools.com/typescript/" size="high" text="Accesibility" />
@@ -63,6 +64,10 @@ export const Home = () => {
                 <CloudItem href="https://nextjs.org/" size="low" text="Next" />
                 <CloudItem href="https://www.w3schools.com/php" size="reallyLow" text="PHP" />
                 <CloudItem href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/" size="high" text="Aria" />
+                <CloudItem href="https://getbootstrap.com/" size="high" text="Bootstrap" />
+                <CloudItem href="hhttps://vitejs.dev/guide/" size="low" text="Vite" />
+                <CloudItem href="https://www.figma.com/" size="low" text="Figma" />
+                <CloudItem href="https://jquery.com/" size="medium" text="jQuery" />
             </div>
         </Layout>
 	);
