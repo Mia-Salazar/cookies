@@ -1,0 +1,17 @@
+@import "../../assets/stylesheets/settings/toRem";
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+.articles {
+    &__img {
+        width: toRem(30);
+        animation: rotate 2s linear infinite;
+    }
+}

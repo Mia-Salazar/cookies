@@ -16,7 +16,7 @@
 
     &__year {
         padding: 0 toRem(6);
-        background-color: $primary;
+        background-color: $secondary;
         color: $white;
         font-family: $font-family-secondary;
     }
@@ -33,5 +33,9 @@
         color: $black;
         font-family: $font-family-secondary;
         text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
     }
 }

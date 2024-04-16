@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { portfolioArray } from "../../../utils/data/PortfolioElements";
+import { portfolioArray } from "../../../utils/PortfolioElements";
 import PortfolioItem from "../../molecules/PortfolioItem/PortfolioItem";
 import Button from "../../atoms/Button/Button";
 import "./PortfolioContent.scss";
