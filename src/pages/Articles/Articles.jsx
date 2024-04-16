@@ -12,6 +12,8 @@ export const Articles = () => {
             <Heading text="nav.articles" />
             <Text>{t('articles.text')}</Text>
             <Text>{t('articles.textTwo')}</Text>
+            <Heading text="Dev.to" type={2} />
+            <Heading text="Medium" type={2} />
         </Layout>
 	);
 };
