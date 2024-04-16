@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Heading, Text, Layout, ArticleItem } from "../../components";
-import { articlesArray } from "../../utils/data/ArticlesElements";
+import { articlesArray } from "../../utils/ArticlesElements";
 import "./Articles.scss";
 
 export const Articles = () => {
     const { t } = useTranslation();
+
+    const [contentArray, setContentArray] = useState([]);
+
+
+	useEffect(() => {
+		fetch("https://dev.to/api/articles?username=miasalazar")
+			.then(response => response.json())
+			.then(data => data.map(articleConstructor))
+			.then(data => setContentArray(prevState => [...data, ...prevState]));
+	}, []);
 
 	return (
 		<Layout>

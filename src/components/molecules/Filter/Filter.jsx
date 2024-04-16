@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { portfolioFilter } from "../../../utils/data/PortfolioFilter"
+import { portfolioFilter } from "../../../utils/PortfolioFilter"
 import Button from "../../atoms/Button/Button";
 import "./Filter.scss";
 
