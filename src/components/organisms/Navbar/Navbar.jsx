@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import logo from '../../../assets/img/logo.png';
@@ -44,11 +44,11 @@ export const Navbar = () => {
 
             <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
                 <div className="navbar__list">
-                    <Link className={"navbar__link"} to="/home">{t('nav.home')}</Link>
-                    <Link className={"navbar__link"} to="/articles">{t('nav.articles')}</Link>
-                    <Link className={"navbar__link"} to="/activities">{t('nav.activities')}</Link>
-                    <Link className={"navbar__link"} to="/portfolio">{t('nav.portfolio')}</Link>
-                    <Link className={"navbar__link"} to="/contact">{t('nav.contact')}</Link>
+                    <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" } to="/home">{t('nav.home')}</NavLink>
+                    <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/articles">{t('nav.articles')}</NavLink>
+                    <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/activities">{t('nav.activities')}</NavLink>
+                    <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/portfolio">{t('nav.portfolio')}</NavLink>
+                    <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/contact">{t('nav.contact')}</NavLink>
                 </div>
                 <LanguageButton />
             </div>
