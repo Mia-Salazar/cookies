@@ -3,7 +3,7 @@ const ArticleModel = {
     title: null,
     href: null,
     tags: null,
-    getDare: function() {
+    getDate: function() {
         return this.date.slice(0,10);
     }
 };
