@@ -1,7 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { Heading, Text, Layout } from "../../components";
+import { Heading, Text, Layout, ArticleItem } from "../../components";
+import { articlesArray } from "../../utils/data/ArticlesElements";
 import "./Articles.scss";
 
 export const Articles = () => {
@@ -14,6 +15,15 @@ export const Articles = () => {
             <Text>{t('articles.textTwo')}</Text>
             <Heading text="Dev.to" type={2} />
             <Heading text="Medium" type={2} />
+
+            {
+				articlesArray.map(({date, tags, title, href}) => {
+					return(
+						<ArticleItem date={date} tags={tags} title={title} href={href} />
+					);
+				})
+			}
+            
         </Layout>
 	);
 };

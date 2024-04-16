@@ -4,28 +4,29 @@ import PropTypes from "prop-types";
 
 import "./ArticleItem.scss";
 
-export const ArticleItem = ({date, lang, tags, title}) => {
+export const ArticleItem = ({date, href, tags, title}) => {
 	return (
-		<div className="article">
-            <div>
-                <p>{lang}</p>
-                <p>{date}</p>
-            </div>
-            <p>{title}</p>
-            {
-				tags.map((item) => {
-					return(
-						<p key={item}>{item}</p>
-					);
-				})
-			}
-		</div>
+		<a target="_blank" href={href} className="article-item" rel="noreferrer">
+            <p className="article-item__date">{date}</p>
+            <p className="article-item__title">{title}</p>
+            
+            {tags &&
+                <div className="article-item__list">
+                    {tags.map((item) => {
+                            return(
+                                <p className="article-item__tag" key={item}>{item}</p>
+                            );
+                        })
+                    }
+                </div>
+            }
+		</a>
 	);
 };
 
 ArticleItem.propTypes = {
     date: PropTypes.string.isRequired,
-    lang: PropTypes.string.isRequired,
+    href: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
 	title: PropTypes.string.isRequired,
 };

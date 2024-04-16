@@ -1,0 +1,55 @@
+@import '../../../assets/stylesheets/settings/toRem';
+@import '../../../assets/stylesheets/settings/variables';
+
+.article-item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    margin-bottom: toRem(32);
+    padding: toRem(16);
+    border-bottom: 2px solid $light-gray;
+
+    color: $black;
+    font-family: $font-family-secondary;
+
+    &__header {
+        position: relative;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        font-size: toRem(18);
+        font-weight: bold;
+
+        margin-bottom: 0;
+    }
+    
+    &__date {
+        color: $gray;
+        font-size: toRem(12);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: toRem(8);
+        margin-top: toRem(20);
+    }
+
+    &__tag {
+        margin: 0;
+        padding: toRem(8);
+
+        background-color: $secondary;
+        border-radius: toRem(16);
+
+        color: $white;
+        font-size: toRem(14);
+    }
+}
