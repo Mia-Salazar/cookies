@@ -9,11 +9,9 @@ export const Articles = () => {
 
 	return (
 		<Layout>
-            <Heading text="home.hello" />
-            <Text>{t('home.textOne')}</Text>
-            <Text>{t('home.textTwo')}</Text>
-            <Text>{t('home.textThree')}</Text>
-            <Heading text="home.activities" type={2} />
+            <Heading text="nav.articles" />
+            <Text>{t('articles.text')}</Text>
+            <Text>{t('articles.textTwo')}</Text>
         </Layout>
 	);
 };

@@ -85,15 +85,5 @@
     "articles": {
         "text": "Disfruto mucho escribiendo artículos sobre diversos temas. Mi favorito es la accesibilidad, pero también escribo sobre front-end, programación y soft skills. ",
         "textTwo": "Aquí podéis ver todos mis artículos.",
-        "articleOne": "La pesadilla del desarrollador: Accesibilidad Web",
-        "articleTwo": "¿Por qué, Icomoon, por qué?",
-        "articleThree": "Cómo estructurar CSS en VUE como una persona Pro",
-        "articleFour": "¿Angular Material o no Angular Material?",
-        "articleFive": "How to support IE and not die trying",
-        "articleFourteen": "Optimizar tu GitHub y CV para pasar la revisión técnica",
-        "articleTwentyOne": "La importancia del color en la accesibilidad",
-        "articleTwentyTwo": "Cómo escribir documentación ÚTIL",
-        "articleTwentyThree": "Proyectos adaptados a personas con discapacidad visual",
-        "articleTwentyFour": "Accesibilidad web: Navegación por teclado"
     }
 }  
