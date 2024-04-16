@@ -22,6 +22,8 @@ export const gameArray = [
 
 export const otherArray = [
 	{ year: 2023, lang: "es", aria: "awards.mentor", icon: "venus", text: "awards.mentor", href: "https://step4ward.notion.site/"},
+	{ year: 2023, lang: "es", aria: "awards.handshake", icon: "handshake", text: "awards.les", href: "https://www.ludoergosum.org/"},
+	{ year: 2023, lang: "es", aria: "awards.handshake", icon: "handshake", text: "awards.freak", href: "https://freakwarsmadrid.com/"},
 	{ year: 2022, lang: "es", aria: "awards.paper", icon: "atom", text: "awards.coreaThree", href: "https://drive.google.com/file/d/1vTwR7VHkjjmAU4i1XJxg7NnVgAm40l0Z/view?usp=sharing" },
 	{ year: 2021, lang: "es", aria: "awards.mentor", icon: "venus", text: "awards.mentorAdalab", href: "https://adalab.es/"},
 ]
