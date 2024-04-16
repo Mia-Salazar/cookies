@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { ActivityItem, Heading, Text, Layout } from "../../components";
-import { gameArray, interviewsArray, otherArray, speechesArray } from "../../utils/data/ActivitiesElements";
+import { gameArray, interviewsArray, otherArray, speechesArray } from "../../utils/ActivitiesElements";
 import "./Activities.scss";
 
 export const Activities = () => {

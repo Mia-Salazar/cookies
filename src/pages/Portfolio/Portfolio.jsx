@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { oldPortfolio } from "../../utils/data/PortfolioElements";
+import { oldPortfolio } from "../../utils/PortfolioElements";
 import { 
         Heading,
         PortfolioContent,
