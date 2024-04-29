@@ -15,9 +15,10 @@ export const Activities = () => {
             <Heading text="activities.speeches" type={2} />
             <div className="activities__list">
                 {
-                    speechesArray.map(({aria, href, icon, lang, text, year}, index) => {
+                    speechesArray.map(({aria, speechLink, slidesLink, icon, lang, text, year}, index) => {
                         return(
-                            <ActivityItem aria={aria} href={href} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang}
+                                text={text} year={year} key={index} slidesLink={slidesLink} />
                         );
                     })
                 }
@@ -25,9 +26,9 @@ export const Activities = () => {
             <Heading text="activities.interview" type={2} />
             <div className="activities__list">
                 {
-                    interviewsArray.map(({aria, href, icon, lang, text, year}, index) => {
+                    interviewsArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
                         return(
-                            <ActivityItem aria={aria} href={href} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
                         );
                     })
                 }
@@ -35,9 +36,9 @@ export const Activities = () => {
             <Heading text="activities.game" type={2} />
             <div className="activities__list">
                 {
-                    gameArray.map(({aria, href, icon, lang, text, year}, index) => {
+                    gameArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
                         return(
-                            <ActivityItem aria={aria} href={href} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
                         );
                     })
                 }
@@ -45,9 +46,9 @@ export const Activities = () => {
             <Heading text="activities.others" type={2} />
             <div className="activities__list">
                 {
-                    otherArray.map(({aria, href, icon, lang, text, year}, index) => {
+                    otherArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
                         return(
-                            <ActivityItem aria={aria} href={href} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
                         );
                     })
                 }

@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.scss';
-import { Contact, Home, Intro, Portfolio, Activities, Articles, Loading } from './pages';
+import { Contact, Home, Intro, Portfolio, Activities, Articles } from './pages';
 import { Suspense } from 'react';
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback="...">
       <BrowserRouter>
         <Routes>
           <Route exact path="/articles" element={<Articles />} />

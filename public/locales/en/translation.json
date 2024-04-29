@@ -30,7 +30,9 @@
         "interview": "Interviews",
         "game": "Game Jams",
         "others": "Others",
-        "speeches": "Speeches"
+        "speeches": "Speeches",
+        "speech": "Video",
+        "slide": "Slides"
     },
     "contact": {
         "text": "If you have something to tell me or an interesting challenge, don't hesitate to write to me!",

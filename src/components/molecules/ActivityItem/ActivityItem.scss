@@ -4,10 +4,11 @@
 .list-item {
     display: grid;
     align-items: center;
-    grid-template-columns: toRem(24) toRem(48) 1fr;
+    grid-template-columns: toRem(16) toRem(48) 1fr;
+    grid-gap: toRem(12);
     list-style-type: none;
 
-    margin-bottom: toRem(12);
+    margin-bottom: toRem(24);
 
     .fas {
         color: $primary;
@@ -25,17 +26,5 @@
         display: grid;
         grid-template-columns: toRem(12) toRem(24);
         grid-gap: toRem(4);
-    }
-
-    &__link {
-        margin-left: toRem(8);
-
-        color: $black;
-        font-family: $font-family-secondary;
-        text-decoration: none;
-
-        &:hover {
-            color: $primary;
-        }
     }
 }
