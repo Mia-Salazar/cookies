@@ -20,7 +20,7 @@
     },
     "nav": {
         "home": "Inicio",
-        "portfolio": "Portfolio",
+        "portfolio": "Proyectos",
         "articles": "Artículos",
         "activities": "Fregaos",
         "contact": "Contacto"
@@ -30,7 +30,9 @@
         "interview": "Entrevistas",
         "game": "Game Jams",
         "others": "Otros",
-        "speeches": "Charlas"
+        "speeches": "Charlas",
+        "speech": "Vídeo",
+        "slide": "Dispositivas"
     },
     "contact": {
         "text": "Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!",

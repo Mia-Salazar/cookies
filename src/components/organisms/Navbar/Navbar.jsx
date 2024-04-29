@@ -47,7 +47,7 @@ export const Navbar = () => {
                     <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" } to="/home">{t('nav.home')}</NavLink>
                     <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/articles">{t('nav.articles')}</NavLink>
                     <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/activities">{t('nav.activities')}</NavLink>
-                    <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/portfolio">{t('nav.portfolio')}</NavLink>
+                    <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/projects">{t('nav.portfolio')}</NavLink>
                     <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/contact">{t('nav.contact')}</NavLink>
                 </div>
                 <LanguageButton />

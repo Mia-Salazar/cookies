@@ -1,0 +1,35 @@
+@import '../../../assets/stylesheets/settings/toRem';
+@import '../../../assets/stylesheets/settings/variables';
+
+.activity-link, .activity-wrapper {
+    margin-left: toRem(8);
+
+    color: $black;
+    font-family: $font-family-secondary;
+    text-decoration: none;
+}
+
+.activity-link {
+    &:hover {
+        color: $primary;
+    }
+}
+
+
+
+.activity-wrapper {
+    &__text {
+        margin-top: 0;
+        margin-bottom: toRem(4);
+    }
+
+    &__container {
+        max-width: toRem(250);
+
+        display: flex;
+        grid-gap: toRem(10);
+
+        font-size: toRem(14);
+
+    }
+}
