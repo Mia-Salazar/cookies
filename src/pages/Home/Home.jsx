@@ -1,11 +1,17 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import { speechesArray } from "../../utils/ActivitiesElements";
 import { CloudItem, Heading, StrengthItem, Text, Layout } from "../../components";
 import "./Home.scss";
 
 export const Home = () => {
     const { t } = useTranslation();
+
+    // Speeches on schools where two
+    const speechesNumber = speechesArray.length + 1;
+    const yearActual = new Date().getFullYear();
+    const yearsOfExperience = yearActual - 2018;
 
 	return (
         <Layout>
@@ -16,7 +22,7 @@ export const Home = () => {
             <Heading text="home.activities" type={2} />
             <div className="home__container">
                 <StrengthItem 
-                    title="6"
+                    title={yearsOfExperience.toString()}
                     subtitle="home.experience"
                 />
                 <StrengthItem 
@@ -28,11 +34,11 @@ export const Home = () => {
                     subtitle="home.step4ward"
                 />
                 <StrengthItem 
-                    title="+30"
+                    title="+35"
                     subtitle="home.articles"
                 />
                 <StrengthItem 
-                    title="6"
+                    title={speechesNumber.toString()}
                     subtitle="home.speeches"
                 />
                 <StrengthItem 
