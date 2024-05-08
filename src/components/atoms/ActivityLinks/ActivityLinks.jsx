@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import "./ActivityLinks.scss";
 import ButtonLink from "../ButtonLink/ButtonLink";
 
-export const ActivityLinks = ({text, speechLink, slidesLink}) => {
+export const ActivityLinks = ({text, speechLink, slidesLink, hasVideo}) => {
 
     const { t } = useTranslation();
 
@@ -13,7 +13,7 @@ export const ActivityLinks = ({text, speechLink, slidesLink}) => {
         return <div className="activity-wrapper">
             <p className="activity-wrapper__text">{t(text)}</p>
             <div className="activity-wrapper__container">
-                <ButtonLink isExternal styles="ghost small secondary" text="activities.speech" href={speechLink}/>
+                <ButtonLink isExternal styles="ghost small secondary" text={hasVideo ? 'activities.speech' : 'activities.event'} href={speechLink}/>
                 <ButtonLink isExternal styles="ghost small" text="activities.slide" href={slidesLink}/>
             </div>
         </div>
@@ -23,7 +23,12 @@ export const ActivityLinks = ({text, speechLink, slidesLink}) => {
 
 }
 
+ActivityLinks.defaultProps = {
+	hasVideo: true
+};
+
 ActivityLinks.propTypes = {
+    hasVideo: PropTypes.bool,
     text: PropTypes.string.isRequired,
     speechLink: PropTypes.string.isRequired,
     slidesLink: PropTypes.string

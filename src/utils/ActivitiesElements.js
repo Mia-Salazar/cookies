@@ -1,15 +1,17 @@
 export const speechesArray = [
-	{ year: 2024, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.t3chfest2024", 
+	{ hasVideo: true, year: 2024, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.t3chfest2024", 
 		speechLink: "https://www.youtube.com/watch?v=gKBTMnxLGvc&list=PLqgZDFdwyB8YYRsd91u4zsPsoQ1pflWO4&index=44", slidesLink: "https://docs.google.com/presentation/d/1LT0TMwLTdgz073yx1jqESb4h3R_zvLgV-StW8NIicZM/edit?usp=sharing" },
-	{ year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.techshessionsThree", 
+	{ hasVideo: false, year: 2024, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.svq", 
+		speechLink: "https://www.meetup.com/es-ES/fullstacksevilla/events/299888095/", slidesLink: "https://docs.google.com/presentation/d/172kS1l7ScKDdzaaED4mwZU0s2jw7XNNhcGkCQGYl8YQ/edit?usp=sharing" },
+	{ hasVideo: true, year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.techshessionsThree", 
 		speechLink: "https://www.youtube.com/watch?v=QUllvzs_KWM&ab_channel=CommitConf", slidesLink: "https://docs.google.com/presentation/d/1r1xpEqe94CDNH_LjYaVqqGRuOOuIM_D5BtgHfzuvQSY/edit?usp=sharing" },
-	{ year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.mentorTwo", 
+	{ hasVideo: true, year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.mentorTwo", 
 		speechLink: "https://twitter.com/patrimalvido/status/1700151281266901443"},
-	{ year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.techshessionsTwo", 
+	{ hasVideo: true, year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.techshessionsTwo", 
 		speechLink: "https://www.youtube.com/watch?v=d7NcHxRH8zU&feature=youtu.be", slidesLink: "https://docs.google.com/presentation/d/1dbRuLOIcLpeq4IlAAOHdRCHfnAAV65atWWk_XA8K68s/edit?usp=sharing"  },
-	{ year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.techshessionsOne", 
+	{ hasVideo: true, year: 2023, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.techshessionsOne", 
 		speechLink: "https://www.youtube.com/watch?v=CpuxfoV71E0&feature=youtu.be&ab_channel=CommitConf", slidesLink: "https://docs.google.com/presentation/d/1dbRuLOIcLpeq4IlAAOHdRCHfnAAV65atWWk_XA8K68s/edit?usp=sharing" },
-	{ year: 2021, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.talksOne", 
+	{ hasVideo: true, year: 2021, lang: "es", aria: "awards.talks", icon: "venus", text: "awards.talksOne", 
 		speechLink: "https://eventos.uc3m.es/70884/section/33597/ciencia-y-tecnologia-en-femenino.-programa-e-inauguracion-exposicion.html" },
 ]
 

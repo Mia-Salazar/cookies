@@ -15,9 +15,9 @@ export const Activities = () => {
             <Heading text="activities.speeches" type={2} />
             <div className="activities__list">
                 {
-                    speechesArray.map(({aria, speechLink, slidesLink, icon, lang, text, year}, index) => {
+                    speechesArray.map(({aria, speechLink, slidesLink, hasVideo, icon, lang, text, year}, index) => {
                         return(
-                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang}
+                            <ActivityItem aria={aria} speechLink={speechLink} hasVideo ={hasVideo} icon={icon} lang={lang}
                                 text={text} year={year} key={index} slidesLink={slidesLink} />
                         );
                     })
