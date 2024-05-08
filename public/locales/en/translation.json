@@ -32,7 +32,8 @@
         "others": "Others",
         "speeches": "Speeches",
         "speech": "Video",
-        "slide": "Slides"
+        "slide": "Slides",
+        "event": "Event"
     },
     "contact": {
         "text": "If you have something to tell me or an interesting challenge, don't hesitate to write to me!",
@@ -58,6 +59,7 @@
         "angular": "Angular"
     },
     "awards": {
+        "svq": "Fullstack Sevilla. Web accesibility: Guide for newbies",
         "t3chfest2024": "T3ch Fest 2024. Web accesibility: Guide for newbies",
         "techshessionsThree": "TechSHEssions third speech. Foodiesaurus, designing an accesible project",
         "techshessionsTwo": "TechSHEssions second speech. Foodiesaurus, project with sticks and stones",

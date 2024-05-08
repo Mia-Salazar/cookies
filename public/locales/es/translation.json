@@ -32,7 +32,8 @@
         "others": "Otros",
         "speeches": "Charlas",
         "speech": "Vídeo",
-        "slide": "Dispositivas"
+        "slide": "Dispositivas",
+        "event": "Evento"
     },
     "contact": {
         "text": "Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!",
@@ -58,6 +59,7 @@
         "angular": "Angular"
     },
     "awards": {
+        "svq": "Fullstack Sevilla. Accesibilidad web: Guía para noobies",
         "t3chfest2024": "T3ch Fest 2024. Accesibilidad web: Guía para noobies",
         "talksThree": "DiscoDurodeRoer. Entrevista sobre accesibilidad",
         "techshessionsThree": "TechSHEssions tercera charla. Foodiesaurus, diseñando un proyecto accesible",
