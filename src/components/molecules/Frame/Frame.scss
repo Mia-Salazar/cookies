@@ -11,7 +11,7 @@
     padding-top: toRem(40);
     min-height: 100vh;
 
-    border: toRem(10) solid $primary;
+    border: toRem(16) solid $primary;
     background: $light;
 
     overflow: hidden;
@@ -19,6 +19,7 @@
     @media (min-width: 992px) {
         padding-top: toRem(80);
         
+        border: toRem(20) solid $primary;
         background-image: url("../../../assets/img/logo-rotate.png");
         background-repeat: no-repeat;
         background-position: 117% 89%;
