@@ -1,4 +1,9 @@
 {
+    "alt": {
+        "cookie": "Galleta con pepitas de chocolate con los ojos bizcos",
+        "loading": "Cargando contenido",
+        "skip": "Saltar al contenido"
+    },
     "home": {
         "continue": "Continuar",
         "hello": "¡Hola hola!",
