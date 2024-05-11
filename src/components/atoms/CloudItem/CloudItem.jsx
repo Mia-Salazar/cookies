@@ -6,9 +6,7 @@ import "./CloudItem.scss";
 export const CloudItem = ({href, size, text }) => {
 	return (
 		<div className="cloud-item">
-			<a className={"cloud-item__link cloud-item__link--" + (size)}
-            
-            href={href}>
+			<a className={"cloud-item__link cloud-item__link--" + (size)} href={href}>
                 {text}
             </a>
 		</div>

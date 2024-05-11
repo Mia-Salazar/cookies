@@ -1,4 +1,9 @@
 {
+    "alt": {
+        "cookie": "Cross-Eyed Chocolate Chip Cookie",
+        "loading": "Loading content",
+        "skip": "Skip to content"
+    },
     "home": {
         "continue": "Continue",
         "hello": "Hello there!",
