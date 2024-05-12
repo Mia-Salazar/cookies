@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
-import "./ActivityLinks.scss";
 import ButtonLink from "../ButtonLink/ButtonLink";
+import "./ActivityLinks.scss";
 
 export const ActivityLinks = ({text, speechLink, slidesLink, hasVideo}) => {
 

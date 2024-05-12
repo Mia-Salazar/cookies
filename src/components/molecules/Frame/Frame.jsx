@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-import "./Frame.scss";
 import Footer from "../../organisms/Footer/Footer";
+import "./Frame.scss";
 
 export const Frame = ({children, isIntro, styles = ""}) => {
 	return (

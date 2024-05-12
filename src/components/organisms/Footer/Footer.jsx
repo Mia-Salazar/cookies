@@ -1,8 +1,8 @@
 import React from "react";
 
 import logo from '../../../assets/img/logo.png';
-import "./Footer.scss";
 import SocialNetwork from "../../atoms/SocialNetwork/SocialNetwork";
+import "./Footer.scss";
 
 export const Footer = () => {
     const socialNetwork = [
@@ -27,7 +27,6 @@ export const Footer = () => {
 					})
 				}
             </div>
-
 		</div>
 	);
 };

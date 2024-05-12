@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import { useTranslation } from "react-i18next";
 
 import "./Heading.scss";
-import { useTranslation } from "react-i18next";
 
 export const Heading = ({text, type}) => {
 	const { t } = useTranslation();

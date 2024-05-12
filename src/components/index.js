@@ -3,6 +3,7 @@ export { default as Footer } from './organisms/Footer/Footer';
 export { default as Form } from './organisms/Form/Form';
 export { default as PortfolioContent } from './organisms/PortfolioContent/PortfolioContent';
 export { default as Layout } from './organisms/Layout/Layout';
+export { default as ArticlesList } from './organisms/ArticlesList/ArticlesList'
 
 export { default as Frame } from './molecules/Frame/Frame';
 export { default as Header } from './molecules/Header/Header';

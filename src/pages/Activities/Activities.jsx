@@ -12,47 +12,55 @@ export const Activities = () => {
         <Layout styles="activities">
             <Heading text="nav.activities" />
             <Text>{t('activities.text')}</Text>
-            <Heading text="activities.speeches" type={2} />
-            <div className="activities__list">
-                {
-                    speechesArray.map(({aria, speechLink, slidesLink, hasVideo, icon, lang, text, year}, index) => {
-                        return(
-                            <ActivityItem aria={aria} speechLink={speechLink} hasVideo ={hasVideo} icon={icon} lang={lang}
-                                text={text} year={year} key={index} slidesLink={slidesLink} />
-                        );
-                    })
-                }
-            </div>
-            <Heading text="activities.interview" type={2} />
-            <div className="activities__list">
-                {
-                    interviewsArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
-                        return(
-                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
-                        );
-                    })
-                }
-            </div>
-            <Heading text="activities.game" type={2} />
-            <div className="activities__list">
-                {
-                    gameArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
-                        return(
-                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
-                        );
-                    })
-                }
-            </div>
-            <Heading text="activities.others" type={2} />
-            <div className="activities__list">
-                {
-                    otherArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
-                        return(
-                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
-                        );
-                    })
-                }
-            </div>
+            <section>
+                <Heading text="activities.speeches" type={2} />
+                <ul className="activities__list">
+                    {
+                        speechesArray.map(({aria, speechLink, slidesLink, hasVideo, icon, lang, text, year}, index) => {
+                            return(
+                                <ActivityItem aria={aria} speechLink={speechLink} hasVideo ={hasVideo} icon={icon} lang={lang}
+                                    text={text} year={year} key={index} slidesLink={slidesLink} />
+                            );
+                        })
+                    }
+                </ul>
+            </section>
+            <section>
+                <Heading text="activities.interview" type={2} />
+                <ul className="activities__list">
+                    {
+                        interviewsArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
+                            return(
+                                <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            );
+                        })
+                    }
+                </ul>
+            </section>
+            <section>
+                <Heading text="activities.game" type={2} />
+                <ul className="activities__list">
+                    {
+                        gameArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
+                            return(
+                                <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            );
+                        })
+                    }
+                </ul>
+            </section>
+            <section>
+                <Heading text="activities.others" type={2} />
+                <ul className="activities__list">
+                    {
+                        otherArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
+                            return(
+                                <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            );
+                        })
+                    }
+                </ul>
+            </section>
         </Layout>
 	);
 };
