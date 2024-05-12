@@ -54,7 +54,6 @@ export const Navbar = () => {
                 </ul>
                 <LanguageButton />
             </div>
-
         </div>
 	);
 };

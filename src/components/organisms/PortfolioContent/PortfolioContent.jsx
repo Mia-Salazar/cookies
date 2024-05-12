@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { portfolioArray } from "../../../utils/PortfolioElements";
 import PortfolioItem from "../../molecules/PortfolioItem/PortfolioItem";
 import Button from "../../atoms/Button/Button";
-import "./PortfolioContent.scss";
 import Filter from "../../molecules/Filter/Filter";
+import "./PortfolioContent.scss";
 
 export const PortfolioContent = () => {
 	const [portfolioContent, setPortfolioContent] = useState(portfolioArray.slice(0, 6));

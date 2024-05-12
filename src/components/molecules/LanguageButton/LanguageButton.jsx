@@ -5,11 +5,13 @@ import "./LanguageButton.scss";
 
 export const LanguageButton = () => {
 	const [language, setLanguage] = useState("en");
+
 	const changeLanguage = (language) => {
 		localStorage.setItem("lang", language);
 		i18n.changeLanguage(language);
 		setLanguage(language);
 	};
+
 	useEffect(() => {
 		const lang = localStorage.getItem("lang");
 		if (lang === "en" || lang === "es") {
@@ -20,6 +22,7 @@ export const LanguageButton = () => {
 			setLanguage("en");
 		}
 	}, []);
+	
 	return (
 		<div className="language-buttons" aria-label={i18n.t("navbar.lang")}>
 			<button className={language === "en" ? "language-buttons__item language-buttons__item--active" : "language-buttons__item" } onClick={() => changeLanguage("en")}>en</button>

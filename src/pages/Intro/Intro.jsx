@@ -2,7 +2,6 @@ import React from "react";
 
 import { ButtonLink, Header, Frame } from "../../components";
 
-
 export const Intro = () => {
 	return (
 		<Frame isIntro>

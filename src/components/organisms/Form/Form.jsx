@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import "./Form.scss";
-
 import FormElement from "../../molecules/FormElement/FormElement";
 import Button from "../../atoms/Button/Button";
+import "./Form.scss";
 
 export const Form = () => {
     const [values, setValues] = useState({name: "", email:"", street: "", city: "", country: "", comment: "", province: ""});
@@ -38,7 +37,6 @@ export const Form = () => {
 
         axios.post('https://formspree.io/f/mjvjpnrl', new FormData(form))
 			.then(() => {
-                //this
 				handleServerResponse(true, "contact.success");
 			})
 			.catch(r => {

@@ -7,11 +7,11 @@ import "./ActivityItem.scss";
 export const ActivityItem = ({aria, hasVideo, icon, slidesLink, speechLink, text, year}) => {
 
 	return (
-		<div className="list-item">
+		<li className="list-item">
 			<span className={`fas fa-${icon}`} aria-label={aria} title={aria}></span>
 			<span className="list-item__year">{year}</span>
 			<ActivityLinks hasVideo={hasVideo} slidesLink={slidesLink} speechLink={speechLink} text={text}  />
-		</div>
+		</li>
 	);
 };
 
