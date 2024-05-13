@@ -58,7 +58,7 @@ export const PortfolioContent = () => {
 	return (
 		<div className="portfolio-items">
 			<Filter buttonFunctionality={changeFilter} filterActive={filter} />
-			<div className="portfolio-items__container">
+			<ul className="portfolio-items__container">
 				{
 					portfolioContent.map(({text, image, href}, index) => {
 						return(
@@ -66,7 +66,7 @@ export const PortfolioContent = () => {
 						);
 					})
 				}
-			</div>
+			</ul>
 			{
 				loadMore &&
                     <Button text="portfolio.load" functionality={loadMoreFunc}/>

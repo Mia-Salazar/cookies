@@ -13,7 +13,7 @@ export const PortfolioItem = ({href, image, text}) => {
 	};
 
 	return (
-		<div className={moreInfoOpen ? "portfolio-item portfolio-item--active": "portfolio-item" } data-testid="portfolio-item">
+		<li className={moreInfoOpen ? "portfolio-item portfolio-item--active": "portfolio-item" } data-testid="portfolio-item">
 			<div className="portfolio-item__img-container">
 				<img className="portfolio-item__img" src={image}/> 
 				<p className="portfolio-item__img-text">{text} </p>
@@ -22,7 +22,7 @@ export const PortfolioItem = ({href, image, text}) => {
 				<Button styles="secondary" text="portfolio.info" functionality={getMoreInfo}/>
 				<ButtonLink styles="ghost" text="portfolio.visit" href={href} target="_blank" />
 			</div>
-		</div>
+		</li>
 	);
 };
 

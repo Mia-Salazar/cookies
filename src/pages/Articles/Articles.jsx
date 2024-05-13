@@ -13,18 +13,22 @@ export const Articles = () => {
             <Heading text="nav.articles" />
             <Text>{t('articles.text')}</Text>
             <Text>{t('articles.textTwo')}</Text>
-            <Heading text="Dev.to" type={2} />
-            <ArticlesList />           
-            <Heading text="Medium" type={2} />
-            <ul className="articles__list">
-                {
-                    articlesArray.map(({date, tags, title, href}) => {
-                        return(
-                            <ArticleItem date={date} tags={tags} title={title} href={href} key={title}/>
-                        );
-                    })
-                }
-            </ul> 
+            <section>
+                <Heading text="Dev.to" type={2} />
+                <ArticlesList />   
+            </section>
+            <section>
+                <Heading text="Medium" type={2} />
+                <ul className="articles__list">
+                    {
+                        articlesArray.map(({date, tags, title, href}) => {
+                            return(
+                                <ArticleItem date={date} tags={tags} title={title} href={href} key={title}/>
+                            );
+                        })
+                    }
+                </ul> 
+            </section>
         </Layout>
 	);
 };

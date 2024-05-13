@@ -24,7 +24,7 @@ export const Portfolio = () => {
             <section>
                 <Heading text="portfolio.past" type={2} />
                 <Text>{t('portfolio.textTwo')}</Text>
-                <div className="portfolio__list">
+                <ul className="portfolio__list">
                     {
                         oldPortfolio.map(({text, image, href}, index) => {
                             return(
@@ -32,7 +32,7 @@ export const Portfolio = () => {
                             );
                         })
                     }
-                </div>
+                </ul>
             </section>
         </Layout>
 	);
