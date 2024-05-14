@@ -11,6 +11,7 @@
 
     &--secondary {
         background: $primary;
+        border: 2px solid $primary;
 
         &:hover, &:disabled {
             background: $secondary;
