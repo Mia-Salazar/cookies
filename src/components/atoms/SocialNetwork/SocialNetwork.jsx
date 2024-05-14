@@ -2,7 +2,7 @@ import React from "react";
 
 import "./SocialNetwork.scss";
 
-export const SocialNetwork = ({icon, link}) => {
+export const SocialNetwork = ({ icon, link }) => {
 
     const handleClick = () => {
         window.open(link, "_blank")

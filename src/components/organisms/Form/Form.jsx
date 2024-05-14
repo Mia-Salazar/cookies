@@ -6,7 +6,7 @@ import Button from "../../atoms/Button/Button";
 import "./Form.scss";
 
 export const Form = () => {
-    const [values, setValues] = useState({name: "", email:"", street: "", city: "", country: "", comment: "", province: ""});
+    const [values, setValues] = useState({ city: "", comment: "", country: "",  email:"", name: "", province: "", street: "",});
 	const [serverState, setServerState] = useState({
 		submitting: false,
 		status: null
@@ -19,13 +19,13 @@ export const Form = () => {
 		});
 		if (ok) {
             setValues({
-                name: "",
-                email:"",
-                street: "",
-                city: "",
-                country: "",
+				city: "",
                 comment: "",
-				province: ""
+                country: "",
+                email:"",
+                name: "",
+				province: "",
+				street: "",
             })
 		}
 	};

@@ -1,1 +1,7 @@
 @import "../../../assets/stylesheets/settings/variables";
+
+.skip {
+    background-color: $secondary;
+    color: $white;
+    font-family: $font-family-primary;
+}

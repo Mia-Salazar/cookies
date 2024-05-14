@@ -10,7 +10,20 @@
     text-align: center;
     text-decoration: none;
     font-family: $font-family-secondary;
-    border: none;
+    border: 2px solid $secondary;
+    border-radius: toRem(2);
+}
+
+@mixin ghostButton {
+    padding: toRem(8) toRem(24);
+
+    background-color: $white;
+
+    color: $secondary;
+    text-align: center;
+    text-decoration: none;
+    font-family: $font-family-secondary;
+    border: 2px solid $secondary;
     border-radius: toRem(2);
 }
 

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import "./ButtonLink.scss";
 
-export const ButtonLink = ({href, isExternal, text, styles}) => {
+export const ButtonLink = ({ href, isExternal, text, styles }) => {
 	const { t } = useTranslation();
 
 	if (isExternal) {

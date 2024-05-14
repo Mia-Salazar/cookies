@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import "./Heading.scss";
 
-export const Heading = ({text, type}) => {
+export const Heading = ({ text, type }) => {
 	const { t } = useTranslation();
 
 	return (

@@ -1,18 +1,43 @@
 @import "../../../assets/stylesheets/settings/toRem";
 @import "../../../assets/stylesheets/settings/variables";
+@import "../../../assets/stylesheets/settings/mixins";
 
 .form-element {
+    display: flex;
+    flex-direction: column;
     margin-left: 1px;
     margin-bottom: 0;
 
     &__text {
+        order: 1;
         margin-top: 0;
         margin-bottom: toRem(8);
         font-family: $font-family-secondary;
         font-weight: 400;
     }
 
+    input, textarea {
+        order: 2;
+    }
+
     &__asterisk {
         margin-left: toRem(4);
+    }
+
+    &__text-radio {
+        @include ghostButton;
+
+        &:hover, &:disabled {
+            background-color: $secondary;
+            color: $white;
+        }
+    }
+
+    input[type="radio"] {
+        display:none;
+
+        &:checked+.form-element__text-radio {    
+            @include button;
+        }
     }
 }
