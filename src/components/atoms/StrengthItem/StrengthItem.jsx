@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import "./StrengthItem.scss";
 
-export const StrengthItem = ({title, subtitle}) => {
+export const StrengthItem = ({ subtitle, title }) => {
 	const { t } = useTranslation();
 
 	return (
@@ -16,8 +16,8 @@ export const StrengthItem = ({title, subtitle}) => {
 };
 
 StrengthItem.propTypes = {
-	title: PropTypes.string.isRequired,
 	subtitle: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
 }
 
 export default StrengthItem;

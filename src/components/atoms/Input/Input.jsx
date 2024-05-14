@@ -3,20 +3,21 @@ import PropTypes from "prop-types";
 
 import "./Input.scss";
 
-export const Input = ({type, id, value, required, functionality}) => {
+export const Input = ({ checked, functionality, id, required, type, value }) => {
 	return (
 		<input className="input" type={type} id={id} name={id} value={value}
-			required={required} onChange={functionality}
+			required={required} onChange={functionality} checked={checked}
 		/>
 	);
 };
 
 Input.propTypes = {
-	type: PropTypes.string.isRequired,
-	value: PropTypes.string,
+	checked: PropTypes.bool,
+	functionality: PropTypes.func,
 	id: PropTypes.string.isRequired,
 	required: PropTypes.bool,
-	functionality: PropTypes.func
+	type: PropTypes.string.isRequired,
+	value: PropTypes.string,
 };;
 
 export default Input;

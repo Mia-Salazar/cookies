@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import ButtonLink from "../ButtonLink/ButtonLink";
 import "./ActivityLinks.scss";
 
-export const ActivityLinks = ({text, speechLink, slidesLink, hasVideo}) => {
+export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo }) => {
 
     const { t } = useTranslation();
 

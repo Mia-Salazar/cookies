@@ -5,7 +5,7 @@ import Button from "../../atoms/Button/Button";
 import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
 import "./PortfolioItem.scss";
 
-export const PortfolioItem = ({href, image, text}) => {
+export const PortfolioItem = ({ href, image, text }) => {
 	const [moreInfoOpen, setMoreInfoOpen] = useState(false);
 
 	const getMoreInfo = () => {

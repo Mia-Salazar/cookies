@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import "./Button.scss";
 
-export const Button = ({ text, type = "button", functionality, disabled = false, styles, ...rest}) => {
+export const Button = ({ disabled = false, functionality, styles,  text, type = "button", ...rest}) => {
 	const { t } = useTranslation();
 
 	return (
@@ -13,11 +13,11 @@ export const Button = ({ text, type = "button", functionality, disabled = false,
 };
 
 Button.propTypes = {
+	disabled: PropTypes.bool,
+	functionality: PropTypes.func,
+	styles:  PropTypes.string,
 	text: PropTypes.string.isRequired,
 	type: PropTypes.string,
-	functionality: PropTypes.func,
-	disabled: PropTypes.bool,
-	styles:  PropTypes.string
 };
 
 export default Button;

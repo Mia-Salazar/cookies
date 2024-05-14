@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import ActivityLinks from "../../atoms/ActivityLinks/ActivityLinks";
 import "./ActivityItem.scss";
 
-export const ActivityItem = ({aria, hasVideo, icon, slidesLink, speechLink, text, year}) => {
+export const ActivityItem = ({ aria, hasVideo, icon, slidesLink, speechLink, text, year }) => {
 
 	return (
 		<li className="list-item">

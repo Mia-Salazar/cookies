@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "./ArticleItem.scss";
 
-export const ArticleItem = ({date, href, tags, title}) => {
+export const ArticleItem = ({ date, href, tags, title }) => {
 	return (
         <li>
             <a target="_blank" href={href} className="article-item" rel="noreferrer">
