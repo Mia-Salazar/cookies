@@ -56,6 +56,14 @@
         "city": "Ciudad",
         "comment": "¿Qué me quieres contar?"
     },
+    "placeholder": {
+        "email": "Introduce un email",
+        "name": "Introduce un nombre completo",
+        "country": "Introduce un país",
+        "street": "Introduce una calle, avenida...",
+        "province": "Introduce la provincia",
+        "city": "Introduce la ciudad"
+    },
     "portfolio": {
         "text": "Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado.",
         "textTwo": "Antes de ser una monstrua de las galletas, fui una viajera intergaláctica y una superheroína. Puedes ver mis proyectos aquí.",

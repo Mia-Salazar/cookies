@@ -56,6 +56,14 @@
         "city": "City",
         "comment": "What do you want to tell me?"
     },
+    "placeholder": {
+        "email": "Write an email",
+        "name": "Write a complete name",
+        "country": "Write a country",
+        "street": "Write a street, an avenue...",
+        "province": "Write a provincia",
+        "city": "Write a city"
+    },
     "portfolio": {
         "text": "Here you can see some of the projects I've worked on professionally, and many of the personal projects I've done.",
         "textTwo": "Before being a cookie monster, I was an intergalactic traveler and a superheroine. You can see my projects here.",
