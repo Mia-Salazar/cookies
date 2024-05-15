@@ -2,7 +2,12 @@
     "alt": {
         "cookie": "Galleta con pepitas de chocolate con los ojos bizcos",
         "loading": "Cargando contenido",
-        "skip": "Saltar al contenido"
+        "skip": "Saltar al contenido",
+        "github": "Sígueme en Github",
+        "codepen": "Sígueme en Codepen",
+        "linkedin": "Sígueme en Linkedin",
+        "medium": "Sígueme en Medium",
+        "twitter": "Sígueme en Twitter"
     },
     "home": {
         "continue": "Continuar",

@@ -19,7 +19,7 @@ export const ArticlesList = () => {
 	}, []);
 
     if (content.isLoading) {
-        return <img alt="" className="articles__img" src={cookie} />
+        return <img className="articles__img" src={cookie} />
     }
 
 	return (
