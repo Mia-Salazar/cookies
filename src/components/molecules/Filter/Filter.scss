@@ -9,9 +9,9 @@
     // display: flex;
     // flex-direction: column;
 
-    // @media (min-width: 768px) {
-    //     grid-template-columns: repeat(4, 100px);
-    // }
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 100px);
+    }
 
     &__list {
         display: grid;
