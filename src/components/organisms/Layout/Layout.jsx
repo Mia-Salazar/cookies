@@ -5,6 +5,7 @@ import Frame from "../../molecules/Frame/Frame";
 import Navbar from "../Navbar/Navbar";
 import Header from "../../molecules/Header/Header";
 import Container from "../../atoms/Container/Container";
+import './Layout.scss';
 
 export const Layout = ({ children, styles }) => {
 
