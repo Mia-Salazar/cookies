@@ -33,7 +33,8 @@
         "portfolio": "Proyectos",
         "articles": "Artículos",
         "activities": "Fregaos",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "lang": "Escoger idioma"
     },
     "activities":  {
         "text": "Además de un mosntruo de las galletas, soy una persona a la que le encanta meterse en fregaos y buscar actividades nuevas. Aquí puedes ver todos los fregaos en los que me he metido: desde charlas a Game Jams.",

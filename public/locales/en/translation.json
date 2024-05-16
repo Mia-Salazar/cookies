@@ -33,7 +33,8 @@
         "portfolio": "Projects",
         "articles": "Articles",
         "activities": "Challenges",
-        "contact": "Contact"
+        "contact": "Contact",
+        "lang": "Choose language"
     },
     "activities":  {
         "text": "In addition to being a cookie monster, I am a person who loves to get into trouble and look for new activities. Here you can see all the challenges I've gotten into: from talks to Game Jams.",
