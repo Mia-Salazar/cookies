@@ -19,7 +19,7 @@ export const Home = () => {
             <Text>{t('home.textOne')}</Text>
             <Text>{t('home.textTwo')}</Text>
             <Text>{t('home.textThree')}</Text>
-            <Heading text="home.activities" type={2} />
+            <Heading text="home.activities" type="medium" />
             <div className="home__container">
                 <StrengthItem 
                     title={yearsOfExperience.toString()}
@@ -46,7 +46,7 @@ export const Home = () => {
                     subtitle="home.lang"
                 />
             </div>
-            <Heading text="home.tech" type={2} />
+            <Heading text="home.tech" type="medium" />
             <Text>{t('home.textFour')}</Text>
             <Text>{t('home.textFive')}</Text>
             <div className="home__list">

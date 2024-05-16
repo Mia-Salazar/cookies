@@ -14,11 +14,11 @@ export const Articles = () => {
             <Text>{t('articles.text')}</Text>
             <Text>{t('articles.textTwo')}</Text>
             <section>
-                <Heading text="Dev.to" type={2} />
+                <Heading text="Dev.to" type="medium" />
                 <ArticlesList />   
             </section>
             <section>
-                <Heading text="Medium" type={2} />
+                <Heading text="Medium" type="medium" />
                 <ul className="articles__list">
                     {
                         articlesArray.map(({date, tags, title, href}) => {
