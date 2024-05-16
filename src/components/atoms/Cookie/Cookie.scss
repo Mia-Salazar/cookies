@@ -24,6 +24,7 @@
 .cookie {
     position: relative;
     width: toRem(200);
+    height: toRem(200);
 
     &:after, &:before {
         content: "";
@@ -49,6 +50,7 @@
 
     @media (min-width: 992px) {
         width: toRem(300);
+        height: toRem(300);
     }
 
     &__img {
