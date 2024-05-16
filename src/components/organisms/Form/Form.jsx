@@ -54,8 +54,8 @@ export const Form = () => {
 
 	return (
 		<form className="form" onSubmit={handleOnSubmit}>
-            <FormElement type="text" id="name" text="contact.name" value={values.name} functionality={inputChange("name")} />
-            <FormElement type="email" id="email" text="contact.email" value={values.email} functionality={inputChange("email")} />
+            <FormElement type="text" id="field1" text="contact.name" value={values.name} functionality={inputChange("name")} />
+            <FormElement type="email" id="field2" text="contact.email" value={values.email} functionality={inputChange("email")} />
             <FormElement  id="comment" text="contact.comment" value={values.comment} functionality={inputChange("comment")} />
 			<Button text="contact.send" disabled={serverState.submitting || !values.email === "" || values.comment === ""} type="submit"/>
 		</form>
