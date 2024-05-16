@@ -32,7 +32,7 @@ PortfolioItem.propTypes = {
     href: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired
+	title: PropTypes.string
 };
 
 export default PortfolioItem;

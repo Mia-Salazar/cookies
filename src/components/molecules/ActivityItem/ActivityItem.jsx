@@ -18,8 +18,9 @@ export const ActivityItem = ({ aria, hasVideo, icon, slidesLink, speechLink, tex
 ActivityItem.propTypes = {
 	aria: PropTypes.string.isRequired,
 	hasVideo: PropTypes.bool,
-	href: PropTypes.string.isRequired,
 	icon: PropTypes.string.isRequired,
+    speechLink: PropTypes.string.isRequired,
+    slidesLink: PropTypes.string,
 	text: PropTypes.string.isRequired,
 	year: PropTypes.number.isRequired,
 };

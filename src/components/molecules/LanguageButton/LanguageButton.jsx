@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import i18n from "../../../i18n";
@@ -6,13 +6,25 @@ import "./LanguageButton.scss";
 
 export const LanguageButton = () => {
 	const { t } = useTranslation();
-	const [language, setLanguage] = useState("es");
+	const [language, setLanguage] = useState(null);
 
 	const changeLanguage = (language) => {
 		i18n.changeLanguage(language);
 		setLanguage(language);
 		//document.documentElement.lang = language;
 	};
+
+	useEffect(() => {
+		const lang = localStorage.getItem("lang");
+		if (lang === "en" || lang === "es") {
+			i18n.changeLanguage(lang);
+			setLanguage(lang);
+
+		} else {
+			i18n.changeLanguage("es");
+			setLanguage("es");
+		}
+	}, [language]);
 	
 	return (
 		<form className="language">
@@ -24,7 +36,6 @@ export const LanguageButton = () => {
 					<label htmlFor="en" className={language === "en" ? "language__label language__label--active" : "language__label" } >
 						en
 					</label>
-
 
 					<input checked={language === "es"} className="language__input"
 						id="es" type="radio" name="lang" onChange={() => changeLanguage("es")}/>
