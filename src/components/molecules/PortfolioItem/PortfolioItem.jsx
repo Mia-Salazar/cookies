@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 import Button from "../../atoms/Button/Button";
 import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
 import "./PortfolioItem.scss";
 
-export const PortfolioItem = ({ href, image, text }) => {
+export const PortfolioItem = ({ href, image, text, title }) => {
+	const { t } = useTranslation();
 	const [moreInfoOpen, setMoreInfoOpen] = useState(false);
 
 	const getMoreInfo = () => {
@@ -16,7 +18,7 @@ export const PortfolioItem = ({ href, image, text }) => {
 		<li className={moreInfoOpen ? "portfolio-item portfolio-item--active": "portfolio-item" } data-testid="portfolio-item">
 			<div className="portfolio-item__img-container">
 				<img className="portfolio-item__img" src={image}/> 
-				<p className="portfolio-item__img-text">{text} </p>
+				<p className="portfolio-item__img-text"><span>{t(title)}</span>{text} </p>
 			</div>
 			<div className="portfolio-item__button-container">
 				<Button styles="secondary" text="portfolio.info" functionality={getMoreInfo}/>
@@ -29,7 +31,8 @@ export const PortfolioItem = ({ href, image, text }) => {
 PortfolioItem.propTypes = {
     href: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired
 };
 
 export default PortfolioItem;

@@ -60,9 +60,9 @@ export const PortfolioContent = () => {
 			<Filter buttonFunctionality={changeFilter} filterActive={filter} />
 			<ul className="portfolio-items__container">
 				{
-					portfolioContent.map(({text, image, href}, index) => {
+					portfolioContent.map(({text, image, href, title}, index) => {
 						return(
-							<PortfolioItem text={text} href={href} image={image} key={index}/>
+							<PortfolioItem text={text} href={href} image={image} key={index} title={title} />
 						);
 					})
 				}
