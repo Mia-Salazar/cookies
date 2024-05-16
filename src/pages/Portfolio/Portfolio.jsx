@@ -22,7 +22,7 @@ export const Portfolio = () => {
                 <PortfolioContent />
             </section>
             <section>
-                <Heading text="portfolio.past" type={2} />
+                <Heading text="portfolio.past" type="medium" />
                 <Text>{t('portfolio.textTwo')}</Text>
                 <ul className="portfolio__list">
                     {

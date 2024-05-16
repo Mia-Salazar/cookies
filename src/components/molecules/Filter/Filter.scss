@@ -13,15 +13,17 @@
         grid-template-columns: repeat(4, 100px);
     }
 
-    &__list {
-        display: grid;
-        gap: toRem(16);
-        grid-template-columns: 1fr 1fr;
+    // &__list {
+    //     display: grid;
+    //     gap: toRem(16);
+    //     grid-template-columns: 1fr 1fr;
+    //     border: none;
+    //     padding: 0;
 
-        @media (min-width: 768px) {
-            grid-template-columns: repeat(4, 100px);
-        }
-    }
+    //     @media (min-width: 768px) {
+    //         grid-template-columns: repeat(4, 100px);
+    //     }
+    // }
 
     // legend {
     //     font-family: $font-family-secondary;
