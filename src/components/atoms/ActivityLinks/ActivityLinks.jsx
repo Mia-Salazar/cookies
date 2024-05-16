@@ -6,7 +6,6 @@ import ButtonLink from "../ButtonLink/ButtonLink";
 import "./ActivityLinks.scss";
 
 export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo }) => {
-
     const { t } = useTranslation();
 
     if (slidesLink) {

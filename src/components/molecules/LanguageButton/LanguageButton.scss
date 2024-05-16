@@ -2,8 +2,11 @@
 @import '../../../assets/stylesheets/settings/toRem';
 @import '../../../assets/stylesheets/settings/mixins';
 
-.language-buttons {
+.language {
+    position: relative;
+    display: flex;
     margin: toRem(12) 0;
+
     background-color: $white;
     border: 4px solid $white;
 
@@ -12,7 +15,7 @@
         border: none;
     }
 
-    &__item {
+    &__label {
         font-family: $font-family-primary;
         padding: 8px;
         border: none;
@@ -22,6 +25,32 @@
         &--active, &:hover {
             background-color: $white;
             color: $primary;
+        }
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__fieldset {
+        display: flex;
+        padding: 0;
+        border: 1px solid transparent;
+    }
+
+    &__title {
+        position: absolute;
+        left: -9999em;
+        height: 0%;
+        border: none;
+    }
+
+    &__input {
+        position: absolute;
+        left: -9999px;
+
+        &:focus+.language__label {
+            outline: 2px solid black;
         }
     }
 }

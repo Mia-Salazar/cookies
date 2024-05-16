@@ -1,33 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import i18n from "../../../i18n";
 import "./LanguageButton.scss";
 
 export const LanguageButton = () => {
-	const [language, setLanguage] = useState("en");
+	const { t } = useTranslation();
+	const [language, setLanguage] = useState("es");
 
 	const changeLanguage = (language) => {
-		localStorage.setItem("lang", language);
 		i18n.changeLanguage(language);
 		setLanguage(language);
+		//document.documentElement.lang = language;
 	};
-
-	useEffect(() => {
-		const lang = localStorage.getItem("lang");
-		if (lang === "en" || lang === "es") {
-			i18n.changeLanguage(lang);
-			setLanguage(lang);
-		} else {
-			i18n.changeLanguage("en");
-			setLanguage("en");
-		}
-	}, []);
 	
 	return (
-		<div className="language-buttons" aria-label={i18n.t("navbar.lang")}>
-			<button className={language === "en" ? "language-buttons__item language-buttons__item--active" : "language-buttons__item" } onClick={() => changeLanguage("en")}>en</button>
-			<button className={language === "es" ? "language-buttons__item language-buttons__item--active" : "language-buttons__item" } onClick={() => changeLanguage("es")}>es</button>
-		</div>
+		<form className="language">
+			<fieldset className="language__fieldset">
+				<legend className="language__title" aria-hidden="false">{t('nav.lang')}</legend>
+				<div className="language__container">
+					<input checked={language === "en"} className="language__input"
+						id="en" type="radio" name="lang" onChange={() => changeLanguage("en")}/>
+					<label htmlFor="en" className={language === "en" ? "language__label language__label--active" : "language__label" } >
+						en
+					</label>
+
+
+					<input checked={language === "es"} className="language__input"
+						id="es" type="radio" name="lang" onChange={() => changeLanguage("es")}/>
+					<label htmlFor="es" className={language === "es" ? "language__label language__label--active" : "language__label" } >
+						es	
+					</label>
+				</div>
+			</fieldset>
+		</form>
 	);
 };
 

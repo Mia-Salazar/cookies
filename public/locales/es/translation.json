@@ -33,7 +33,8 @@
         "portfolio": "Proyectos",
         "articles": "Artículos",
         "activities": "Fregaos",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "lang": "Escoger idioma"
     },
     "activities":  {
         "text": "Además de un mosntruo de las galletas, soy una persona a la que le encanta meterse en fregaos y buscar actividades nuevas. Aquí puedes ver todos los fregaos en los que me he metido: desde charlas a Game Jams.",
@@ -55,6 +56,14 @@
         "province": "Provincia",
         "city": "Ciudad",
         "comment": "¿Qué me quieres contar?"
+    },
+    "placeholder": {
+        "email": "Introduce un email",
+        "name": "Introduce un nombre completo",
+        "country": "Introduce un país",
+        "street": "Introduce una calle, avenida...",
+        "province": "Introduce la provincia",
+        "city": "Introduce la ciudad"
     },
     "portfolio": {
         "text": "Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado.",

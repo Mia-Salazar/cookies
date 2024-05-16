@@ -56,10 +56,6 @@ export const Form = () => {
 		<form className="form" onSubmit={handleOnSubmit}>
             <FormElement type="text" id="name" text="contact.name" value={values.name} functionality={inputChange("name")} />
             <FormElement type="email" id="email" text="contact.email" value={values.email} functionality={inputChange("email")} />
-            <FormElement type="text" id="country" text="contact.country" value={values.country} functionality={inputChange("country")} />
-			<FormElement type="text" id="province" text="contact.province" value={values.province} functionality={inputChange("province")} />
-            <FormElement type="text" id="city" text="contact.city" value={values.city} functionality={inputChange("city")} />
-            <FormElement type="text" id="street" text="contact.street" value={values.street} functionality={inputChange("street")} />
             <FormElement  id="comment" text="contact.comment" value={values.comment} functionality={inputChange("comment")} />
 			<Button text="contact.send" disabled={serverState.submitting || !values.email === "" || values.comment === ""} type="submit"/>
 		</form>

@@ -7,6 +7,7 @@
 
     &:hover, &:disabled {
         background-color: $primary;
+        border: 2px solid $primary;
     }
 
     &--secondary {
@@ -15,6 +16,7 @@
 
         &:hover, &:disabled {
             background: $secondary;
+            border: 2px solid $secondary;
         }
     }
 

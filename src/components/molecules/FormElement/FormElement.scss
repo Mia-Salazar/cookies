@@ -3,6 +3,7 @@
 @import "../../../assets/stylesheets/settings/mixins";
 
 .form-element {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-left: 1px;
@@ -35,6 +36,14 @@
 
     input[type="radio"] {
         display:none;
+
+        // position: absolute;
+        // height: 100%;
+        // z-index: -1;
+
+        // &:focus+.form-element__text-radio {
+        //     outline: 2px solid black;
+        // }
 
         &:checked+.form-element__text-radio {    
             @include button;
