@@ -4,25 +4,25 @@ import PropTypes from "prop-types";
 import "./ArticleItem.scss";
 
 export const ArticleItem = ({ date, href, tags, title }) => {
+    const formattedDate = date.slice(0, 10)
 	return (
-        <li>
-            <a target="_blank" href={href} className="article-item" rel="noreferrer">
-                <p className="article-item__date">{date}</p>
+        <li className="article-item">
+            <p className="article-item__date">{formattedDate}</p>
+            <a className="article-item__link" target="_blank" href={href} rel="noreferrer">
                 <p className="article-item__title">{title}</p>
-                
-                {tags &&
-                    <div className="article-item__list">
-                        {tags.map((item) => {
-                                return(
-                                    <p className="article-item__tag" key={item}>{item}</p>
-                                );
-                            })
-                        }
-                    </div>
-                }
             </a>
+            
+            {tags &&
+                <ul className="article-item__list">
+                    {tags.map((item) => {
+                            return(
+                                <li className="article-item__tag" key={item}>{item}</li>
+                            );
+                        })
+                    }
+                </ul>
+            }
         </li>
-
 	);
 };
 

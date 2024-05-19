@@ -1,30 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 import cookie from '../../../assets/img/logo.png';
-import { articleConstructor } from "../../../models/ArticlesModel";
 import ArticleItem from "../../molecules/ArticleItem/ArticleItem";
 import './ArticlesList.scss'
 
-export const ArticlesList = () => {
-    const [content, setContent] = useState({
-        data: [],
-        isLoading: true
-    });
-
-	useEffect(() => {
-		fetch("https://dev.to/api/articles?username=miasalazar")
-			.then(response => response.json())
-			.then(data => data.map(articleConstructor))
-			.then(data => setContent({isLoading: false, data}));
-	}, []);
-
-    if (content.isLoading) {
+export const ArticlesList = ({ isLoading, data }) => {
+    if (isLoading) {
         return <img className="articles__img" src={cookie} />
     }
 
 	return (
         <ul className="articles-list">
-            {content.data.map(({date, tags, title, href}) => {
+            {data.map(({date, tags, title, href}) => {
                 return(
                     <ArticleItem date={date} tags={tags} title={title} href={href} key={title}/>
                 );
@@ -32,6 +20,16 @@ export const ArticlesList = () => {
         </ul>
 
 	);
+};
+
+ArticlesList.propTypes = {
+    isLoading: PropTypes.bool.isRequired,
+    data: PropTypes.arrayOf(PropTypes.shape({
+        date: PropTypes.string.isRequired,
+        tags: PropTypes.arrayOf(PropTypes.string),
+        title: PropTypes.string.isRequired,
+        href: PropTypes.string.isRequired,
+    })),
 };
 
 export default ArticlesList;
