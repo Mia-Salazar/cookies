@@ -6,23 +6,28 @@ import "./LanguageButton.scss";
 
 export const LanguageButton = () => {
 	const { t } = useTranslation();
-	const [language, setLanguage] = useState(null);
+	const [language, setLanguage] = useState("es");
 
-	const changeLanguage = (language) => {
-		i18n.changeLanguage(language);
-		setLanguage(language);
-		//document.documentElement.lang = language;
+	const changeLanguage = (lang) => {
+		i18n.changeLanguage(lang);
+		setLanguage(lang);
+		localStorage.setItem("i18nextLng", lang);
+		//document.documentElement.lang = lang;
 	};
 
 	useEffect(() => {
-		const lang = localStorage.getItem("lang");
-		if (lang === "en" || lang === "es") {
-			i18n.changeLanguage(lang);
-			setLanguage(lang);
+		const langStorage = localStorage.getItem("i18nextLng");
+		if (langStorage === "en" || langStorage === "es") {
+			i18n.changeLanguage(langStorage);
+			setLanguage(langStorage);
+			//document.documentElement.lang = langStorage;
+			localStorage.setItem("i18nextLng", langStorage);
 
 		} else {
 			i18n.changeLanguage("es");
 			setLanguage("es");
+			//document.documentElement.lang = "es";
+			localStorage.setItem("i18nextLng", "es");
 		}
 	}, [language]);
 	
