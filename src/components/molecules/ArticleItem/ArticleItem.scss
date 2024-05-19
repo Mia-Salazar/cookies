@@ -15,6 +15,7 @@
 
     &__header {
         position: relative;
+
         @media (min-width: 768px) {
             display: flex;
             justify-content: space-between;
@@ -39,7 +40,17 @@
         display: flex;
         flex-wrap: wrap;
         gap: toRem(8);
-        margin-top: toRem(20);
+
+        margin: toRem(20) 0 0 0;
+        padding: 0;
+        list-style-type: none;
+
+        font-family: $font-family-secondary;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $black;
     }
 
     &__tag {

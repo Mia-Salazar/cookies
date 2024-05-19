@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Heading, Text, Layout, ArticleItem, ArticlesList } from "../../components";
 import { articlesArray } from "../../utils/ArticlesElements";
 import "./Articles.scss";
+import { articleConstructor } from "../../models/ArticlesModel";
 
 export const Articles = () => {
     const { t } = useTranslation();
+    const [content, setContent] = useState({
+        data: [],
+        isLoading: true
+    });
+
+    useEffect(() => {
+		fetch("https://dev.to/api/articles?username=miasalazar")
+			.then(response => response.json())
+			.then(data => data.map(articleConstructor))
+            .then(data => {
+                setContent({isLoading: false, data})
+                // setTimeout(() => {
+                //     console.log("Retrasado por 15 segundo.");
+                //     setContent({isLoading: false, data})
+                //   }, "15000");
+            });
+	}, []);
 
 	return (
 		<Layout>
@@ -15,7 +33,7 @@ export const Articles = () => {
             <Text>{t('articles.textTwo')}</Text>
             <section>
                 <Heading text="Dev.to" type="medium" />
-                <ArticlesList />   
+                <ArticlesList data={content.data} isLoading={content.isLoading} />   
             </section>
             <section>
                 <Heading text="Medium" type="medium" />
