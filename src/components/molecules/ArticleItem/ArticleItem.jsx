@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 import "./ArticleItem.scss";
 
 export const ArticleItem = ({ date, href, tags, title }) => {
+    const formattedDate = date.slice(0, 10)
 	return (
         <li>
             <a target="_blank" href={href} className="article-item" rel="noreferrer">
-                <p className="article-item__date">{date}</p>
+                <p className="article-item__date">{formattedDate}</p>
                 <p className="article-item__title">{title}</p>
                 
                 {tags &&
