@@ -17,7 +17,7 @@ export const Navbar = () => {
     const isSticky = (e) => {
         const header = document.querySelector('.navbar');
         const scrollTop = window.scrollY;
-        scrollTop >= 600 ? header.classList.add('navbar--is-sticky') : header.classList.remove('navbar--is-sticky');
+        scrollTop >= 600 && document.body.scrollHeight > 1400 ? header.classList.add('navbar--is-sticky') : header.classList.remove('navbar--is-sticky');
     };
 
     useEffect(() => {
