@@ -17,7 +17,7 @@ export const Navbar = () => {
     const isSticky = (e) => {
         const header = document.querySelector('.navbar');
         const scrollTop = window.scrollY;
-        scrollTop >= 600 && document.body.scrollHeight > 1400 ? header.classList.add('navbar--is-sticky') : header.classList.remove('navbar--is-sticky');
+        scrollTop >= 600 && document.body.scrollHeight > 1500 ? header.classList.add('navbar--is-sticky') : header.classList.remove('navbar--is-sticky');
     };
 
     useEffect(() => {
@@ -34,7 +34,7 @@ export const Navbar = () => {
                 <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
                 <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
             </div>
-            <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
+            <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"} role="dialog" aria-modal="true">
                 <ul className="navbar__list">
                     <li>
                         <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" } to="/home">{t('nav.home')}</NavLink>
