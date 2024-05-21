@@ -58,12 +58,9 @@
         "comment": "¿Qué me quieres contar?"
     },
     "placeholder": {
-        "email": "Introduce un email",
-        "name": "Introduce un nombre completo",
-        "country": "Introduce un país",
-        "street": "Introduce una calle, avenida...",
-        "province": "Introduce la provincia",
-        "city": "Introduce la ciudad"
+        "email": "example@example.com",
+        "name": "Taylor Alison Swift",
+        "comment": "Escribe aquí tu mensaje"
     },
     "portfolio": {
         "text": "Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado.",
