@@ -12,7 +12,7 @@ export const LanguageButton = () => {
 		i18n.changeLanguage(lang);
 		setLanguage(lang);
 		localStorage.setItem("i18nextLng", lang);
-		//document.documentElement.lang = lang;
+		document.documentElement.lang = lang;
 	};
 
 	useEffect(() => {
@@ -20,13 +20,13 @@ export const LanguageButton = () => {
 		if (langStorage === "en" || langStorage === "es") {
 			i18n.changeLanguage(langStorage);
 			setLanguage(langStorage);
-			//document.documentElement.lang = langStorage;
+			document.documentElement.lang = langStorage;
 			localStorage.setItem("i18nextLng", langStorage);
 
 		} else {
 			i18n.changeLanguage("es");
 			setLanguage("es");
-			//document.documentElement.lang = "es";
+			document.documentElement.lang = "es";
 			localStorage.setItem("i18nextLng", "es");
 		}
 	}, [language]);
