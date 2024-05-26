@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 import { portfolioArray } from "../../../utils/PortfolioElements";
-import PortfolioItem from "../../molecules/PortfolioItem/PortfolioItem";
+import ProjectItem from "../../molecules/ProjectItem/ProjectItem";
 import Button from "../../atoms/Button/Button";
 import Filter from "../../molecules/Filter/Filter";
-import "./PortfolioContent.scss";
+import "./ProjectsContent.scss";
 
-export const PortfolioContent = () => {
-	const [portfolioContent, setPortfolioContent] = useState(portfolioArray.slice(0, 6));
+export const ProjectsContent = () => {
+	const [portfolioContent, setProjectsContent] = useState(portfolioArray.slice(0, 6));
 	const [loadMore, setLoadMore] = useState(true);
 	const [filter, setFilter] = useState("all");
 
@@ -21,7 +21,7 @@ export const PortfolioContent = () => {
 			arrayFiltered = portfolioArray.filter(element => element.text.toLowerCase().includes(filter));
 		}
 
-		setPortfolioContent(portfolioContent.concat(arrayFiltered.slice(length, length + 3)));
+		setProjectsContent(portfolioContent.concat(arrayFiltered.slice(length, length + 3)));
 
 		if (portfolioContent.length + 3 >= arrayFiltered.length) {
 			setLoadMore(false);
@@ -52,7 +52,7 @@ export const PortfolioContent = () => {
 	};
 
 	useEffect(() => {
-		setPortfolioContent(filterFunction(filter, portfolioArray));
+		setProjectsContent(filterFunction(filter, portfolioArray));
 	}, [filter]);
 
 	return (
@@ -62,7 +62,7 @@ export const PortfolioContent = () => {
 				{
 					portfolioContent.map(({text, image, href, title}, index) => {
 						return(
-							<PortfolioItem text={text} href={href} image={image} key={index} title={title} />
+							<ProjectItem text={text} href={href} image={image} key={index} title={title} />
 						);
 					})
 				}
@@ -75,4 +75,4 @@ export const PortfolioContent = () => {
 	);
 };
 
-export default PortfolioContent;
+export default ProjectsContent;

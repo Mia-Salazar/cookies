@@ -45,6 +45,8 @@
         justify-content: center;
 
         margin: toRem(48) auto toRem(8) auto;
+        padding: 0;
+        list-style-type: none;
 
         @media (min-width: 768px) {
             margin: 0;

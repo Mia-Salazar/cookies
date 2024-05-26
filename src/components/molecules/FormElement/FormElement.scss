@@ -25,15 +25,6 @@
         margin-left: toRem(4);
     }
 
-    &__text-radio {
-        @include ghostButton;
-
-        &:hover, &:disabled {
-            background-color: $secondary;
-            color: $white;
-        }
-    }
-
     input[type="radio"] {
         display:none;
 
@@ -41,13 +32,17 @@
         // height: 100%;
         // z-index: -1;
 
-        // &:focus+.form-element__text-radio {
+        // &:focus+label {
         //     outline: 4px solid #000000;
         //     outline-offset: 0.125rem;
         // }
 
-        &:checked+.form-element__text-radio {    
-            @include button;
+        &:checked+label {    
+            // @include button;
+        }
+
+        +label {
+            // @include ghostButton;
         }
     }
 }

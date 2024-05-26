@@ -1,14 +1,14 @@
 export { default as Navbar } from './organisms/Navbar/Navbar';
 export { default as Footer } from './organisms/Footer/Footer';
 export { default as Form } from './organisms/Form/Form';
-export { default as PortfolioContent } from './organisms/PortfolioContent/PortfolioContent';
+export { default as ProjectsContent } from './organisms/ProjectsContent/ProjectsContent';
 export { default as Layout } from './organisms/Layout/Layout';
 export { default as ArticlesList } from './organisms/ArticlesList/ArticlesList'
 
 export { default as Frame } from './molecules/Frame/Frame';
 export { default as Header } from './molecules/Header/Header';
 export { default as FormElement } from './molecules/FormElement/FormElement';
-export { default as PortfolioItem } from './molecules/PortfolioItem/PortfolioItem';
+export { default as ProjectItem } from './molecules/ProjectItem/ProjectItem';
 export { default as Filter } from './molecules/Filter/Filter';
 export { default as LanguageButton } from './molecules/LanguageButton/LanguageButton';
 export { default as ArticleItem } from './molecules/ArticleItem/ArticleItem';

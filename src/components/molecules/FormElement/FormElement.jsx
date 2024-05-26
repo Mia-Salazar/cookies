@@ -16,7 +16,7 @@ export const FormElement = ({ checked, functionality, id, name, required, text, 
 				? <Input type={type} id={id} name={name} required={required} functionality={functionality} value={value} checked={checked} />
 				: <Textarea id={id} name={name} required={required} functionality={functionality} value={value} />
 			}			
-			<p className={ type === "radio" ? "form-element__text-radio" : "form-element__text"}>
+			<p className="form-element__text">
 				{t(text)}
 				{required ? <span className="form-element__asterisk">*</span> : ""}
 			</p>

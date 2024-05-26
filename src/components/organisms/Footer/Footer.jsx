@@ -20,13 +20,13 @@ export const Footer = () => {
                 </div>
                 <p className="footer__title">Mia Salazar</p>
             </div>
-			<div className="footer__list">
+			<ul className="footer__list">
 				{
 					socialNetwork.map((social) => {
 						return <SocialNetwork key={social.icon} icon={social.icon} link={social.link}></SocialNetwork>;
 					})
 				}
-            </div>
+            </ul>
 		</div>
 	);
 };

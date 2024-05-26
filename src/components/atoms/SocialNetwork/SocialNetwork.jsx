@@ -12,11 +12,11 @@ export const SocialNetwork = ({ icon, link }) => {
     }
 
 	return (
-		<div className="social-network">
+		<li className="social-network">
             <div onClick={handleClick}>
                 <i className={`fab social-network__icon ${icon}`}></i>
             </div>
-        </div>
+        </li>
 	);
 };
 

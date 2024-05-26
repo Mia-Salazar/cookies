@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 
 import Button from "../../atoms/Button/Button";
 import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
-import "./PortfolioItem.scss";
+import "./ProjectItem.scss";
 
-export const PortfolioItem = ({ href, image, text, title }) => {
+export const ProjectItem = ({ href, image, text, title }) => {
 	const { t } = useTranslation();
 	const [moreInfoOpen, setMoreInfoOpen] = useState(false);
 
@@ -28,11 +28,11 @@ export const PortfolioItem = ({ href, image, text, title }) => {
 	);
 };
 
-PortfolioItem.propTypes = {
+ProjectItem.propTypes = {
     href: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
 	title: PropTypes.string
 };
 
-export default PortfolioItem;
+export default ProjectItem;

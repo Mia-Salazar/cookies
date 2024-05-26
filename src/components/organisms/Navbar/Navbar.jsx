@@ -34,7 +34,7 @@ export const Navbar = () => {
                 <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
                 <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
             </div>
-            <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"} role="dialog" aria-modal="true">
+            <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
                 <ul className="navbar__list">
                     <li>
                         <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" } to="/home">{t('nav.home')}</NavLink>
