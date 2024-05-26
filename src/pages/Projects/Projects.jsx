@@ -4,14 +4,14 @@ import { useTranslation } from "react-i18next";
 import { oldPortfolio } from "../../utils/PortfolioElements";
 import { 
         Heading,
-        PortfolioContent,
-        PortfolioItem,
+        ProjectsContent,
+        ProjectItem,
         Text, 
         Layout
     } from "../../components";
-import "./Portfolio.scss";
+import "./Projects.scss";
 
-export const Portfolio = () => {
+export const Projects = () => {
     const { t } = useTranslation();
 
 	return (
@@ -19,7 +19,7 @@ export const Portfolio = () => {
             <section>
                 <Heading text="nav.portfolio" />
                 <Text>{t('portfolio.text')}</Text>
-                <PortfolioContent />
+                <ProjectsContent />
             </section>
             <section>
                 <Heading text="portfolio.past" type="medium" />
@@ -28,7 +28,7 @@ export const Portfolio = () => {
                     {
                         oldPortfolio.map(({text, image, href}, index) => {
                             return(
-                                <PortfolioItem text={text} href={href} image={image} key={index}/>
+                                <ProjectItem text={text} href={href} image={image} key={index}/>
                             );
                         })
                     }
@@ -38,4 +38,4 @@ export const Portfolio = () => {
 	);
 };
 
-export default Portfolio;
+export default Projects;
