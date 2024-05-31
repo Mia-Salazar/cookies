@@ -4,11 +4,6 @@ import { useTranslation } from "react-i18next";
 
 import "./Heading.scss";
 
-// const TYPES = {
-// 	'big': 'h1',
-// 	'medium': 'h2'
-// }
-
 export const Heading = ({ text, type }) => {
 	const { t } = useTranslation();
 

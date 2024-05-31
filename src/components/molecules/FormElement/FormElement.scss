@@ -27,22 +27,5 @@
 
     input[type="radio"] {
         display:none;
-
-        // position: absolute;
-        // height: 100%;
-        // z-index: -1;
-
-        // &:focus+label {
-        //     outline: 4px solid #000000;
-        //     outline-offset: 0.125rem;
-        // }
-
-        &:checked+label {    
-            // @include button;
-        }
-
-        +label {
-            // @include ghostButton;
-        }
     }
 }

@@ -6,26 +6,7 @@
     gap: toRem(16);
     grid-template-columns: 1fr 1fr;
 
-    // display: flex;
-    // flex-direction: column;
-
     @media (min-width: 768px) {
         grid-template-columns: repeat(4, 100px);
-    }
-
-    fieldset {
-        display: grid;
-        gap: toRem(16);
-        grid-template-columns: 1fr 1fr;
-        border: none;
-        padding: 0;
-
-        @media (min-width: 768px) {
-            grid-template-columns: repeat(4, 100px);
-        }
-    }
-
-    legend {
-        font-family: $font-family-secondary;
     }
 }

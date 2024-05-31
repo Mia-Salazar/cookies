@@ -19,10 +19,6 @@ export const Articles = () => {
 			.then(data => data.map(articleConstructor))
             .then(data => {
                 setContent({isLoading: false, data})
-                // setTimeout(() => {
-                //     console.log("Retrasado por 15 segundo.");
-                //     setContent({isLoading: false, data})
-                //   }, "15000");
             });
 	}, []);
 
