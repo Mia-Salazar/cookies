@@ -1,12 +1,12 @@
 import React from "react";
 
-import { ButtonLink, Header, Frame } from "../../components";
+import { LinkButton, Header, Frame } from "../../components";
 
 export const Intro = () => {
 	return (
 		<Frame isIntro>
             <Header />
-            <ButtonLink href="/home" text="home.continue" />
+            <LinkButton href="/home" text="home.continue" />
         </Frame>
 	);
 };

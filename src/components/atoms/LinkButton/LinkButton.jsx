@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import "./ButtonLink.scss";
+import "./LinkButton.scss";
 
-export const ButtonLink = ({ href, isExternal, text, styles }) => {
+export const LinkButton = ({ href, isExternal, text, styles }) => {
 	const { t } = useTranslation();
 
 	if (isExternal) {
@@ -19,15 +19,15 @@ export const ButtonLink = ({ href, isExternal, text, styles }) => {
 	);
 };
 
-ButtonLink.defaultProps = {
+LinkButton.defaultProps = {
 	isExternal: false
 };
 
-ButtonLink.propTypes = {
+LinkButton.propTypes = {
 	href: PropTypes.string.isRequired,
 	isExternal: PropTypes.bool, 
 	styles: PropTypes.string,
 	text: PropTypes.string.isRequired,
 }
 
-export default ButtonLink;
+export default LinkButton;
