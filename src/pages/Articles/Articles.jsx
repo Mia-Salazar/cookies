@@ -28,11 +28,11 @@ export const Articles = () => {
             <Text>{t('articles.text')}</Text>
             <Text>{t('articles.textTwo')}</Text>
             <section>
-                <Heading text="Dev.to" type="medium" />
+                <Heading text="Dev.to" size="medium" />
                 <ArticlesList data={content.data} isLoading={content.isLoading} />   
             </section>
             <section>
-                <Heading text="Medium" type="medium" />
+                <Heading text="Medium" size="medium" />
                 <ul className="articles__list">
                     {
                         articlesArray.map(({date, tags, title, href}) => {
