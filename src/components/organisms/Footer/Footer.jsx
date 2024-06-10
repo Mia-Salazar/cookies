@@ -13,21 +13,21 @@ export const Footer = () => {
 		{icon: "fa-twitter", link: "https://twitter.com/miadeveloper", aria: "Sígueme en Twitter"}
 	];
 	return (
-		<div className="footer">
+		<footer className="footer">
             <div className="footer__logo">
-                <div className="footer__img-container">
-                    <img className="footer__img" src={logo} />
-                </div>
+                <figure className="footer__img-container">
+                    <img alt="Galleta con chips de chocolate y los ojos bizcos" className="footer__img" src={logo} />
+                </figure>
                 <p className="footer__title">Mia Salazar</p>
             </div>
 			<ul className="footer__list">
 				{
 					socialNetwork.map((social) => {
-						return <SocialNetwork key={social.icon} icon={social.icon} link={social.link}></SocialNetwork>;
+						return <SocialNetwork key={social.icon} icon={social.icon} link={social.link} aria={social.aria}></SocialNetwork>;
 					})
 				}
             </ul>
-		</div>
+		</footer>
 	);
 };
 

@@ -23,7 +23,7 @@ export const Home = () => {
             </section>
             <section>
                 <Heading text="home.activities" size="medium" />
-                <div className="home__container">
+                <ul className="home__container">
                     <StrengthItem 
                         title={yearsOfExperience.toString()}
                         subtitle="home.experience"
@@ -48,13 +48,13 @@ export const Home = () => {
                         title="2"
                         subtitle="home.lang"
                     />
-                </div>
+                </ul>
             </section>
             <section>
                 <Heading text="home.tech" size="medium" />
                 <Text>{t('home.textFour')}</Text>
                 <Text>{t('home.textFive')}</Text>
-                <div className="home__list">
+                <ul className="home__list">
                     <TechItem href="https://jestjs.io/es-ES/" size="high" text="Jest" />
                     <TechItem href="https://www.w3schools.com/css/" size="reallyHigh" text="CSS" />
                     <TechItem href="https://es.react.dev/" size="high" text="React" />
@@ -79,7 +79,7 @@ export const Home = () => {
                     <TechItem href="hhttps://vitejs.dev/guide/" size="low" text="Vite" />
                     <TechItem href="https://www.figma.com/" size="low" text="Figma" />
                     <TechItem href="https://jquery.com/" size="medium" text="jQuery" />
-                </div>
+                </ul>
             </section>
         </Layout>
 	);

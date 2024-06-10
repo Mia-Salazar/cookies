@@ -12,6 +12,7 @@ export const Layout = ({ children, styles }) => {
 	return (
 		<Frame styles={styles}>
             <Header />
+            <a className="skip" href="#main">Saltar al contenido</a>
             <Navbar />
             <Container>
                 {children}

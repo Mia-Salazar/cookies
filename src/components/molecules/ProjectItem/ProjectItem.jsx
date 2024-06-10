@@ -17,7 +17,7 @@ export const ProjectItem = ({ href, image, text, title }) => {
 	return (
 		<li className={moreInfoOpen ? "portfolio-item portfolio-item--active": "portfolio-item" } data-testid="portfolio-item">
 			<div className="portfolio-item__img-container">
-				<img className="portfolio-item__img" src={image}/> 
+				<img alt="" className="portfolio-item__img" src={image}/> 
 				<p className="portfolio-item__img-text"><span>{t(title)}</span>{text} </p>
 			</div>
 			<div className="portfolio-item__button-container">

@@ -5,11 +5,11 @@ import "./TechItem.scss";
 
 export const TechItem = ({ href, size, text }) => {
 	return (
-		<div className="cloud-item">
+		<li className="cloud-item">
 			<a className={"cloud-item__link cloud-item__link--" + (size)} href={href}>
                 {text}
             </a>
-		</div>
+		</li>
 	);
 };
 

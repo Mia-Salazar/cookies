@@ -28,12 +28,12 @@ export const Navbar = () => {
     });
 
 	return (
-		<div className={toggle ? "navbar navbar--is-open": "navbar"}>
-            <div className={toggle ? "navbar__hamburguer navbar__hamburguer--is-open": "navbar__hamburguer"} onClick={handleClick}>
-                <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
-                <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
-                <span className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
-            </div>
+		<nav className={toggle ? "navbar navbar--is-open": "navbar"}>
+            <button aria-label="Abrir y cerrar menú" className={toggle ? "navbar__hamburguer navbar__hamburguer--is-open": "navbar__hamburguer"} onClick={handleClick}>
+                <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
+                <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
+                <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
+            </button>
             <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
                 <ul className="navbar__list">
                     <li>
@@ -54,7 +54,7 @@ export const Navbar = () => {
                 </ul>
                 <LanguageButton />
             </div>
-        </div>
+        </nav>
 	);
 };
 

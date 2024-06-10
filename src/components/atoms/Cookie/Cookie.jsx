@@ -5,9 +5,9 @@ import "./Cookie.scss";
 
 export const Cookie = () => {
 	return (
-        <div className="cookie">
-            <img className="cookie__img" src={logo} />
-        </div>
+        <figure className="cookie">
+            <img alt="Galleta con chips de chocolate y los ojos bizcos" className="cookie__img" src={logo} />
+        </figure>
 	);
 };
 

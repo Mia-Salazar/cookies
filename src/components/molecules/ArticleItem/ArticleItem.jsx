@@ -9,7 +9,7 @@ export const ArticleItem = ({ date, href, tags, title }) => {
         <li className="article-item">
             <p className="article-item__date">{formattedDate}</p>
             <a className="article-item__link" target="_blank" href={href} rel="noreferrer">
-                <p className="article-item__title">{title}</p>
+                <h3 className="article-item__title">{title}</h3>
             </a>
             
             {tags &&
