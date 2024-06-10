@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./SocialNetwork.scss";
 
 export const SocialNetwork = ({ icon, link }) => {
-    //target="_blank" rel="noopener"
+    //target="_blank" rel="noopener noreferrer"
     const handleClick = () => {
         window.open(link, "_blank")
     }
