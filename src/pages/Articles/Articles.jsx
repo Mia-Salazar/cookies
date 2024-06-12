@@ -27,7 +27,7 @@ export const Articles = () => {
             <Heading text="nav.articles" />
             <Text>{t('articles.text')}</Text>
             <Text>{t('articles.textTwo')}</Text>
-            <section>
+            <section aria-live="polite" aria-busy={content.isLoading}>
                 <Heading text="Dev.to" size="medium" />
                 <ArticlesList data={content.data} isLoading={content.isLoading} />   
             </section>

@@ -54,9 +54,9 @@ export const Form = () => {
 
 	return (
 		<form className="form" onSubmit={handleOnSubmit}>
-            <FormElement placeholder="Mia Salazar" type="text" id="name" name="name" text="contact.name" value={values.name} required={true} functionality={inputChange("name")} />
-            <FormElement placeholder="hello@miasalazar.com" type="email" id="email" name="email" text="contact.email" value={values.email} required={true} functionality={inputChange("email")} />
-            <FormElement placeholder="Escríbeme algo bonito" id="comment" name="comment" text="contact.comment" value={values.comment} required={true} functionality={inputChange("comment")} />
+            <FormElement placeholder="placeholder.name" type="text" id="name" name="name" text="contact.name" value={values.name} required={true} functionality={inputChange("name")} />
+            <FormElement placeholder="placeholder.email" type="email" id="email" name="email" text="contact.email" value={values.email} required={true} functionality={inputChange("email")} />
+            <FormElement placeholder="placeholder.comment" id="comment" name="comment" text="contact.comment" value={values.comment} required={true} functionality={inputChange("comment")} />
 			<Button text="contact.send" disabled={serverState.submitting || !values.email === "" || values.comment === ""} type="submit"/>
 		</form>
 	);
