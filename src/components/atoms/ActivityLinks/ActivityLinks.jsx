@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
-import ButtonLink from "../ButtonLink/ButtonLink";
+import LinkButton from "../LinkButton/LinkButton";
 import "./ActivityLinks.scss";
 
 export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo }) => {
@@ -12,8 +12,8 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo }) => {
         return <div className="activity-wrapper">
             <p className="activity-wrapper__text">{t(text)}</p>
             <div className="activity-wrapper__container">
-                <ButtonLink isExternal styles="ghost small secondary" text={hasVideo ? 'activities.speech' : 'activities.event'} href={speechLink}/>
-                <ButtonLink isExternal styles="ghost small" text="activities.slide" href={slidesLink}/>
+                <LinkButton isExternal styles="ghost small secondary" text={hasVideo ? 'activities.speech' : 'activities.event'} href={speechLink}/>
+                <LinkButton isExternal styles="ghost small" text="activities.slide" href={slidesLink}/>
             </div>
         </div>
     }

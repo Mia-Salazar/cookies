@@ -4,26 +4,27 @@ import { useTranslation } from "react-i18next";
 
 import "./Heading.scss";
 
-// const TYPES = {
-// 	'big': 'h1',
-// 	'medium': 'h2'
-// }
+const Types = {
+	'big': 'h1',
+	'medium': 'h2'
+}
 
-export const Heading = ({ text, type }) => {
+export const Heading = ({ text, size }) => {
 	const { t } = useTranslation();
+	const HeadingType = Types[size]
 
 	return (
-		<div className={"heading " + (type > 'big' ? `heading--${type}` : '')}>{t(text)}</div>
+		<HeadingType className={"heading " + (size > 'big' ? `heading--${size}` : '')}>{t(text)}</HeadingType>
 	);
 };
 
 Heading.defaultProps = {
-	type: 'big'
+	size: 'big'
 };
 
 Heading.propTypes = {
 	text: PropTypes.string.isRequired,
-    type: PropTypes.string
+    size: PropTypes.string
 }
 
 export default Heading;

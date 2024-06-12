@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
 import Button from "../../atoms/Button/Button";
-import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
+import LinkButton from "../../atoms/LinkButton/LinkButton";
 import "./ProjectItem.scss";
 
 export const ProjectItem = ({ href, image, text, title }) => {
@@ -17,12 +17,12 @@ export const ProjectItem = ({ href, image, text, title }) => {
 	return (
 		<li className={moreInfoOpen ? "portfolio-item portfolio-item--active": "portfolio-item" } data-testid="portfolio-item">
 			<div className="portfolio-item__img-container">
-				<img className="portfolio-item__img" src={image}/> 
+				<img alt="" className="portfolio-item__img" src={image}/> 
 				<p className="portfolio-item__img-text"><span>{t(title)}</span>{text} </p>
 			</div>
 			<div className="portfolio-item__button-container">
 				<Button styles="secondary" text="portfolio.info" functionality={getMoreInfo}/>
-				<ButtonLink styles="ghost" text="portfolio.visit" href={href} target="_blank" />
+				<LinkButton styles="ghost" text="portfolio.visit" href={href} target="_blank" />
 			</div>
 		</li>
 	);

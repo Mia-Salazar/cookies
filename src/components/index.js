@@ -15,8 +15,8 @@ export { default as ArticleItem } from './molecules/ArticleItem/ArticleItem';
 export { default as ActivityItem } from './molecules/ActivityItem/ActivityItem';
 
 export { default as ActivityLink } from './atoms/ActivityLinks/ActivityLinks';
-export { default as ButtonLink } from './atoms/ButtonLink/ButtonLink';
-export { default as CloudItem } from './atoms/CloudItem/CloudItem';
+export { default as LinkButton } from './atoms/LinkButton/LinkButton';
+export { default as TechItem } from './atoms/TechItem/TechItem';
 export { default as Cookie } from './atoms/Cookie/Cookie';
 export { default as Container } from './atoms/Container/Container';
 export { default as Text } from './atoms/Text/Text';

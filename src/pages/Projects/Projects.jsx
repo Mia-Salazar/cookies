@@ -22,7 +22,7 @@ export const Projects = () => {
                 <ProjectsContent />
             </section>
             <section>
-                <Heading text="portfolio.past" type="medium" />
+                <Heading text="portfolio.past" size="medium" />
                 <Text>{t('portfolio.textTwo')}</Text>
                 <ul className="portfolio__list">
                     {

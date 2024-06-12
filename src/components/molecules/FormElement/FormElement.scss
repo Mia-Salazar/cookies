@@ -26,23 +26,19 @@
     }
 
     input[type="radio"] {
-        display:none;
-
-        // position: absolute;
-        // height: 100%;
-        // z-index: -1;
-
-        // &:focus+label {
-        //     outline: 4px solid #000000;
-        //     outline-offset: 0.125rem;
-        // }
-
-        &:checked+label {    
-            // @include button;
-        }
+        position: absolute;
+        z-index: -1;
 
         +label {
-            // @include ghostButton;
+            @include ghostButton;
+        }
+
+        &:checked+label {
+            @include button;
+        }
+
+        &:focus+label {
+            outline: 4px solid black;
         }
     }
 }

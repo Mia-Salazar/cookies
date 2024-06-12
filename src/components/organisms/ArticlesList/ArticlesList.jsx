@@ -1,15 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import cookie from '../../../assets/img/logo.png';
 import ArticleItem from "../../molecules/ArticleItem/ArticleItem";
 import './ArticlesList.scss'
 
 export const ArticlesList = ({ isLoading, data }) => {
-    if (isLoading) {
-        return <img className="articles__img" src={cookie} />
-    }
-
 	return (
         <ul className="articles-list">
             {data.map(({date, tags, title, href}) => {

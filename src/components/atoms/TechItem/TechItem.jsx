@@ -1,22 +1,22 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-import "./CloudItem.scss";
+import "./TechItem.scss";
 
-export const CloudItem = ({ href, size, text }) => {
+export const TechItem = ({ href, size, text }) => {
 	return (
-		<div className="cloud-item">
+		<li className="cloud-item">
 			<a className={"cloud-item__link cloud-item__link--" + (size)} href={href}>
                 {text}
             </a>
-		</div>
+		</li>
 	);
 };
 
-CloudItem.propTypes = {
+TechItem.propTypes = {
 	href: PropTypes.string.isRequired,
     size: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 }
 
-export default CloudItem;
+export default TechItem;

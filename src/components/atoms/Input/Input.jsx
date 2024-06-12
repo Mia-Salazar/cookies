@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useTranslation } from "react-i18next";
 
 import "./Input.scss";
 
-export const Input = ({ checked, functionality, id, name, required, type, value }) => {
-	const { t } = useTranslation();
-
+export const Input = ({ checked, functionality, id, name, placeholder, required, type, value }) => {
 	return (
 		<input className="input" type={type} id={id} name={name} value={value}
-			required={required} onChange={functionality} checked={checked}
+			required={required} onChange={functionality} checked={checked} placeholder={placeholder}
 		/>
 	);
 };
@@ -19,6 +16,7 @@ Input.propTypes = {
 	functionality: PropTypes.func,
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
+	placeholder:PropTypes.string.isRequired, 
 	required: PropTypes.bool,
 	type: PropTypes.string.isRequired,
 	value: PropTypes.string,
