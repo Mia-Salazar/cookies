@@ -58,7 +58,7 @@ export const ProjectsContent = () => {
 	return (
 		<div className="portfolio-items">
 			<Filter buttonFunctionality={changeFilter} filterActive={filter} />
-			<ul className="portfolio-items__container">
+			<ul className="portfolio-items__container" id="filter-portoflio">
 				{
 					portfolioContent.map(({text, image, href, title}, index) => {
 						return(

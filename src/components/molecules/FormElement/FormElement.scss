@@ -26,5 +26,19 @@
     }
 
     input[type="radio"] {
+        position: absolute;
+        z-index: -1;
+
+        +label {
+            @include ghostButton;
+        }
+
+        &:checked+label {
+            @include button;
+        }
+
+        &:focus+label {
+            outline: 4px solid black;
+        }
     }
 }

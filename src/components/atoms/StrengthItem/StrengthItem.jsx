@@ -8,10 +8,10 @@ export const StrengthItem = ({ subtitle, title }) => {
 	const { t } = useTranslation();
 
 	return (
-		<div className="strength-item">
+		<li className="strength-item">
 			<p className="strength-item__title">{t(title)}</p>
 			<p className="strength-item__subtitle">{t(subtitle)}</p>
-		</div>
+		</li>
 	);
 };
 

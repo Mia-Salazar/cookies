@@ -4,4 +4,12 @@
     background-color: $secondary;
     color: $white;
     font-family: $font-family-primary;
+
+    position: absolute;
+    top: 0;
+    left: -5000%;
+
+    &:focus {
+        left:0;
+    }
 }

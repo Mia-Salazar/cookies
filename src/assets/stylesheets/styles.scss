@@ -5,5 +5,8 @@
 @import './settings/variables';
 
 * {
-    outline: none;
+    &:focus{
+        outline: 4px solid black;
+        outline-offset: 2px;
+    }
 }
