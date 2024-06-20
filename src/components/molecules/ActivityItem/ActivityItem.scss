@@ -5,10 +5,14 @@
     display: grid;
     align-items: center;
     grid-template-columns: toRem(16) toRem(48) 1fr;
-    grid-gap: toRem(12);
+    grid-gap: toRem(8);
     list-style-type: none;
 
     margin-bottom: toRem(24);
+
+    @media (min-width: 768px) {
+        grid-gap: toRem(12);
+    }
 
     .fas {
         color: $primary;
