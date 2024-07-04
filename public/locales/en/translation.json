@@ -96,9 +96,10 @@
         "slot": "Slot Machine Game"
     },
     "awards": {
+        "steptalks": "Step4wardtalk. Web accesibility: Guide for noobies",
         "garaje": "Garaje de ideas. Live Coding: Legacy Code and accessibility",
-        "svq": "Fullstack Sevilla. Web accesibility: Guide for newbies",
-        "t3chfest2024": "T3ch Fest 2024. Web accesibility: Guide for newbies",
+        "svq": "Fullstack Sevilla. Web accesibility: Guide for noobies",
+        "t3chfest2024": "T3ch Fest 2024. Web accesibility: Guide for noobies",
         "techshessionsThree": "TechSHEssions third speech. Foodiesaurus, designing an accesible project",
         "techshessionsTwo": "TechSHEssions second speech. Foodiesaurus, project with sticks and stones",
         "interviewTwo": "IT Gals. Interview about my evolution in the world of technology",
