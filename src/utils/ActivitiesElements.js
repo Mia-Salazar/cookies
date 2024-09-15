@@ -1,6 +1,8 @@
 export const speechesArray = [
 	{ hasVideo: true, year: 2024, lang: "es", aria: "awards.garaje", icon: "microphone", text: "awards.garaje", 
 	speechLink: "https://www.youtube.com/watch?v=QspxkW7kheA", slidesLink: "https://docs.google.com/presentation/d/1b8nGXgL6E3tarq6Ca22HbmGk6fZ8jo2s/edit?usp=sharing&ouid=105566763085813942698&rtpof=true&sd=true" },
+	{ hasVideo: false, year: 2024, lang: "es", aria: "awards.wtm", icon: "microphone", text: "awards.wtm", 
+		speechLink: "https://www.meetup.com/es-ES/gdgmadrid/events/303048213/", slidesLink: "https://docs.google.com/presentation/d/1RifWPkI4lfYRFjE0sQH03YH03A53oO4kHsIDr2gQ18U/edit?usp=sharing" },
 	{ hasVideo: true, year: 2024, lang: "es", aria: "awards.steptalks", icon: "microphone", text: "awards.steptalks", 
 	speechLink: "https://www.youtube.com/watch?v=2hMMwl4JEJo&ab_channel=MentorasStep4ward", slidesLink: "https://docs.google.com/presentation/d/1Ng7D-E2e4VmMNIIhBdR3nd_jBzv6nuv6_4twa2VxyBc/edit?usp=sharing" },
 	{ hasVideo: true, year: 2024, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.t3chfest2024", 
