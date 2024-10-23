@@ -37,6 +37,7 @@ export const gameArray = [
 ]
 
 export const otherArray = [
+	{ year: 2024, lang: "es", aria: "awards.mentor", icon: "venus", text: "awards.mentorTechSHE", speechLink: "https://step4ward.notion.site/"},
 	{ year: 2023, lang: "es", aria: "awards.mentor", icon: "venus", text: "awards.mentor", speechLink: "https://step4ward.notion.site/"},
 	{ year: 2023, lang: "es", aria: "awards.handshake", icon: "handshake", text: "awards.les", speechLink: "https://www.ludoergosum.org/"},
 	{ year: 2023, lang: "es", aria: "awards.handshake", icon: "handshake", text: "awards.freak", speechLink: "https://freakwarsmadrid.com/"},
