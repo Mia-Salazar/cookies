@@ -1,4 +1,6 @@
 export const speechesArray = [
+	{ hasVideo: false, year: 2024, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.gdg", 
+		speechLink: "https://gdg.community.dev/events/details/google-gdg-madrid-presents-devfest-madrid-2024/", slidesLink: "https://view.genially.com/670c3dd53bfb21282c583694" },
 	{ hasVideo: true, year: 2024, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.garaje", 
 	speechLink: "https://www.youtube.com/watch?v=QspxkW7kheA", slidesLink: "https://docs.google.com/presentation/d/1b8nGXgL6E3tarq6Ca22HbmGk6fZ8jo2s/edit?usp=sharing&ouid=105566763085813942698&rtpof=true&sd=true" },
 	{ hasVideo: true, year: 2024, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.presentation", 
