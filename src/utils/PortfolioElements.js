@@ -21,6 +21,10 @@ import connect from "../assets/img/connect.png";
 import foodiesaurus from "../assets/img/foodiesaurus.png";
 import old from "../assets/img/old.jpg";
 import galactic from "../assets/img/galatic.png";
+import zityhub from "../assets/img/zityhub.png";
+import admin from "../assets/img/admin.png";
+import rick from "../assets/img/rick.png";
+import marvelNew from "../assets/img/marvelNew.png";
 
 export const oldPortfolio = [
 	{href: "https://condescending-borg-99e8cc.netlify.app/", text:"React, HTML5, CSS3, SASS, Flexbox, Grid, BEM, i18n", image: galactic},
@@ -28,7 +32,11 @@ export const oldPortfolio = [
 ]
 
 export const portfolioArray = [
-	{ title: "portfolio.foodiesaurus", href: "https://foodiesaurus.com/", text:"HTML5, CSS3, Javascript, PHP, MySQL, phpMyAdmin", image: foodiesaurus },
+	{ title: "portfolio.marvelNew", href: "https://67b831b2ff66d1ccbfd67cb3--glistening-pastelito-1d2b92.netlify.app/characters", text:"React, Vitest, Testing library, React Query, SCSS", image: marvelNew },
+	{ title: "portfolio.rick", href: "https://67e575a42d520b00a4a572e6--upbeat-jepsen-fe697b.netlify.app/characters", text:"React, Styled Components, Jest, Testing library, React Query", image: rick },
+	{ title: "portfolio.zityhubBackOffice", href: "https://admin.zityhub.com", text:"Next, Redux, Jest, Testing library, Styled components", image: admin },
+	{ title: "portfolio.zityhub", href: "https://app.zityhub.com", text:"React, Redux, Jest, Testing library, Playwright, Styled components, React Query", image: zityhub },
+	{ title: "portfolio.foodiesaurus", href: "https://youtu.be/6OjCFya3QRg", text:"HTML5, CSS3, Javascript, PHP, MySQL, phpMyAdmin, PWA", image: foodiesaurus },
 	{ title: "portfolio.enthec", href: "https://enthec.com", text:"Angular, HTML5, CSS3, SASS, Flexbox, Grid, Typescript, API Rest, i18n, BEM Methodology, Accesibility", image: enthec },
 	{ title: "portfolio.enthecHome", href: "https://kartos.enthec.com", text:"Angular, Angular Material, Redux, HTML5, CSS3, SASS, Flexbox, Grid, i18n, BEM Methodology, Typescript, API Rest, Accesibility", image: kartos },
 	{ title: "portfolio.xcj", href: "http://xcjgames.surge.sh/", text:"Reactjs, React Hooks, Jest, Testing-library, HTML5, CSS3, SASS, Flexbox, Grid, Javascript,", image: xcjgames },
