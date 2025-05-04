@@ -100,6 +100,9 @@
         "slot": "Slot Machine Game"
     },
     "awards": {
+        "wtmInternational": "Women Tech Makers Madrid. Web Accessibility: A Survival Guide for Noobies",
+        "commit": "CommitConf 2025. I occasionally see ARIA attributes",
+        "commitSpace": "CommitConf 2025. Open Space: Mom, when I grow up I want to be a speaker",
        "t3ch25": "T3ch Fest 2025. Soft Skills: How role-playing made me a better programmer",
         "gdg": "Google Developer Groups. Workshop abput Legacy code and accessibility: Improving our projects",
         "presentation": "TechSHEssions presentation. Talk about my experience as a mentee",
