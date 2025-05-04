@@ -37,7 +37,7 @@ export const Home = () => {
                         subtitle="home.step4ward"
                     />
                     <StrengthItem 
-                        title="+35"
+                        title="+40"
                         subtitle="home.articles"
                     />
                     <StrengthItem 
