@@ -1,8 +1,8 @@
 export const speechesArray = [
 	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.wtmInternational", 
 		speechLink: "https://www.youtube.com/watch?v=S1XPUzsSG4c&list=PLkb8P70owGbjuLjmjdISitddb8hE5PWDr&index=3&ab_channel=SirviendoC%C3%B3digo", slidesLink: "https://docs.google.com/presentation/d/11XEArrCzNdVRyOWYT1qm5yxDi-DcEiZ-NrlG30Rp450/edit?usp=sharing" },
-	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.commit", 
-		speechLink: "https://koliseo.com/commit/commit-conf-2025/agenda/1?selected=p8s6xQ68iprT2VLn3CpC", slidesLink: "https://docs.google.com/presentation/d/1ffUcwdWc3Bqv2aHtUewvb9ghDRAWpiNp6Ispjf1WpT8/edit?usp=sharing" },
+	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.commit", 
+		speechLink: "https://www.youtube.com/watch?v=QzjWU4c9KIwC", slidesLink: "https://docs.google.com/presentation/d/1ffUcwdWc3Bqv2aHtUewvb9ghDRAWpiNp6Ispjf1WpT8/edit?usp=sharing" },
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.commitSpace", 
 		speechLink: "https://koliseo.com/commit/commit-conf-2025/agenda/1?selected=JA964NWuiNVziZzqTuA3", slidesLink: "https://view.genially.com/67db4896c049f1c7029aff4d/presentation-indice" },
 	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.t3ch25", 
