@@ -100,6 +100,8 @@
         "slot": "Juego de tragaperras"
     },
     "awards": {
+        "madvue": "MadVue. Accesibilidad web: Guía para principiantes",
+        "salmorejo": "SalmorejoTech. Accesibilidad web: Guía de supervivencia para noobies",
         "wtmInternational": "Women Tech Makers Madrid. Accesibilidad web: Guía de supervivencia para noobies",
         "commit": "CommitConf 2025. En ocasiones veo atributos ARIA",
         "commitSpace": "CommitConf 2025. Open Space: Mamá, de mayor quiero ser ponente",

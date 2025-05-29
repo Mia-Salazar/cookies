@@ -1,4 +1,8 @@
 export const speechesArray = [
+	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.salmorejo", 
+		speechLink: "https://www.youtube.com/live/O6bdjPrcbEM?si=FilYx-iQomOiBE80&t=15257", slidesLink: "https://docs.google.com/presentation/d/1MxIr3kYGMIIlIUhoE_CUWCttCnh7jVww2RINbnyrCHc/edit?usp=sharing" },
+	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.madvue", 
+		speechLink: "https://madvue.es/agenda", slidesLink: "https://docs.google.com/presentation/d/1oLoVRJ2NzGZQ42uMi6Q4ZPaR5Vg02H3BVT_c0hsZkUA/edit?usp=sharing" },
 	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.wtmInternational", 
 		speechLink: "https://www.youtube.com/watch?v=S1XPUzsSG4c&list=PLkb8P70owGbjuLjmjdISitddb8hE5PWDr&index=3&ab_channel=SirviendoC%C3%B3digo", slidesLink: "https://docs.google.com/presentation/d/11XEArrCzNdVRyOWYT1qm5yxDi-DcEiZ-NrlG30Rp450/edit?usp=sharing" },
 	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.commit", 
