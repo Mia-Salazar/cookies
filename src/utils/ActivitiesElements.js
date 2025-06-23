@@ -1,4 +1,6 @@
 export const speechesArray = [
+	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.adoptaUnJunior", 
+		speechLink: "https://www.therevolutiontech.es/#agenda", slidesLink: "https://docs.google.com/presentation/d/1oQGhAbdc14DeFpxkL3Onl4Ugh8tBvINLD-A9Fmq01HE/edit?usp=sharing" },
 	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.salmorejo", 
 		speechLink: "https://www.youtube.com/live/O6bdjPrcbEM?si=FilYx-iQomOiBE80&t=15257", slidesLink: "https://docs.google.com/presentation/d/1MxIr3kYGMIIlIUhoE_CUWCttCnh7jVww2RINbnyrCHc/edit?usp=sharing" },
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.madvue", 
