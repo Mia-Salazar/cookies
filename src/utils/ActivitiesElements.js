@@ -1,6 +1,6 @@
 export const speechesArray = [
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.technolatinas", 
-		speechLink: "https://lu.ma/dsufoobv", slidesLink: "https://miro.com/welcomeonboard/V3B0SG9GaDFYb0JISC9abUEwc0xzQ25HRW5qNjZ6cituV2h3M09rbDJ3YzRSN2xhNmp4bzZRbE1PRzM5U21LeHJRclIrREUyaHh4MWtvRm1nc3VkU3hBOG5SZmZpcG9ZcVVSMTdraXRZRjVOQ2ZnRXRGUmE0Y0JSVnhTdHB1cHl3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=927275878267" },
+		speechLink: "https://lu.ma/dsufoobv", slidesLink: "https://miro.com/welcomeonboard/V3B0SG9GaDFYb0JISC9abUEwc0xzQ25HRW5qNjZ6cituV2h3M09rbDJ3YzRSN2xhNmp4bzZRbE1PRzM5U21LeHJRclIrREUyaHh4MWtvRm1nc3VkU3hBOG5SZmZpcG9ZcVVSMTdraXRZRjVFYnFtM1NxK25QYmRweGhPZWlRbHlnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=908846559633" },
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.adoptaUnJunior", 
 		speechLink: "https://www.therevolutiontech.es/#agenda", slidesLink: "https://docs.google.com/presentation/d/1oQGhAbdc14DeFpxkL3Onl4Ugh8tBvINLD-A9Fmq01HE/edit?usp=sharing" },
 	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.salmorejo", 
