@@ -1,6 +1,12 @@
 export const speechesArray = [
+	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.scb", 
+		speechLink: "https://softwarecrafters.barcelona/", slidesLink: "https://docs.google.com/presentation/d/1N0qJAhsaRuUpLjbEiBIPqyxcrDlqGSUF3X8mRWUekbw/edit?usp=sharing"},
+	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.edd", 
+		speechLink: "https://extremaduradigitalday.com/programa/", slidesLink: "https://docs.google.com/presentation/d/1DI8fIweSsIeaLhom0x9Mik4YrZ7CktxRvrkHidimqnM/edit?usp=sharing" },
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.technolatinas", 
-		speechLink: "https://lu.ma/dsufoobv", slidesLink: "https://miro.com/welcomeonboard/V3B0SG9GaDFYb0JISC9abUEwc0xzQ25HRW5qNjZ6cituV2h3M09rbDJ3YzRSN2xhNmp4bzZRbE1PRzM5U21LeHJRclIrREUyaHh4MWtvRm1nc3VkU3hBOG5SZmZpcG9ZcVVSMTdraXRZRjVFYnFtM1NxK25QYmRweGhPZWlRbHlnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=908846559633" },
+		speechLink: "https://lu.ma/dsufoobv" },
+	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.ping", 
+		speechLink: "https://www.meetup.com/es/grupo-de-ping-a-programadoras/events/310932062/?eventOrigin=your_events", slidesLink: "https://docs.google.com/presentation/d/1wnpVmf9rsDGDYGmhk9I0S_X8a1ajzV22ve4gDn9N1iM/edit?usp=sharing" },
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.adoptaUnJunior", 
 		speechLink: "https://www.therevolutiontech.es/#agenda", slidesLink: "https://docs.google.com/presentation/d/1oQGhAbdc14DeFpxkL3Onl4Ugh8tBvINLD-A9Fmq01HE/edit?usp=sharing" },
 	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.salmorejo", 
