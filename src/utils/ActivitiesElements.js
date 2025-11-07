@@ -1,8 +1,8 @@
 export const speechesArray = [
-	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.scb", 
-		speechLink: "https://softwarecrafters.barcelona/", slidesLink: "https://docs.google.com/presentation/d/1N0qJAhsaRuUpLjbEiBIPqyxcrDlqGSUF3X8mRWUekbw/edit?usp=sharing"},
-	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.edd", 
-		speechLink: "https://extremaduradigitalday.com/programa/", slidesLink: "https://docs.google.com/presentation/d/1DI8fIweSsIeaLhom0x9Mik4YrZ7CktxRvrkHidimqnM/edit?usp=sharing" },
+	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.scb", 
+		speechLink: "https://www.youtube.com/watch?v=T8afeagwZCQ", slidesLink: "https://docs.google.com/presentation/d/1N0qJAhsaRuUpLjbEiBIPqyxcrDlqGSUF3X8mRWUekbw/edit?usp=sharing"},
+	{ hasVideo: true, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.edd", 
+		speechLink: "https://www.youtube.com/watch?v=NWTNMZHcacs", slidesLink: "https://docs.google.com/presentation/d/1DI8fIweSsIeaLhom0x9Mik4YrZ7CktxRvrkHidimqnM/edit?usp=sharing" },
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.technolatinas", 
 		speechLink: "https://lu.ma/dsufoobv" },
 	{ hasVideo: false, year: 2025, lang: "es", aria: "awards.talks", icon: "microphone", text: "awards.ping", 
