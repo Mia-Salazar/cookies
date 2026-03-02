@@ -20,6 +20,8 @@ export const Home = () => {
                 <Text>{t('home.textOne')}</Text>
                 <Text>{t('home.textTwo')}</Text>
                 <Text>{t('home.textThree')}</Text>
+                <Text>{t('home.textFour')}</Text>
+                <Text>{t('home.textSix')}</Text>
             </section>
             <section>
                 <Heading text="home.activities" size="medium" />
@@ -37,7 +39,7 @@ export const Home = () => {
                         subtitle="home.step4ward"
                     />
                     <StrengthItem 
-                        title="+40"
+                        title="+50"
                         subtitle="home.articles"
                     />
                     <StrengthItem 
@@ -52,7 +54,7 @@ export const Home = () => {
             </section>
             <section>
                 <Heading text="home.tech" size="medium" />
-                <Text>{t('home.textFour')}</Text>
+                <Text>{t('home.textSeven')}</Text>
                 <Text>{t('home.textFive')}</Text>
                 <ul className="home__list">
                     <TechItem href="https://jestjs.io/es-ES/" size="high" text="Jest" />

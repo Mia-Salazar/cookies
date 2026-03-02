@@ -2,64 +2,61 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { ActivityItem, Heading, Text, Layout } from "../../components";
-import { gameArray, interviewsArray, otherArray, speechesArray } from "../../utils/ActivitiesElements";
+import { speechesArray } from "../../utils/ActivitiesElements";
 import "./Activities.scss";
+import { conferencesArray } from "../../utils/ConferencesElements";
 
 export const Activities = () => {
     const { t } = useTranslation();
 
+    const talks = speechesArray.filter(talk => !talk.isWorkshop)
+    const workshop = speechesArray.filter(talk => talk.isWorkshop)
+
 	return (
         <Layout styles="activities">
-            <Heading text="nav.activities" />
+            <Heading text="activities.speeches" />
+            <Text>{t('activities.textOne')}</Text>
+            <Text>{t('activities.textTwo')}</Text>
             <Text>{t('activities.text')}</Text>
+            <Text>{t('activities.textThree')}</Text>
+            <ul className="activities__logos">
+                {conferencesArray.map((talk, index) => (
+                    <li key={talk.alt || index}>
+                        <a href={talk.href}>
+                            <img alt={talk.alt} src={talk.image} />
+                        </a>
+                    </li>
+                ))}
+            </ul>
             <section>
                 <Heading text="activities.speeches" size="medium" />
-                <ul className="activities__list">
-                    {
-                        speechesArray.map(({aria, speechLink, slidesLink, hasVideo, icon, lang, text, year}, index) => {
-                            return(
-                                <ActivityItem aria={aria} speechLink={speechLink} hasVideo ={hasVideo} icon={icon} lang={lang}
-                                    text={text} year={year} key={index} slidesLink={slidesLink} />
-                            );
-                        })
-                    }
-                </ul>
+
+                {talks?.map((talk, index) => {
+                    const previousYear = talks?.[index - 1]?.year;
+                    const showYear = index === 0 || previousYear !== talk.year;
+
+                    return (
+                    <React.Fragment key={index}>
+                        {showYear && <h3 className="activities__year">{talk.year}</h3>}
+                        <ActivityItem {...talk} />
+                    </React.Fragment>
+                    );
+                })}
             </section>
             <section>
-                <Heading text="activities.interview" size="medium" />
-                <ul className="activities__list">
-                    {
-                        interviewsArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
-                            return(
-                                <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
-                            );
-                        })
-                    }
-                </ul>
-            </section>
-            <section>
-                <Heading text="activities.game" size="medium" />
-                <ul className="activities__list">
-                    {
-                        gameArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
-                            return(
-                                <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
-                            );
-                        })
-                    }
-                </ul>
-            </section>
-            <section>
-                <Heading text="activities.others" size="medium" />
-                <ul className="activities__list">
-                    {
-                        otherArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
-                            return(
-                                <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
-                            );
-                        })
-                    }
-                </ul>
+                <Heading text="home.workshops" size="medium" />
+
+                {workshop?.map((talk, index) => {
+                    const previousYear = workshop?.[index - 1]?.year;
+                    const showYear = index === 0 || previousYear !== talk.year;
+
+                    return (
+                    <React.Fragment key={index}>
+                        {showYear && <h3 className="activities__year">{talk.year}</h3>}
+                        <ActivityItem {...talk} />
+                    </React.Fragment>
+                    );
+                })}
             </section>
         </Layout>
 	);

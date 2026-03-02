@@ -1,8 +1,41 @@
 @import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
 
 .activities {
     &__list {
         margin-top: toRem(16);
         padding: 0;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        li {
+            &:first-child {
+                background-color: black;
+            }
+        }
+        
+
+        img {
+            height: 2rem;
+
+            @media(min-width: 768px) {
+                height: 4rem;
+            }
+        }
+    }
+
+    &__year {
+        width: fit-content;
+        padding: 0 toRem(6);
+        background-color: $secondary;
+        color: $white;
+        font-family: $font-family-secondary;
+        font-size: toRem(32);
     }
 }

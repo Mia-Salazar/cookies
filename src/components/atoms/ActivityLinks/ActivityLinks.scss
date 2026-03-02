@@ -13,6 +13,14 @@
     &:hover {
         color: $primary;
     }
+
+    &--no-link {
+        margin-top: 0;
+        margin-bottom: 0;
+        &:hover {
+            color: $black;
+        }
+    }
 }
 
 .activity-wrapper {

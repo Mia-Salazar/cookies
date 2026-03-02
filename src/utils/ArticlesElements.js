@@ -34,3 +34,13 @@ export const articlesArray = [
         href: "https://marasalazar.medium.com/to-angular-material-or-not-to-angular-material-940a616ac22d" 
     },      
 ];
+
+export const weaaareArray = [
+    { 
+        date: "2020-03-05",
+        tags: ["role", "ARIA", "Accesibility", "HTML"],
+        lang: "es",
+        title: "Cuando HTML se queda corto: roles de ARIA",
+        href: "https://marasalazar.medium.com/to-angular-material-or-not-to-angular-material-940a616ac22d" 
+    }, 
+]

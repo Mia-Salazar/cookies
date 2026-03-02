@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Heading, Text, Layout, ArticleItem, ArticlesList } from "../../components";
-import { articlesArray } from "../../utils/ArticlesElements";
+import { articlesArray, weaaareArray } from "../../utils/ArticlesElements";
 import "./Articles.scss";
 import { articleConstructor } from "../../models/ArticlesModel";
 
@@ -31,6 +31,18 @@ export const Articles = () => {
                 <Heading text="Dev.to" size="medium" />
                 <ArticlesList data={content.data} isLoading={content.isLoading} />   
             </section>
+            {/* <section>
+                <Heading text="weAAAre" size="medium" />
+                <ul className="articles__list">
+                    {
+                        weaaareArray.map(({date, tags, title, href}) => {
+                            return(
+                                <ArticleItem date={date} tags={tags} title={title} href={href} key={title}/>
+                            );
+                        })
+                    }
+                </ul> 
+            </section> */}
             <section>
                 <Heading text="Medium" size="medium" />
                 <ul className="articles__list">

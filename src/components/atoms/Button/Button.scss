@@ -45,6 +45,10 @@
         }
     }
 
+    &.small {
+        padding: toRem(4) toRem(8);
+    }
+
     &:disabled {
         cursor:not-allowed;
     }
