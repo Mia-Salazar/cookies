@@ -5,11 +5,25 @@ import ActivityLinks from "../../atoms/ActivityLinks/ActivityLinks";
 import "./ActivityItem.scss";
 
 export const ActivityItem = ({ aria, hasVideo, icon, slidesLink, speechLink, text, imageSrc }) => {
-	console.log(imageSrc, 'imageSrc')
+	const hasIcon = Boolean(icon);
+
 	return (
-		<li className="list-item">
-			<span className={`fas fa-${icon}`} aria-label={aria} title={aria}></span>
-			<ActivityLinks hasVideo={hasVideo} slidesLink={slidesLink} speechLink={speechLink} text={text} imageSrc={imageSrc}  />
+		<li
+			className={`list-item ${hasIcon ? "list-item--with-icon" : "list-item--full"}`}
+			aria-label={aria}
+		>
+			{hasIcon && (
+				<span className="list-item__icon-container" aria-hidden="true">
+					<i className={`fas fa-${icon}`} />
+				</span>
+			)}
+			<ActivityLinks
+				hasVideo={hasVideo}
+				slidesLink={slidesLink}
+				speechLink={speechLink}
+				text={text}
+				imageSrc={imageSrc}
+			/>
 		</li>
 	);
 };
@@ -17,7 +31,7 @@ export const ActivityItem = ({ aria, hasVideo, icon, slidesLink, speechLink, tex
 ActivityItem.propTypes = {
 	aria: PropTypes.string.isRequired,
 	hasVideo: PropTypes.bool,
-	icon: PropTypes.string.isRequired,
+	icon: PropTypes.string,
     speechLink: PropTypes.string,
     slidesLink: PropTypes.string,
 	text: PropTypes.string.isRequired,

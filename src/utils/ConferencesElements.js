@@ -12,11 +12,13 @@ import weaaare from "../assets/img/logos/weaaare.png";
 import wtm from "../assets/img/logos/wtm.png";
 import scb from "../assets/img/logos/scb.png";
 import talent from "../assets/img/logos/talent.png";
+import jsconf from "../assets/img//logos/jsconf.png";
 
 export const conferencesArray  = [
     { alt: "CommitConf", href: "https://commit-conf.com/", image: commit },
     { alt: "t3chFest", href: "https://t3chfest.es/2026/", image: t3chfest },
     { alt: "Universidad de Nebrija", href: "https://www.nebrija.com/", image: uni },
+    { alt: "JSConf", href: "https://www.jsconf.es/", image: jsconf },
     { alt: "Google Developers Group", href: "https://gdg.community.dev/gdg-madrid/", image: gdg },
     { alt: "MadVue", href: "https://madvue.es/", image: madvue },
     { alt: "Women Tech Makers Madrid", href: "https://wtmgdgmadrid.github.io/", image: wtm },

@@ -17,4 +17,8 @@
     @media (min-width: 1100px) {
         max-width: toRem(900); 
     }
+
+    @media (min-width: 1300px) {
+        max-width: toRem(1100); 
+    }
 }

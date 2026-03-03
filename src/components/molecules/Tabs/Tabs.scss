@@ -1,0 +1,48 @@
+@import "../../../assets/stylesheets/settings/toRem";
+@import "../../../assets/stylesheets/settings/variables";
+
+.tabs {
+  &__fieldset {
+    border: 0;
+    margin: 0 0 1rem;
+    padding: 0;
+  }
+
+  &__legend {
+    width: 100%;
+    margin: toRem(24) 0;
+
+    color: $primary;
+    font-family: $font-family-primary;
+    text-align: left;
+
+    font-size: toRem(24);
+    
+    @media (min-width: 768px) {
+        font-size: toRem(38); 
+    } 
+  }
+
+  &__radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__label {
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    border-bottom: 2px solid $primary;
+    margin-right: 0.5rem;
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    color: $primary;
+  }
+
+  &__label[aria-selected="true"] {
+    background-color: $primary;
+    color: $white;
+  }
+}
+

@@ -35,6 +35,8 @@ export const Navbar = () => {
                 <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
             </button>
             <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
+                <div className="navbar__border navbar__border--top" aria-hidden="true" />
+                <div className="navbar__border navbar__border--bottom" aria-hidden="true" />
                 <ul className="navbar__list">
                     <li>
                         <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" } to="/home">{t("home.about")}</NavLink>

@@ -11,9 +11,28 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc
     const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    const renderTextWithBoldFirstSentence = () => {
+        const translated = t(text);
+        const firstDotIndex = translated.indexOf(".");
+
+        if (firstDotIndex === -1) {
+            return translated;
+        }
+
+        const firstSentence = translated.slice(0, firstDotIndex + 1);
+        const rest = translated.slice(firstDotIndex + 1);
+
+        return (
+            <>
+                <span className="activity-highlight">{firstSentence}</span>
+                {rest}
+            </>
+        );
+    };
+
     if (slidesLink) {
         return <div className="activity-wrapper">
-            <p className="activity-wrapper__text">{t(text)}</p>
+            <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
             <div className="activity-wrapper__container">
                 <LinkButton
                     isExternal
@@ -47,12 +66,14 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc
     }
 
     if (speechLink) {
-        return <a className="activity-link" href={speechLink} target="__blank" rel="noreferrer">{t(text)}</a>
+        return <a className="activity-link" href={speechLink} target="__blank" rel="noreferrer">
+            {renderTextWithBoldFirstSentence()}
+        </a>
     }
 
     if (imageSrc) {
         return <div className="activity-wrapper">
-            <p className="activity-wrapper__text">{t(text)}</p>
+            <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
             <div className="activity-wrapper__container">
                 {imageSrc && (
                     <>
@@ -73,7 +94,7 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc
         </div>
     }
 
-    return <p className="activity-link activity-link--no-link">{t(text)}</p>
+    return <p className="activity-link activity-link--no-link">{renderTextWithBoldFirstSentence()}</p>
 
 }
 

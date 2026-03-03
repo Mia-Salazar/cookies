@@ -15,7 +15,7 @@
     }
 
     @media (min-width: 768px) {
-        margin-top: toRem(48);
+        margin-top: toRem(72);
 
         &--is-sticky {
             position: fixed;
@@ -24,6 +24,47 @@
             width: 100%;
 
             margin-top: 0;
+        }
+    }
+
+    &__border {
+        --a: 90deg;
+        --s: 60px;
+        --b: 0px;
+
+        position: absolute;
+        z-index: 0;
+
+        background: $primary;
+        height: calc(var(--s) / (2 * tan(var(--a) / 2)));
+        width: 100%;
+
+        --_g: var(--s) repeat-x
+            conic-gradient(
+                from calc(var(--a) / -2) at bottom,
+                #0000,
+                #000 1deg calc(var(--a) - 1deg),
+                #0000 var(--a)
+            );
+        mask: 50% 0 / var(--_g);
+
+        &--top {
+            top: -28px;
+            left: 0;
+            /* Triángulos apuntando hacia abajo, hacia el navbar */
+            transform: scaleY(-1);
+            transform-origin: center;
+            mask-position: 50% 1px;
+            -webkit-mask-position: 50% 1px;
+        }
+
+        &--bottom {
+            bottom: calc(-1 * (var(--s) / (2 * tan(var(--a) / 2))));
+            left: 0;
+            /* Triángulos apuntando hacia arriba, hacia el navbar */
+            transform: none;
+            mask-position: 50% 0;
+            -webkit-mask-position: 50% 0;
         }
     }
 
@@ -77,6 +118,8 @@
     }
 
     &__container {
+        position: relative;
+        overflow: visible;
         display: none;        
         padding: toRem(80) 0 0 0;
         margin: 0;
@@ -85,6 +128,7 @@
         
         background-color: $primary;
         transition: opacity 0.5s, left 1s;
+
 
         &--is-open {
             position: fixed;
@@ -100,8 +144,7 @@
             align-items: center;
             flex-direction: row;
             justify-content: center;
-
-            padding: 0 toRem(16);
+            padding: 0;
         }
 
         @media (max-width: 767px) {
@@ -135,6 +178,10 @@
 
         &--is-active {
             background-color: $secondary;
+        }
+
+        @media (min-width: 768px) {
+            padding: toRem(20) toRem(16);
         }
     }
 

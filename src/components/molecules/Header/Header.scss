@@ -6,6 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: toRem(32);
+
+    @media (min-width: 768px) {
+       padding-top: toRem(80); 
+    }
     
     &__title {
         margin: toRem(8) 0 0 0;
@@ -17,6 +22,11 @@
         @media (min-width: 992px) {
             font-size: toRem(80);
         }
+    }
+
+    &__image {
+        border-radius: 50%;
+        max-height: 200px;
     }
 
     &__subtitle {

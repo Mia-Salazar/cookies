@@ -9,6 +9,7 @@
         display: flex;
         align-items: center;
         justify-content:space-between;
+        padding: toRem(60) toRem(24) toRem(32) toRem(24);
     }
 
     &__img-container {

@@ -5,6 +5,7 @@ import { ActivityItem, Heading, Text, Layout } from "../../components";
 import { speechesArray } from "../../utils/ActivitiesElements";
 import "./Activities.scss";
 import { conferencesArray } from "../../utils/ConferencesElements";
+import Tabs, { Tab } from "../../components/molecules/Tabs/Tabs";
 
 export const Activities = () => {
     const { t } = useTranslation();
@@ -28,36 +29,34 @@ export const Activities = () => {
                     </li>
                 ))}
             </ul>
-            <section>
-                <Heading text="activities.speeches" size="medium" />
+            <Tabs name="activity" legend={t("activities.choose")}>
+                <Tab name={t("activities.speeches")}>
+                    {talks?.map((talk, index) => {
+                        const previousYear = talks?.[index - 1]?.year;
+                        const showYear = index === 0 || previousYear !== talk.year;
 
-                {talks?.map((talk, index) => {
-                    const previousYear = talks?.[index - 1]?.year;
-                    const showYear = index === 0 || previousYear !== talk.year;
+                        return (
+                        <React.Fragment key={index}>
+                            {showYear && <h3 className="activities__year">{talk.year}</h3>}
+                            <ActivityItem {...talk} />
+                        </React.Fragment>
+                        );
+                    })}
+                </Tab>
+                <Tab name={t("home.workshops")}>
+                    {workshop?.map((talk, index) => {
+                        const previousYear = workshop?.[index - 1]?.year;
+                        const showYear = index === 0 || previousYear !== talk.year;
 
-                    return (
-                    <React.Fragment key={index}>
-                        {showYear && <h3 className="activities__year">{talk.year}</h3>}
-                        <ActivityItem {...talk} />
-                    </React.Fragment>
-                    );
-                })}
-            </section>
-            <section>
-                <Heading text="home.workshops" size="medium" />
-
-                {workshop?.map((talk, index) => {
-                    const previousYear = workshop?.[index - 1]?.year;
-                    const showYear = index === 0 || previousYear !== talk.year;
-
-                    return (
-                    <React.Fragment key={index}>
-                        {showYear && <h3 className="activities__year">{talk.year}</h3>}
-                        <ActivityItem {...talk} />
-                    </React.Fragment>
-                    );
-                })}
-            </section>
+                        return (
+                        <React.Fragment key={index}>
+                            {showYear && <h3 className="activities__year">{talk.year}</h3>}
+                            <ActivityItem {...talk} />
+                        </React.Fragment>
+                        );
+                    })}
+                </Tab>
+            </Tabs>
         </Layout>
 	);
 };

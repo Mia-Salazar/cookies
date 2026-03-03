@@ -14,9 +14,32 @@ import commitopen from "../assets/img/eventos/commitopen.jpg"
 import t3ch25 from "../assets/img/eventos/t3ch2025.png"
 import stepin from "../assets/img/eventos/stepindividual.jfif"
 import t3ch24 from "../assets/img/eventos/t3ch2024.png"
-
+import talent from "../assets/img/eventos/talent.png"
+import jsconf from "../assets/img/eventos/jsconf.JPG"
 
 export const speechesArray = [
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.jsconf",
+		imageSrc: jsconf,
+		slidesLink: "https://docs.google.com/presentation/d/11qDqTXL3NC9v42wLdShOftJEluql7MMcxrqW1KnGEu4/edit?usp=sharing"
+	},
+	{ 
+		isWorkshop: true, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.talent",
+		imageSrc: talent,
+		slidesLink: "https://docs.google.com/presentation/d/1T6-SgL0Y-1Ja9jewQV3pWmMTqFIpQnjBzGyY8zpLiWo/edit?usp=sharing"
+	},
 	{ 
 		isWorkshop: false, 
 		hasVideo: false, 
@@ -46,6 +69,7 @@ export const speechesArray = [
 		icon: "microphone", 
 		text: "awards.a11yconf", 
 		speechLink: "https://www.a11yconf.com/es/agenda/charla/aria-atributos",
+		slidesLink: "https://docs.google.com/presentation/d/1RaX68vGrXcOrcHPrtzt7PNNjXxg0Pk4Lmr5563_3v7E/edit?usp=sharing",
 		imageSrc: a11y
 	},
 	{ 
@@ -59,40 +83,6 @@ export const speechesArray = [
 		speechLink: "https://www.youtube.com/watch?v=T8afeagwZCQ", 
 		slidesLink: "https://docs.google.com/presentation/d/1N0qJAhsaRuUpLjbEiBIPqyxcrDlqGSUF3X8mRWUekbw/edit?usp=sharing",
 		imageSrc: scb
-	},
-	{ 
-		isWorkshop: false, 
-		hasVideo: true, 
-		year: 2025, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.edd", 
-		speechLink: "https://www.youtube.com/watch?v=NWTNMZHcacs", 
-		slidesLink: "https://docs.google.com/presentation/d/1DI8fIweSsIeaLhom0x9Mik4YrZ7CktxRvrkHidimqnM/edit?usp=sharing",
-		imageSrc: edd
-	},
-	{ 
-		isWorkshop: true, 
-		hasVideo: false, 
-		year: 2025, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.step4wardWorkshop", 
-		speechLink: "https://www.linkedin.com/posts/step4ward-es_step4wardtalks-step4ward-womenintech-activity-7394313448270143488-5naa?utm_source=share&utm_medium=member_desktop&rcm=ACoAABhlFzABWpOPHHzqYxR7TR7yUr0X8A8rs5E",
-		imageSrc: step4ward
-	},
-	{ 
-		isWorkshop: true, 
-		hasVideo: false, 
-		year: 2025, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.technolatinas", 
-		speechLink: "https://lu.ma/dsufoobv",
-		imageSrc: technolatinas
 	},
 	{ 
 		isWorkshop: false,
@@ -112,10 +102,9 @@ export const speechesArray = [
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
-		text: "awards.adoptaUnJunior", 
-		speechLink: "https://www.therevolutiontech.es/#agenda", 
-		slidesLink: "https://docs.google.com/presentation/d/1oQGhAbdc14DeFpxkL3Onl4Ugh8tBvINLD-A9Fmq01HE/edit?usp=sharing",
-	    imageSrc: adopta
+		text: "awards.step4wardWorkshop", 
+		speechLink: "https://www.linkedin.com/posts/step4ward-es_step4wardtalks-step4ward-womenintech-activity-7394313448270143488-5naa?utm_source=share&utm_medium=member_desktop&rcm=ACoAABhlFzABWpOPHHzqYxR7TR7yUr0X8A8rs5E",
+		imageSrc: step4ward
 	},
 	{ 
 		isWorkshop: false, 
@@ -124,12 +113,37 @@ export const speechesArray = [
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
-		text: "awards.salmorejo", 
-		speechLink: "https://www.youtube.com/live/O6bdjPrcbEM?si=FilYx-iQomOiBE80&t=15257", 
-		slidesLink: "https://docs.google.com/presentation/d/1MxIr3kYGMIIlIUhoE_CUWCttCnh7jVww2RINbnyrCHc/edit?usp=sharing",
-	    imageSrc: salmorejo
+		text: "awards.edd", 
+		speechLink: "https://www.youtube.com/watch?v=NWTNMZHcacs", 
+		slidesLink: "https://docs.google.com/presentation/d/1DI8fIweSsIeaLhom0x9Mik4YrZ7CktxRvrkHidimqnM/edit?usp=sharing",
+		imageSrc: edd
 	},
+
 	{ 
+		isWorkshop: true, 
+		hasVideo: false, 
+		year: 2025, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.technolatinas", 
+		speechLink: "https://lu.ma/dsufoobv",
+		imageSrc: technolatinas
+	},
+
+	{ 
+		isWorkshop: true, 
+		hasVideo: false, 
+		year: 2025, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.adoptaUnJunior", 
+		speechLink: "https://www.therevolutiontech.es/#agenda", 
+		slidesLink: "https://docs.google.com/presentation/d/1oQGhAbdc14DeFpxkL3Onl4Ugh8tBvINLD-A9Fmq01HE/edit?usp=sharing",
+	    imageSrc: adopta
+	},
+		{ 
 		isWorkshop: false,
 		hasVideo: true, 
 		year: 2025, 
@@ -153,6 +167,20 @@ export const speechesArray = [
 		slidesLink: "https://docs.google.com/presentation/d/11XEArrCzNdVRyOWYT1qm5yxDi-DcEiZ-NrlG30Rp450/edit?usp=sharing",
 	    imageSrc: wid
 	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: true, 
+		year: 2025, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.salmorejo", 
+		speechLink: "https://www.youtube.com/live/O6bdjPrcbEM?si=FilYx-iQomOiBE80&t=15257", 
+		slidesLink: "https://docs.google.com/presentation/d/1MxIr3kYGMIIlIUhoE_CUWCttCnh7jVww2RINbnyrCHc/edit?usp=sharing",
+	    imageSrc: salmorejo
+	},
+
+
 	{ 
 		isWorkshop: false,
 		hasVideo: true, 
@@ -200,6 +228,37 @@ export const speechesArray = [
 		speechLink: "https://gdg.community.dev/events/details/google-gdg-madrid-presents-devfest-madrid-2024/", 
 		slidesLink: "https://view.genially.com/670c3dd53bfb21282c583694"
 	},
+		{ 
+		isWorkshop: false,
+		hasVideo: true, 
+		year: 2024, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.presentation", 
+		speechLink: "https://www.youtube.com/watch?v=9k7PtZ5emNs&ab_channel=CommitConf"
+	},
+		{ 
+		isWorkshop: false,
+		hasVideo: false, 
+		year: 2024, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.wtm", 
+		speechLink: "https://www.meetup.com/es-ES/gdgmadrid/events/303048213/", 
+		slidesLink: "https://docs.google.com/presentation/d/1RifWPkI4lfYRFjE0sQH03YH03A53oO4kHsIDr2gQ18U/edit?usp=sharing"
+	},
+		{ isWorkshop: false,hasVideo: true, 
+		year: 2024, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.steptalks", 
+	    speechLink: "https://www.youtube.com/watch?v=2hMMwl4JEJo&ab_channel=MentorasStep4ward", 
+	    slidesLink: "https://docs.google.com/presentation/d/1Ng7D-E2e4VmMNIIhBdR3nd_jBzv6nuv6_4twa2VxyBc/edit?usp=sharing",
+	    imageSrc: stepin
+	},
 	{ 
 		isWorkshop: false,
 		hasVideo: true, 
@@ -211,47 +270,8 @@ export const speechesArray = [
 	    speechLink: "https://www.youtube.com/watch?v=QspxkW7kheA", 
 	    slidesLink: "https://docs.google.com/presentation/d/1b8nGXgL6E3tarq6Ca22HbmGk6fZ8jo2s/edit?usp=sharing&ouid=105566763085813942698&rtpof=true&sd=true"
 	},
-	{ 
-		isWorkshop: false,
-		hasVideo: true, 
-		year: 2024, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.presentation", 
-		speechLink: "https://www.youtube.com/watch?v=9k7PtZ5emNs&ab_channel=CommitConf"
-	},
-	{ 
-		isWorkshop: false,
-		hasVideo: false, 
-		year: 2024, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.wtm", 
-		speechLink: "https://www.meetup.com/es-ES/gdgmadrid/events/303048213/", 
-		slidesLink: "https://docs.google.com/presentation/d/1RifWPkI4lfYRFjE0sQH03YH03A53oO4kHsIDr2gQ18U/edit?usp=sharing"
-	},
-	{ isWorkshop: false,hasVideo: true, 
-		year: 2024, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.steptalks", 
-	    speechLink: "https://www.youtube.com/watch?v=2hMMwl4JEJo&ab_channel=MentorasStep4ward", 
-	    slidesLink: "https://docs.google.com/presentation/d/1Ng7D-E2e4VmMNIIhBdR3nd_jBzv6nuv6_4twa2VxyBc/edit?usp=sharing",
-	    imageSrc: stepin
-	},
-	{ isWorkshop: false,hasVideo: true, 
-		year: 2024, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.t3chfest2024", 
-		speechLink: "https://www.youtube.com/watch?v=gKBTMnxLGvc&list=PLqgZDFdwyB8YYRsd91u4zsPsoQ1pflWO4&index=44", 
-		slidesLink: "https://docs.google.com/presentation/d/1LT0TMwLTdgz073yx1jqESb4h3R_zvLgV-StW8NIicZM/edit?usp=sharing",
-	    imageSrc: t3ch24
-	},
+
+
 	{ isWorkshop: false,hasVideo: false, 
 		year: 2024, 
 		lang: "es", 
@@ -265,18 +285,21 @@ export const speechesArray = [
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
+		text: "awards.t3chfest2024", 
+		speechLink: "https://www.youtube.com/watch?v=gKBTMnxLGvc&list=PLqgZDFdwyB8YYRsd91u4zsPsoQ1pflWO4&index=44", 
+		slidesLink: "https://docs.google.com/presentation/d/1LT0TMwLTdgz073yx1jqESb4h3R_zvLgV-StW8NIicZM/edit?usp=sharing",
+	    imageSrc: t3ch24
+	},
+
+	{ isWorkshop: false,hasVideo: true, 
+		year: 2024, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
 		text: "awards.techshessionsThree", 
 
 		speechLink: "https://www.youtube.com/watch?v=QUllvzs_KWM&ab_channel=CommitConf", 
 		slidesLink: "https://docs.google.com/presentation/d/1r1xpEqe94CDNH_LjYaVqqGRuOOuIM_D5BtgHfzuvQSY/edit?usp=sharing" },
-	{ isWorkshop: false,hasVideo: true, 
-		year: 2023, 
-		lang: "es", 
-		aria: "awards.talks", 
-		icon: "microphone", 
-		text: "awards.mentorTwo", 
-
-		speechLink: "https://twitter.com/patrimalvido/status/1700151281266901443"},
 	{ isWorkshop: false,hasVideo: true, 
 		year: 2023, 
 		lang: "es", 
@@ -295,7 +318,15 @@ export const speechesArray = [
 
 		speechLink: "https://www.youtube.com/watch?v=CpuxfoV71E0&feature=youtu.be&ab_channel=CommitConf", 
 		slidesLink: "https://docs.google.com/presentation/d/1dbRuLOIcLpeq4IlAAOHdRCHfnAAV65atWWk_XA8K68s/edit?usp=sharing" },
-	{ isWorkshop: false,hasVideo: true, 
+		{ isWorkshop: false,hasVideo: true, 
+		year: 2023, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.mentorTwo", 
+
+		speechLink: "https://twitter.com/patrimalvido/status/1700151281266901443"},
+		{ isWorkshop: false,hasVideo: true, 
 		year: 2021, 
 		lang: "es", 
 		aria: "awards.talks", 

@@ -7,9 +7,15 @@
     color: $black;
     font-family: $font-family-secondary;
     text-decoration: none;
+
+    font-size: toRem(19);
 }
 
 .activity-link {
+    display: flex;
+    flex-direction: column;
+    font-size: toRem(19);
+
     &:hover {
         color: $primary;
     }
@@ -25,8 +31,11 @@
 
 .activity-wrapper {
     &__text {
+        display: flex;
+        flex-direction: column;
         margin-top: 0;
         margin-bottom: toRem(4);
+        font-size: toRem(18);
     }
 
     &__container {
@@ -35,6 +44,12 @@
         display: flex;
         grid-gap: toRem(10);
 
-        font-size: toRem(14);
+        font-size: toRem(16);
     }
+}
+
+.activity-highlight {
+    font-weight: bold;
+    font-size: toRem(23);
+    margin-bottom: 0.5rem;
 }

@@ -1,14 +1,14 @@
 import React from "react";
 
-import Cookie from "../../atoms/Cookie/Cookie";
+import me from '../../../assets/img/madvueme.png';
 import "./Header.scss";
 
 export const Header = () => {
 	return (
         <header className="header">
-            <Cookie />
+            <img alt="" src={me} className="header__image"></img>
             <p className="header__title">Mia Salazar</p>
-            <p className="header__subtitle">Front-end developer & cookie monster</p>
+            <p className="header__subtitle">Front-end developer, mentor & speaker</p>
         </header>
 	);
 };

@@ -2,25 +2,27 @@
 @import "../../../assets/stylesheets/settings/variables";
 
 .list-item {
-    display: grid;
-    align-items: center;
-    grid-template-columns: toRem(16) 1fr;
-    grid-gap: toRem(8);
     list-style-type: none;
+    margin-bottom: toRem(32);
 
-    margin-bottom: toRem(24);
+    &--with-icon {
+        display: grid;
+        align-items: center;
+        grid-template-columns: toRem(16) 1fr;
+        grid-gap: toRem(8);
 
-    @media (min-width: 500px) {
-
+        @media (min-width: 768px) {
+            grid-gap: toRem(12);
+        }
     }
 
-    @media (min-width: 768px) {
-        grid-gap: toRem(12);
+    &--full {
+        display: block;
     }
 
     .fas {
         color: $primary;
-        font-size: toRem(14);
+        font-size: toRem(18);
     }
 
     &__icon-container {

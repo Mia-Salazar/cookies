@@ -4,4 +4,8 @@
 .text {
     max-width: toRem(700);
     font-family: $font-family-secondary;
+
+    @media (min-width: 1300px) {
+        max-width: toRem(900); 
+    }
 }

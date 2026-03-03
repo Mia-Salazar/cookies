@@ -8,18 +8,38 @@
     align-items: center;
     flex-direction: column;
 
-    padding-top: toRem(40);
+    padding-top: toRem(60);
     min-height: 100vh;
 
-    border: toRem(16) solid $primary;
     background: $light;
 
     overflow: hidden;
 
+    &__superior {
+        @media (min-width: 768px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 30px;
+            background-color: $primary;
+            width: calc(100% + 36px);
+        }
+    }
+
+    &__inferior {
+        @media (min-width: 768px) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 30px;
+            background-color: $primary;
+            width: calc(100% + 36px);
+        }
+    }
+
     @media (min-width: 992px) {
-        padding-top: toRem(80);
-        
-        border: toRem(20) solid $primary;
+        padding: toRem(80) 0 toRem(32) 0;
+
         background-image: url("../../../assets/img/logo-rotate.png");
         background-repeat: no-repeat;
         background-position: 117% 89%;
@@ -33,21 +53,111 @@
         height: 100vh;
     }
 
-    &:after, &:before {
-        content: "";
-        position: absolute;
-        height: toRem(155);
-        width: toRem(155);
-        background: $primary;
-        transform: rotate(135deg);
-        top: toRem(-77);
-        right: toRem(-77);
-    }
+    // &:after, &:before {
+    //     content: "";
+    //     position: absolute;
+    //     height: toRem(155);
+    //     width: toRem(155);
+    //     background: $primary;
+    //     transform: rotate(135deg);
+    //     top: toRem(-77);
+    //     right: toRem(-77);
+    //     border-radius: 50%;
 
-    &:after {
-        top: unset;
-        left: toRem(-77);
-        bottom: toRem(-77);
-        right: unset;
+    //     @media (min-width: 768px) {
+    //         height: toRem(255);
+    //         width: toRem(255);
+    //         top: toRem(-100);
+    //         right: toRem(-100);
+    //     }
+    // }
+
+    // &:after {
+    //     top: unset;
+    //     left: toRem(-77);
+    //     bottom: toRem(-77);
+    //     right: unset;
+    // }
+
+    // &__corner {
+    //     position: absolute;
+    //     height: toRem(155);
+    //     width: toRem(155);
+    //     background: $primary;
+    //     transform: rotate(135deg);
+    //     border-radius: 50%;
+
+    //     @media (min-width: 768px) {
+    //         height: toRem(255);
+    //         width: toRem(255);
+    //         top: toRem(-100);
+    //         right: toRem(-100);
+    //     }
+
+    //     &--top-left {
+    //         top: toRem(-77);
+    //         left: toRem(-77);
+
+    //         @media (min-width: 768px) {
+    //             top: toRem(-100);
+    //             left: toRem(-100);
+    //         }
+    //     }
+
+    //     &--bottom-right {
+    //         bottom: toRem(-77);
+    //         right: toRem(-77);
+
+    //         @media (min-width: 768px) {
+    //             bottom: toRem(-100);
+    //             right: toRem(-100);
+    //         }
+    //     }
+    // }
+
+    &__border {
+        --a: 90deg;
+        --s: 100px;
+        --b: 0px;
+
+        position: absolute;
+        z-index: 1;
+
+        background: $primary;
+        height: calc(var(--s) / (2 * tan(var(--a) / 2)));
+        width: 100%;
+
+        --_g: var(--s) repeat-x
+            conic-gradient(
+                from calc(var(--a) / -2) at bottom,
+                #0000,
+                #000 1deg calc(var(--a) - 1deg),
+                #0000 var(--a)
+            );
+        /* Mostramos solo la figura en zig-zag */
+        mask: 50% 0 / var(--_g);
+
+        &--top {
+            top: 0;
+            left: 0;
+
+            @media (min-width: 768px) {
+                top: 30px;
+            }
+        }
+
+        &--bottom {
+            bottom: -2px;
+            left: 0;
+            transform: scaleY(-1);
+            transform-origin: center;
+            /* Desplaza ligeramente la máscara para ocultar la línea base */
+            mask-position: 50% 1px;
+            -webkit-mask-position: 50% 1px;
+
+            @media (min-width: 768px) {
+                bottom: 28px;
+            }
+        }
     }
 }
