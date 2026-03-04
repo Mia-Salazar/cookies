@@ -1,6 +1,6 @@
 import weaaare from "../assets/img/eventos/weaaare.jfif"
 import nebrija from "../assets/img/eventos/nebrija.jfif"
-import a11y from "../assets/img/eventos/a11y.jfif"
+import a11y from "../assets/img/a11y.JPG"
 import scb from "../assets/img/eventos/scb.JPG"
 import edd from "../assets/img/eventos/EDD.JPG"
 import step4ward from "../assets/img/eventos/step4ward.jpg"
@@ -62,13 +62,13 @@ export const speechesArray = [
 	},
 	{ 
 		isWorkshop: false,
-		hasVideo: false, 
+		hasVideo: true, 
 		year: 2025, 
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.a11yconf", 
-		speechLink: "https://www.a11yconf.com/es/agenda/charla/aria-atributos",
+		speechLink: "https://www.youtube.com/watch?v=lwoosgqnmhA",
 		slidesLink: "https://docs.google.com/presentation/d/1RaX68vGrXcOrcHPrtzt7PNNjXxg0Pk4Lmr5563_3v7E/edit?usp=sharing",
 		imageSrc: a11y
 	},
