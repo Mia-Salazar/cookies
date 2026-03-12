@@ -41,6 +41,6 @@ export const weaaareArray = [
         tags: ["role", "ARIA", "Accesibility", "HTML"],
         lang: "es",
         title: "Cuando HTML se queda corto: roles de ARIA",
-        href: "https://marasalazar.medium.com/to-angular-material-or-not-to-angular-material-940a616ac22d" 
+        href: "https://www.weaaare.com/blog/html-se-queda-corto-roles-de-aria" 
     }, 
 ]

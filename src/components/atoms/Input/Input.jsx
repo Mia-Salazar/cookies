@@ -4,11 +4,21 @@ import PropTypes from "prop-types";
 import "./Input.scss";
 import { useTranslation } from "react-i18next";
 
-export const Input = ({ checked, functionality, id, name, placeholder, required, type, value }) => {
+export const Input = ({ checked, functionality, id, name, placeholder, required, type, value, "aria-describedby": ariaDescribedBy, "aria-invalid": ariaInvalid }) => {
 	const { t } = useTranslation();
 	return (
-		<input className="input" type={type} id={id} name={name} value={value}
-			required={required} onChange={functionality} checked={checked} placeholder={t(placeholder)}
+		<input
+			className="input"
+			type={type}
+			id={id}
+			name={name}
+			value={value}
+			required={required}
+			onChange={functionality}
+			checked={checked}
+			placeholder={t(placeholder)}
+			aria-describedby={ariaDescribedBy}
+			aria-invalid={ariaInvalid}
 		/>
 	);
 };
@@ -18,10 +28,12 @@ Input.propTypes = {
 	functionality: PropTypes.func,
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
-	placeholder:PropTypes.string.isRequired, 
+	placeholder: PropTypes.string.isRequired,
 	required: PropTypes.bool,
 	type: PropTypes.string.isRequired,
 	value: PropTypes.string,
-};;
+	"aria-describedby": PropTypes.string,
+	"aria-invalid": PropTypes.bool,
+};
 
 export default Input;

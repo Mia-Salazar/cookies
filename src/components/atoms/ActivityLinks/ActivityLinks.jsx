@@ -66,7 +66,7 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc
     }
 
     if (speechLink) {
-        return <a className="activity-link" href={speechLink} target="__blank" rel="noreferrer">
+        return <a className="activity-link" href={speechLink} target="_blank" rel="noopener noreferrer">
             {renderTextWithBoldFirstSentence()}
         </a>
     }

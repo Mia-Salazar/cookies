@@ -31,7 +31,7 @@ export const Articles = () => {
                 <Heading text="Dev.to" size="medium" />
                 <ArticlesList data={content.data} isLoading={content.isLoading} />   
             </section>
-            {/* <section>
+            <section>
                 <Heading text="weAAAre" size="medium" />
                 <ul className="articles__list">
                     {
@@ -42,7 +42,7 @@ export const Articles = () => {
                         })
                     }
                 </ul> 
-            </section> */}
+            </section>
             <section>
                 <Heading text="Medium" size="medium" />
                 <ul className="articles__list">

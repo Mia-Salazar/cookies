@@ -1,14 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 import "./ArticleItem.scss";
 
 export const ArticleItem = ({ date, href, tags, title }) => {
-    const formattedDate = date.slice(0, 10)
+    const { t } = useTranslation();
+    const formattedDate = date.slice(0, 10);
+    const dateTime = date.length >= 10 ? date.slice(0, 10) : formattedDate;
 	return (
         <li className="article-item">
-            <p className="article-item__date">{formattedDate}</p>
-            <a className="article-item__link" target="_blank" href={href} rel="noreferrer">
+            <time className="article-item__date" dateTime={dateTime}>{formattedDate}</time>
+            <a
+                className="article-item__link"
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t("alt.openArticle", { title })}
+            >
                 <p className="article-item__title">{title}</p>
             </a>
             

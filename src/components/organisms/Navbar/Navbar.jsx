@@ -28,13 +28,26 @@ export const Navbar = () => {
     });
 
 	return (
-		<nav className={toggle ? "navbar navbar--is-open": "navbar"}>
-            <button aria-label="Abrir y cerrar menú" className={toggle ? "navbar__hamburguer navbar__hamburguer--is-open": "navbar__hamburguer"} onClick={handleClick}>
+		<nav
+            className={toggle ? "navbar navbar--is-open": "navbar"}
+            aria-label={t("alt.navigation")}
+        >
+            <button
+                type="button"
+                aria-label="Abrir y cerrar menú"
+                aria-expanded={toggle}
+                aria-controls="navbar-menu"
+                className={toggle ? "navbar__hamburguer navbar__hamburguer--is-open": "navbar__hamburguer"}
+                onClick={handleClick}
+            >
                 <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
                 <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
                 <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
             </button>
-            <div className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}>
+            <div
+                className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}
+                id="navbar-menu"
+            >
                 <div className="navbar__border navbar__border--top" aria-hidden="true" />
                 <div className="navbar__border navbar__border--bottom" aria-hidden="true" />
                 <ul className="navbar__list">

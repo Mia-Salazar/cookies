@@ -9,9 +9,16 @@ export const LinkButton = ({ href, isExternal, text, styles }) => {
 	const { t } = useTranslation();
 
 	if (isExternal) {
-		<a className={`link ${styles ? styles : ''}`} href={href} target="__blank" rel="noreferrer">
-			{t(text)}
-		</a>
+		return (
+			<a
+				className={`link ${styles ? styles : ''}`}
+				href={href}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				{t(text)}
+			</a>
+		);
 	}
 
 	return (

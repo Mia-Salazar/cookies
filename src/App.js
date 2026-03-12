@@ -7,7 +7,13 @@ import Collaborations from './pages/Collaborations/Collaborations';
 
 function App() {
   return (
-    <Suspense fallback="...">
+    <Suspense
+      fallback={
+        <div role="status" aria-live="polite">
+          ...
+        </div>
+      }
+    >
       <BrowserRouter>
         <Routes>
           <Route exact path="/articles" element={<Articles />} />

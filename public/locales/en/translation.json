@@ -3,6 +3,9 @@
         "cookie": "Cross-Eyed Chocolate Chip Cookie",
         "loading": "Loading content",
         "skip": "Skip to content",
+        "navigation": "Main navigation",
+        "openArticle": "Open article \"{{title}}\" in new tab",
+        "openResource": "Open resource {{text}} in new tab",
         "github": "Follow me on Github",
         "codepen": "Follow me on Codepen",
         "linkedin": "Follow me on Linkedin",
@@ -65,7 +68,11 @@
         "street": "Street",
         "province": "Province",
         "city": "City",
-        "comment": "What do you want to tell me?"
+        "comment": "What do you want to tell me?",
+        "success": "Message sent successfully. Thank you for writing.",
+        "error": "Could not send the message. Please try again later.",
+        "required": "This field is required.",
+        "invalidEmail": "Please enter a valid email."
     },
     "placeholder": {
         "email": "example@example.com",

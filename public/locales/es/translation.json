@@ -3,6 +3,9 @@
         "cookie": "Galleta con pepitas de chocolate con los ojos bizcos",
         "loading": "Cargando contenido",
         "skip": "Saltar al contenido",
+        "navigation": "Navegación principal",
+        "openArticle": "Abrir artículo \"{{title}}\" en nueva pestaña",
+        "openResource": "Abrir recurso {{text}} en nueva pestaña",
         "github": "Sígueme en Github",
         "codepen": "Sígueme en Codepen",
         "linkedin": "Sígueme en Linkedin",
@@ -65,7 +68,11 @@
         "street": "Calle",
         "province": "Provincia",
         "city": "Ciudad",
-        "comment": "¿Qué me quieres contar?"
+        "comment": "¿Qué me quieres contar?",
+        "success": "Mensaje enviado correctamente. Gracias por escribir.",
+        "error": "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.",
+        "required": "Este campo es obligatorio.",
+        "invalidEmail": "Introduce un email válido."
     },
     "placeholder": {
         "email": "example@example.com",

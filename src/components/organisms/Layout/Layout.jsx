@@ -12,11 +12,13 @@ export const Layout = ({ children, styles }) => {
     const { t } = useTranslation();
 	return (
 		<Frame styles={styles}>
-            <Header />
             <a className="skip" href="#main">{t('alt.skip')}</a>
+            <Header />
             <Navbar />
             <Container>
-                {children}
+                <main id="main" role="main">
+                    {children}
+                </main>
             </Container>
         </Frame>
 	);
