@@ -20,13 +20,14 @@ import jsconf from "../assets/img/eventos/jsconf.JPG"
 export const speechesArray = [
 	{ 
 		isWorkshop: false, 
-		hasVideo: false, 
+		hasVideo: true, 
 		year: 2026, 
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.jsconf",
 		imageSrc: jsconf,
+		speechLink: "https://www.youtube.com/live/Bh3u33ERUOk?t=23052&is=dkS2vLA5ZxugNIUY",
 		slidesLink: "https://docs.google.com/presentation/d/11qDqTXL3NC9v42wLdShOftJEluql7MMcxrqW1KnGEu4/edit?usp=sharing"
 	},
 	{ 
