@@ -16,8 +16,120 @@ import stepin from "../assets/img/eventos/stepindividual.jfif"
 import t3ch24 from "../assets/img/eventos/t3ch2024.png"
 import talent from "../assets/img/eventos/talent.png"
 import jsconf from "../assets/img/eventos/jsconf.JPG"
+import wtmmasalla from "../assets/img/eventos/wtmmasalla.JPG"
+import codemotion from "../assets/img/eventos/codemotiontaller.JPG"
+import iwdMentor from "../assets/img/eventos/iwd.jfif"
+import adoptaZombie from "../assets/img/eventos/adoptazombie.JPG"
+import uoc from "../assets/img/eventos/uoc2.JPG"
+import commit26 from "../assets/img/eventos/commitnew.JPG"
+import weaaareNeuro from "../assets/img/eventos/neuroweaare.JPG"
+import commitSpeed from "../assets/img/eventos/speed.JPG"
+import lechazo from "../assets/img/eventos/lechazo.jpeg"
 
 export const speechesArray = [
+	{ 
+		isWorkshop: true, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.commitSpeed",
+		imageSrc: commitSpeed,
+		speechLink: "https://koliseo.com/commit/2026/agenda/0?selected=hlrUg95BuQnolJ6MkyY9"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.weaaareNeuro",
+		imageSrc: weaaareNeuro,
+		speechLink: "https://www.weaaare.com/talleres"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.commit26",
+		imageSrc: commit26,
+		speechLink: "https://koliseo.com/commit/2026/agenda/1?selected=RQzW4Xh4k2A2QGoLO6FX"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.lechazo",
+		imageSrc: lechazo,
+		speechLink: "https://lechazoconf.com/#our_speakers"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: true, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.ouc",
+		imageSrc: uoc,
+		speechLink: "https://www.youtube.com/live/zVNhHTe0-t8",
+		slidesLink: "https://docs.google.com/presentation/d/1w_WnMvKfGELrl7UvTCXC3qhoSRyStw44fQijy0k5tWQ/edit?usp=sharing"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: true, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.adoptaUnJuniorZombie",
+		imageSrc: adoptaZombie,
+		speechLink: "https://www.youtube.com/live/Och4qADksmI?is=0djmMkmR-WiNqgjz",
+		slidesLink: "https://docs.google.com/presentation/d/1iMTxtwzdJbNPxK7iE9L2KcyAUz2bQcHc7c1qB2NFXW8/edit?usp=sharing"
+	},
+	{ 
+		isWorkshop: true, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.codemotion",
+		imageSrc: codemotion,
+		speechLink: "https://conferences.codemotion.com/madrid/agenda/",
+		slidesLink:"https://docs.google.com/presentation/d/13nmeaPkhOFnTGfGVloA_Jn0KdCSWm8LWQ-WfoNLX2k0/edit?usp=sharing",
+	},
+	{ 
+		isWorkshop: true, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.iwdMentor",
+		imageSrc: iwdMentor,
+		speechLink: "https://wtmgdgmadrid.github.io/iwd/#mentorias",
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.wtmMasAlla",
+		imageSrc: wtmmasalla,
+		speechLink: "https://gdg.community.dev/events/details/google-gdg-madrid-presents-wtm-madrid-meetup-dos-visiones-de-tecnologia-ciberseguridad-y-accesibilidad/",
+		slidesLink: "https://docs.google.com/presentation/d/1DnAXsjT2PP6hsW__kEJUlDHFp_konquRGJt5UqXg3Hg/edit?usp=sharing"
+	},
 	{ 
 		isWorkshop: false, 
 		hasVideo: true, 

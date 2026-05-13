@@ -30,73 +30,76 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc
         );
     };
 
-    if (slidesLink) {
-        return <div className="activity-wrapper">
-            <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
-            <div className="activity-wrapper__container">
-                <LinkButton
-                    isExternal
-                    styles="ghost small secondary"
-                    text={hasVideo ? 'activities.speech' : 'activities.event'}
-                    href={speechLink}
-                />
-                <LinkButton
-                    isExternal
+    const renderImageButton = () => {
+        if (!imageSrc) return null;
+
+        return (
+            <>
+                <Button
                     styles="ghost small"
-                    text="activities.slide"
-                    href={slidesLink}
+                    text="activities.image"
+                    functionality={() => setIsModalOpen(true)}
                 />
-                {imageSrc && (
-                    <>
-                        <Button
-                            styles="ghost small"
-                            text="activities.image"
-                            functionality={() => setIsModalOpen(true)}
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    imageSrc={imageSrc}
+                    imageAlt={imageAlt ?? ""}
+                />
+            </>
+        );
+    };
+
+    if (slidesLink) {
+        return (
+            <div className="activity-wrapper">
+                <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
+                <div className="activity-wrapper__container">
+                    {speechLink && (
+                        <LinkButton
+                            isExternal
+                            styles="ghost small secondary"
+                            text={hasVideo ? 'activities.speech' : 'activities.event'}
+                            href={speechLink}
                         />
-                        <Modal
-                            isOpen={isModalOpen}
-                            onClose={() => setIsModalOpen(false)}
-                            imageSrc={imageSrc}
-                            imageAlt={imageAlt ?? ""}
-                        />
-                    </>
-                )}
+                    )}
+                    <LinkButton
+                        isExternal
+                        styles="ghost small"
+                        text="activities.slide"
+                        href={slidesLink}
+                    />
+                    {renderImageButton()}
+                </div>
             </div>
-        </div>
+        );
     }
 
-    if (speechLink) {
-        return <a className="activity-link" href={speechLink} target="_blank" rel="noopener noreferrer">
+    if (speechLink || imageSrc) {
+        return (
+            <div className="activity-wrapper">
+                <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
+                <div className="activity-wrapper__container">
+                    {speechLink && (
+                        <LinkButton
+                            isExternal
+                            styles="ghost small secondary"
+                            text={hasVideo ? 'activities.speech' : 'activities.event'}
+                            href={speechLink}
+                        />
+                    )}
+                    {renderImageButton()}
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <p className="activity-link activity-link--no-link">
             {renderTextWithBoldFirstSentence()}
-        </a>
-    }
-
-    if (imageSrc) {
-        return <div className="activity-wrapper">
-            <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
-            <div className="activity-wrapper__container">
-                {imageSrc && (
-                    <>
-                        <Button
-                            styles="ghost small"
-                            text="activities.image"
-                            functionality={() => setIsModalOpen(true)}
-                        />
-                        <Modal
-                            isOpen={isModalOpen}
-                            onClose={() => setIsModalOpen(false)}
-                            imageSrc={imageSrc}
-                            imageAlt={imageAlt ?? ""}
-                        />
-                    </>
-                )}
-            </div>
-        </div>
-    }
-
-    return <p className="activity-link activity-link--no-link">{renderTextWithBoldFirstSentence()}</p>
-
-}
+        </p>
+    );
+};
 
 ActivityLinks.defaultProps = {
 	hasVideo: true,

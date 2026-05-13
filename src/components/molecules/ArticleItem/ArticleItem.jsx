@@ -4,13 +4,17 @@ import { useTranslation } from "react-i18next";
 
 import "./ArticleItem.scss";
 
-export const ArticleItem = ({ date, href, tags, title }) => {
+export const ArticleItem = ({ date, href, source, tags, title }) => {
     const { t } = useTranslation();
     const formattedDate = date.slice(0, 10);
     const dateTime = date.length >= 10 ? date.slice(0, 10) : formattedDate;
 	return (
         <li className="article-item">
-            <time className="article-item__date" dateTime={dateTime}>{formattedDate}</time>
+            <div className="article-item__wrapper">
+                {source && <p className="article-item__source">{source}</p>}
+                <time className="article-item__date" dateTime={dateTime}>{formattedDate}</time>
+            </div>
+
             <a
                 className="article-item__link"
                 href={href}
@@ -38,6 +42,7 @@ export const ArticleItem = ({ date, href, tags, title }) => {
 ArticleItem.propTypes = {
     date: PropTypes.string.isRequired,
     href: PropTypes.string.isRequired,
+    source: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string),
 	title: PropTypes.string.isRequired,
 };

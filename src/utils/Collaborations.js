@@ -7,6 +7,9 @@ import gals from "../assets/img/logos/itgals.jpg"
 import disco from "../assets/img/logos/disco.jpg"
 import tele from "../assets/img/logos/TeleMadrid.svg.png"
 import op from "../assets/img/logos/opground.jfif"
+import a11y from "../assets/img/logos/a11y.png";
+import codemotion from "../assets/img//logos/codemotion.png";
+import commit from "../assets/img/logos/commit.png";
 
 export const mentorArray = [
     {
@@ -44,6 +47,31 @@ export const mentorArray = [
 ]
 
 export const volunteerArray = [
+    {
+        alt:"a11yConf",
+        imageSrc: a11y,
+        imageHref: "https://a11yconf.com/es",
+        title: "collaborations.a11yOne",
+        year: "collaborations.a11yTwo",
+        description: "collaborations.a11yThree",
+    },
+    {
+        alt:"CommitConf",
+        imageSrc: commit,
+        imageHref: "https://commit-conf.com/",
+        title: "collaborations.commitOne",
+        year: "collaborations.commitTwo",
+        description: "collaborations.commitThree",
+        hasBackground: true
+    },
+    {
+        alt:"Codemotion",
+        imageSrc: codemotion,
+        imageHref: "https://conferences.codemotion.com/",
+        title: "collaborations.codemotionOne",
+        year: "collaborations.codemotionTwo",
+        description: "collaborations.codemotionThree",
+    },
     {
         alt:"Ludo Ergo Sum",
         imageSrc: les,

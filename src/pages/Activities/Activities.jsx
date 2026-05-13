@@ -30,7 +30,7 @@ export const Activities = () => {
                 ))}
             </ul>
             <Tabs name="activity" legend={t("activities.choose")}>
-                <Tab name={t("activities.speeches")}>
+                <Tab name={`${t("activities.speeches")} (${talks?.length})`}>
                     {talks?.map((talk, index) => {
                         const previousYear = talks?.[index - 1]?.year;
                         const showYear = index === 0 || previousYear !== talk.year;
@@ -43,7 +43,7 @@ export const Activities = () => {
                         );
                     })}
                 </Tab>
-                <Tab name={t("home.workshops")}>
+                <Tab name={`${t("home.workshops")} (${workshop?.length})`}>
                     {workshop?.map((talk, index) => {
                         const previousYear = workshop?.[index - 1]?.year;
                         const showYear = index === 0 || previousYear !== talk.year;
