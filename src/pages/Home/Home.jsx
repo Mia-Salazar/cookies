@@ -53,7 +53,7 @@ export const Home = () => {
                         subtitle="home.university"
                     />
                     <StrengthItem 
-                        title="+55"
+                        title="+60"
                         subtitle="home.articles"
                     />
                     <StrengthItem 

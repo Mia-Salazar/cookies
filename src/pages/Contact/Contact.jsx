@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { Form, Heading, Text, Layout } from "../../components";
+import { SOCIAL_NETWORKS } from "../../constants/socialNetworks";
 import "./Contact.scss";
 
 export const Contact = () => {
@@ -12,6 +13,25 @@ export const Contact = () => {
             <Heading text="nav.contact" />
             <Text>{t('contact.text')}</Text>
             <Form />
+            <div className="contact__social">
+                <Text>{t('contact.socialIntro')}</Text>
+                <ul className="contact__social-list">
+                    {SOCIAL_NETWORKS.map((social) => (
+                        <li key={social.icon} className="contact__social-item">
+                            <a
+                                className="contact__social-link"
+                                href={social.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={t(social.aria)}
+                            >
+                                <i aria-hidden="true" className={`fab contact__social-icon ${social.icon}`} />
+                                <span className="contact__social-url">{social.link}</span>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </Layout>
 	);
 };

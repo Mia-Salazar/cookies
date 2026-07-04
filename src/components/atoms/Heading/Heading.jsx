@@ -6,7 +6,7 @@ import "./Heading.scss";
 
 const Types = {
 	'big': 'h1',
-	'medium': 'h2'
+	'medium': 'h2',
 }
 
 export const Heading = ({ text, size }) => {

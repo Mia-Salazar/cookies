@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { Heading, Text, Layout, ArticleItem, ArticlesList } from "../../components";
+import { Heading, Text, Layout, ArticleItem, ArticlesList, LinkButton } from "../../components";
 import { articlesArray, othersArray } from "../../utils/ArticlesElements";
 import "./Articles.scss";
 import { articleConstructor } from "../../models/ArticlesModel";
+import Tabs, { Tab } from "../../components/molecules/Tabs/Tabs";
 
 export const Articles = () => {
     const { t } = useTranslation();
@@ -22,18 +23,25 @@ export const Articles = () => {
             });
 	}, []);
 
+    const articlesNumber = othersArray.length + articlesArray.length;
+
 	return (
 		<Layout>
             <Heading text="nav.articles" />
             <Text>{t('articles.text')}</Text>
             <Text>{t('articles.textTwo')}</Text>
-            <section aria-live="polite" aria-busy={content.isLoading}>
-                <Heading text="home.dev" size="medium" />
-                <ArticlesList data={content.data} isLoading={content.isLoading} />   
-            </section>
-            <section>
-                <Heading text="home.others" size="medium" />
-                <ul className="articles__list">
+            <Text>{t('articles.textThree')}</Text>
+            <Tabs name="articles" legend={t("articles.choose")}>
+                <Tab name={`${t("home.dev")} (+55)`}>
+                    <Text>{t("articles.30")}</Text>
+                    <ArticlesList data={content.data} isLoading={content.isLoading} />
+                    <div className="articles__wrapper">
+                        <LinkButton href="https://dev.to/miasalazar" text={t("articles.all")} />
+                    </div>
+                    
+                </Tab>
+                <Tab name={`${t("home.others")} (${articlesNumber})`}>
+                    <ul className="articles__list">
                     {
                         othersArray.map(({source,date, tags, title, href}) => {
                             return(
@@ -48,8 +56,10 @@ export const Articles = () => {
                             );
                         })
                     }
-                </ul> 
-            </section>
+                </ul>
+                </Tab>
+
+            </Tabs>
         </Layout>
 	);
 };

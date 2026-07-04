@@ -65,6 +65,7 @@
     },
     "contact": {
         "text": "If you have something to tell me or an interesting challenge, don't hesitate to write to me!",
+        "socialIntro": "You can also reach me on social media:",
         "send": "Send",
         "email": "Email",
         "name": "Name",
@@ -122,7 +123,8 @@
         "dragonBall": "Dragon Ball Character Finder"
     },
     "awards": {
-                "lechazo": "LechazoConf. 30 mayo. Valladolid. From allergy to deployment: Lessons learned with Foodiesaurus..",
+        "guarandinga": "GuarandingaTECH, Tenerife Summer Sessions 2026. July 4th. Online. Accessibility and neurodivergence: Not everyone navigates the same way",
+        "lechazo": "LechazoConf. 30 mayo. Valladolid. From allergy to deployment: Lessons learned with Foodiesaurus..",
         "commitSpeed": "CommitConf 2026. June 5th. Madrid. Speed dating, mentorship 1:1",
         "weaaareNeuro": "weAAAre. June 11th. Online. Accessibility and neurodivergence: Not everyone navigates the same way",
         "commit26": "CommitConf 2026. June 6th. Madrid. Accessibility and neurodivergence: Not everyone navigates the same way",
@@ -207,7 +209,7 @@
         "adalabThree": "I was a mentor at Adalab for two of its cohorts, Olguin and Mileva, mentoring 3 and 2 mentees respectively for 6 months",
         "stepOne": "Mentor at Step4ward",
         "stepTwo": "September 2023 - present",
-"stepThree": "I have currently mentored more than 15 women through this initiative. I primarily specialize in mentees who want to take their first steps in the world of technology and need guidance. Also, last year I began the selection process for new mentors, adding a total of 12 new mentors to the initiative. In addition, I also help organize workshops and events for the community.",
+"stepThree": "I have currently mentored more than 16 women through this initiative. I primarily specialize in mentees who want to take their first steps in the world of technology and need guidance. Also, last year I began the selection process for new mentors, adding a total of 14 new mentors to the initiative. In addition, I also help organize workshops and events for the community.",
         "lesTwo": "September 23, 2023",
         "lesThree": "I volunteered at the Ludo Ergo Sum (LES) board game event, performing duties such as crowd control, providing information, security, game management, and setup",
         "freakOne": "Freak Wars",
@@ -230,7 +232,11 @@
 
     },
     "articles": {
+        "30": "Here you can check my latest 30 articles.",
+        "all": "See all articles",
+        "choose": "Choose article type",
         "text": "I really enjoy writing articles on various topics. My favorite is accessibility, but I also write about front-end development, programming, and soft skills.",
-       "textTwo": "I publish most of my articles on Dev.to, however, I have some on Medium and I have collaborated with various initiatives by publishing articles for them, such as weAAAre and Manfred."
+       "textTwo": "I publish most of my articles on Dev.to, however, I have some on Medium and I have collaborated with various initiatives by publishing articles for them, such as weAAAre and Manfred.",
+       "textThree": "Most of my articles are written in English, although you can also find some written in Spanish"
     }
 } 

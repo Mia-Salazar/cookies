@@ -25,8 +25,20 @@ import commit26 from "../assets/img/eventos/commitnew.JPG"
 import weaaareNeuro from "../assets/img/eventos/neuroweaare.JPG"
 import commitSpeed from "../assets/img/eventos/speed.JPG"
 import lechazo from "../assets/img/eventos/lechazo.jpeg"
+import guarandinga from "../assets/img/eventos/guarandinga.png"
 
 export const speechesArray = [
+	{ 
+		isWorkshop: false, 
+		hasVideo: true, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.guarandinga",
+		imageSrc: guarandinga,
+		speechLink: "https://www.youtube.com/watch?v=oei9yb4WofI&list=PLGIcn1-k7gOk"
+	},
 	{ 
 		isWorkshop: true, 
 		hasVideo: false, 
@@ -51,25 +63,25 @@ export const speechesArray = [
 	},
 	{ 
 		isWorkshop: false, 
-		hasVideo: false, 
+		hasVideo: true, 
 		year: 2026, 
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.commit26",
 		imageSrc: commit26,
-		speechLink: "https://koliseo.com/commit/2026/agenda/1?selected=RQzW4Xh4k2A2QGoLO6FX"
+		speechLink: "https://www.youtube.com/watch?v=oei9yb4WofI&list=PLGIcn1-k7gOk"
 	},
 	{ 
 		isWorkshop: false, 
-		hasVideo: false, 
+		hasVideo: true, 
 		year: 2026, 
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.lechazo",
 		imageSrc: lechazo,
-		speechLink: "https://lechazoconf.com/#our_speakers"
+		speechLink: "https://www.youtube.com/watch?v=uOLKPGIAVWw"
 	},
 	{ 
 		isWorkshop: false, 

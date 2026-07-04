@@ -16,6 +16,7 @@ import jsconf from "../assets/img//logos/jsconf.png";
 import codemotion from "../assets/img//logos/codemotion.png";
 import uoc from "../assets/img//logos/uoc.png";
 import lechazo from "../assets/img//logos/lechazologo.png";
+import guarandinga from "../assets/img//logos/guarandinga.JPG";
 
 export const conferencesArray  = [
     { alt: "CommitConf", href: "https://commit-conf.com/", image: commit },
@@ -36,5 +37,5 @@ export const conferencesArray  = [
     { alt: "Technolatinas", href: "https://www.a11yconf.com/es", image: technolatinas },
     { alt: "Software Crafter Barcelona", href: "https://softwarecrafters.barcelona/", image: scb },
     { alt: "Codemotion", href: "https://conferences.codemotion.com/madrid/", image: codemotion },
-
+    { alt: "GuarandingaTECH", href: "https://www.youtube.com/@GuarandingaTECH", image: guarandinga },
 ]

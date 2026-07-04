@@ -1,0 +1,65 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+.contact__social {
+    margin-top: toRem(32);
+    width: 100%;
+    max-width: toRem(700);
+
+    @media (min-width: 768px) {
+        margin-bottom: toRem(50);
+    }
+
+    @media (min-width: 1300px) {
+        max-width: toRem(900);
+        
+    }
+}
+
+.contact__social-list {
+    margin: toRem(16) 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact__social-item {
+    margin-bottom: toRem(12);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__social-link {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: toRem(12);
+    font-family: $font-family-secondary;
+    font-size: toRem(15);
+    color: $primary;
+    text-decoration: none;
+    word-break: break-all;
+
+    &:hover,
+    &:focus {
+        color: $secondary;
+    }
+
+    &:focus {
+        outline: 2px solid $secondary;
+        outline-offset: toRem(2);
+    }
+}
+
+.contact__social-icon {
+    flex-shrink: 0;
+    margin-top: toRem(2);
+    font-size: toRem(18);
+    color: inherit;
+    
+}
+
+.contact__social-url {
+    line-height: 1.4;
+    text-decoration: underline;
+}

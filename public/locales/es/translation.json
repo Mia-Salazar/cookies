@@ -65,6 +65,7 @@
     },
     "contact": {
         "text": "Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!",
+        "socialIntro": "También puedes contactarme en redes sociales:",
         "send": "Enviar",
         "email": "Email",
         "name": "Nombre",
@@ -122,6 +123,7 @@
         "dragonBall": "Buscador de personajes de Dragon Ball"
     },
     "awards": {
+        "guarandinga": "GuarandingaTECH, Tenerife Summer Sessions 2026. 4 julio. Online. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "lechazo": "LechazoConf. 30 mayo. Valladolid. De la alergia al despliegue: Lecciones aprendidas con Foodiesaurus.",
         "commitSpeed": "CommitConf 2026. 5 junio. Madrid. Speed dating, Mentorías 1:1",
         "weaaareNeuro": "weAAAre. 11 junio. Online. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
@@ -205,7 +207,7 @@
         "adalabThree": "Fui mentora de adalab durante dos de sus promociones, la Olguin y la Mileva, mentorizando durante 6 meses a 3 y 2 mentorizadas respectivamente",
         "stepOne": "Mentora en Step4ward",
         "stepTwo": "septiembre 2023 - actualidad",
-        "stepThree": "Actualmente he mentorizado a más de 15 mujeres bajo esta iniciativa. Principalmente me especializo en mentorizadas que quieren dar sus primeros pasos en el mundo de la tecnología y necesiten orientación. Asimismo, el año pasado empecé a hacer los procesos de selección de nuevas mentoras, habiendo añadido a la iniciativa un total de 12 mentoras nuevas. Por otro lado, también ayudo a organizar talleres y eventos para la comunidad.",
+        "stepThree": "Actualmente he mentorizado a más de 16 mujeres bajo esta iniciativa. Principalmente me especializo en mentorizadas que quieren dar sus primeros pasos en el mundo de la tecnología y necesiten orientación. Asimismo, el año pasado empecé a hacer los procesos de selección de nuevas mentoras, habiendo añadido a la iniciativa un total de 14 mentoras nuevas. Por otro lado, también ayudo a organizar talleres y eventos para la comunidad.",
         "lesOne": "Ludo Ergo Sum",
         "lesTwo": "23 septiembre 2023",
         "lesThree": "Fui voluntaria en el evento de juegos de mesa Ludo Ergo Sum (LES), llevando a cabo funciones de control de aforo, información, vigilancia, gestión de juegos, montaje",
@@ -228,7 +230,11 @@
         "opThree": "Me entrevistaron en Opground sobre mis primeros pasos y el desarrollo de mi carrera."
     },
     "articles": {
+        "30": "Aquí puedes ver los 30 artículos más recientes.",
+        "all": "Ver todos los artículos",
+        "choose": "Escoge tipo de artículo",
         "text": "Disfruto mucho escribiendo artículos sobre diversos temas. Mi favorito es la accesibilidad, pero también escribo sobre front-end, programación, soft skills y mentoría. ",
-        "textTwo": "La mayor parte de mis artículos los publico en Dev.to, sin embargo, tengo algunos en Medium y he colaborado con diversos iniciativas publicando artículos para ellos, como por ejemplo weAAAre y Manfred."
+        "textTwo": "La mayor parte de mis artículos los publico en Dev.to, sin embargo, tengo algunos en Medium y he colaborado con diversos iniciativas publicando artículos para ellos, como por ejemplo weAAAre y Manfred.",
+        "textThree": "La mayoría de mis artículos están escritos en inglés, aunque también puedes encontrar escritos en español"
     }
 }  

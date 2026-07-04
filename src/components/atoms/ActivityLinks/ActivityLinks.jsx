@@ -63,12 +63,6 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc
                             href={speechLink}
                         />
                     )}
-                    <LinkButton
-                        isExternal
-                        styles="ghost small"
-                        text="activities.slide"
-                        href={slidesLink}
-                    />
                     {renderImageButton()}
                 </div>
             </div>
