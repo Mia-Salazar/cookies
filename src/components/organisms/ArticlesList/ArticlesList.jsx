@@ -1,13 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 import cookie from '../../../assets/img/logo.png';
 import ArticleItem from "../../molecules/ArticleItem/ArticleItem";
 import './ArticlesList.scss'
 
 export const ArticlesList = ({ isLoading, data }) => {
+    const { t } = useTranslation();
+
     if (isLoading) {
-        return <figure><img alt="Cargando contenido de dev.to" className="articles__img" src={cookie} /></figure>
+        return (
+			<p role="status" aria-live="polite">
+				<img alt="" className="articles__img" src={cookie} aria-hidden="true" />
+				<span className="sr-only">{t("alt.loading")}</span>
+			</p>
+		);
     }
 	return (
         <ul className="articles-list">

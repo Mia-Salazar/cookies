@@ -88,7 +88,13 @@ export const Form = () => {
 		: null;
 
 	return (
-		<form className="form" onSubmit={handleOnSubmit} noValidate aria-describedby={statusMessage ? "form-status" : undefined}>
+		<form
+			className="form"
+			onSubmit={handleOnSubmit}
+			noValidate
+			aria-label={t("nav.contact")}
+			aria-describedby={statusMessage ? "form-status" : undefined}
+		>
 			{statusMessage && (
 				<div
 					id="form-status"

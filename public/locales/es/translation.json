@@ -4,13 +4,31 @@
         "loading": "Cargando contenido",
         "skip": "Saltar al contenido",
         "navigation": "Navegación principal",
+        "menuToggle": "Abrir y cerrar menú de navegación",
+        "close": "Cerrar",
+        "imageDialog": "Ventana de imagen ampliada",
+        "profilePhoto": "Retrato de Mia Salazar",
+        "opensNewTab": "Se abre en una pestaña nueva",
         "openArticle": "Abrir artículo \"{{title}}\" en nueva pestaña",
         "openResource": "Abrir recurso {{text}} en nueva pestaña",
-        "github": "Sígueme en Github",
-        "codepen": "Sígueme en Codepen",
-        "linkedin": "Sígueme en Linkedin",
-        "medium": "Sígueme en Medium",
-        "twitter": "Sígueme en Twitter"
+        "openConference": "Visitar sitio web de {{name}} en nueva pestaña",
+        "openCollaboration": "Visitar {{name}} en nueva pestaña",
+        "projectImage": "Captura del proyecto {{title}}",
+        "github": "Sígueme en Github (se abre en nueva pestaña)",
+        "codepen": "Sígueme en Codepen (se abre en nueva pestaña)",
+        "linkedin": "Sígueme en Linkedin (se abre en nueva pestaña)",
+        "medium": "Sígueme en Medium (se abre en nueva pestaña)",
+        "twitter": "Sígueme en Twitter (se abre en nueva pestaña)"
+    },
+    "pageTitle": {
+        "default": "Portfolio Mia Salazar | Front-end developer & cookie monster",
+        "intro": "Inicio",
+        "home": "Sobre mí",
+        "articles": "Artículos",
+        "activities": "Charlas",
+        "collaborations": "Colaboraciones",
+        "contact": "Contacto",
+        "projects": "Proyectos"
     },
     "home": {
         "dev": "Publicados en Dev.to",
@@ -20,6 +38,7 @@
         "collaborations": "Colaboraciones",
         "about": "Sobre mí",
         "continue": "Continuar",
+        "headerSubtitle": "Front-end developer, mentora y speaker",
         "hello": "¡Hola hola!",
         "textOne": "Soy Mia Salazar, Front-end developer, mentora, speaker y gran amante de las galletas de chocolate.",
         "textTwo": "Empecé mi camino en el mundo de la informática en 2018 y, desde entonces, no he dejado de disfrutarlo. Actualmente trabajo como Front-end developer, con experiencia en Angular, React y Vue, y me estoy especializando en accesibilidad web, un ámbito que me apasiona.",
@@ -85,6 +104,7 @@
         "comment": "Escribe aquí tu mensaje"
     },
     "portfolio": {
+        "filterLegend": "Filtrar por:",
         "text": "Aquí puedes ver algunos de los proyectos en los que he trabajado a nivel profesional, y muchos de los proyectos personales que he realizado.",
         "textTwo": "Antes de ser una monstrua de las galletas, fui una viajera intergaláctica y una superheroína. Puedes ver mis proyectos aquí.",
         "past": "Mi pasado",
@@ -123,6 +143,7 @@
         "dragonBall": "Buscador de personajes de Dragon Ball"
     },
     "awards": {
+        "edd26": "Extremadura Digital Day. 3 octubre. Caceres. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "guarandinga": "GuarandingaTECH, Tenerife Summer Sessions 2026. 4 julio. Online. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "lechazo": "LechazoConf. 30 mayo. Valladolid. De la alergia al despliegue: Lecciones aprendidas con Foodiesaurus.",
         "commitSpeed": "CommitConf 2026. 5 junio. Madrid. Speed dating, Mentorías 1:1",

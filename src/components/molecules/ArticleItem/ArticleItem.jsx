@@ -22,7 +22,7 @@ export const ArticleItem = ({ date, href, source, tags, title }) => {
                 rel="noopener noreferrer"
                 aria-label={t("alt.openArticle", { title })}
             >
-                <p className="article-item__title">{title}</p>
+                <span className="article-item__title">{title}</span>
             </a>
             
             {tags &&

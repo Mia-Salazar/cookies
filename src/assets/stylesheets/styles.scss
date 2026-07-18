@@ -4,9 +4,40 @@
 @import './settings/toRem';
 @import './settings/variables';
 
-* {
-    &:focus{
-        outline: 4px solid black;
-        outline-offset: 2px;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip {
+    background-color: $secondary;
+    color: $white;
+    font-family: $font-family-primary;
+    padding: toRem(8) toRem(16);
+    text-decoration: none;
+    z-index: 100;
+
+    position: absolute;
+    top: 0;
+    left: -5000%;
+
+    &:focus {
+        left: 0;
     }
+}
+
+*:focus {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 4px solid $black;
+    outline-offset: 2px;
 }

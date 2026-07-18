@@ -16,7 +16,7 @@ export const Layout = ({ children, styles }) => {
             <Header />
             <Navbar />
             <Container>
-                <main id="main" role="main">
+                <main id="main">
                     {children}
                 </main>
             </Container>

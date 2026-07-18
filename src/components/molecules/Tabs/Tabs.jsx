@@ -43,11 +43,8 @@ const Tabs = ({ legend, name, children }) => {
               />
               <label
                 htmlFor={radioId}
-                className="tabs__label"
-                role="tab"
+                className={`tabs__label${activeIndex === index ? " tabs__label--active" : ""}`}
                 id={`${groupName}-tab-${index}`}
-                aria-selected={activeIndex === index}
-                aria-controls={panelId}
               >
                 {tabName}
               </label>
@@ -61,17 +58,15 @@ const Tabs = ({ legend, name, children }) => {
         const labelId = `${groupName}-tab-${index}`;
 
         return (
-          <div
+          <section
             key={panelId}
-            role="tabpanel"
             id={panelId}
             aria-labelledby={labelId}
-            tabIndex={activeIndex === index ? 0 : -1}
             hidden={activeIndex !== index}
             className="tabs__panel"
           >
             {tabElement.props.children}
-          </div>
+          </section>
         );
       })}
     </div>
@@ -85,4 +80,3 @@ Tabs.propTypes = {
 };
 
 export default Tabs;
-

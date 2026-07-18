@@ -4,13 +4,31 @@
         "loading": "Loading content",
         "skip": "Skip to content",
         "navigation": "Main navigation",
+        "menuToggle": "Open and close navigation menu",
+        "close": "Close",
+        "imageDialog": "Enlarged image dialog",
+        "profilePhoto": "Portrait of Mia Salazar",
+        "opensNewTab": "Opens in a new tab",
         "openArticle": "Open article \"{{title}}\" in new tab",
         "openResource": "Open resource {{text}} in new tab",
-        "github": "Follow me on Github",
-        "codepen": "Follow me on Codepen",
-        "linkedin": "Follow me on Linkedin",
-        "medium": "Follow me on Medium",
-        "twitter": "Follow me on Twitter"
+        "openConference": "Visit {{name}} website in new tab",
+        "openCollaboration": "Visit {{name}} in new tab",
+        "projectImage": "Screenshot of project {{title}}",
+        "github": "Follow me on Github (opens in new tab)",
+        "codepen": "Follow me on Codepen (opens in new tab)",
+        "linkedin": "Follow me on Linkedin (opens in new tab)",
+        "medium": "Follow me on Medium (opens in new tab)",
+        "twitter": "Follow me on Twitter (opens in new tab)"
+    },
+    "pageTitle": {
+        "default": "Portfolio Mia Salazar | Front-end developer & cookie monster",
+        "intro": "Home",
+        "home": "About me",
+        "articles": "Articles",
+        "activities": "Talks",
+        "collaborations": "Collaborations",
+        "contact": "Contact",
+        "projects": "Projects"
     },
     "home": {
         "dev": "Published in Dev.to",
@@ -20,6 +38,7 @@
         "collaborations": "Collaboration",
         "about": "About me",
         "continue": "Continue",
+        "headerSubtitle": "Front-end developer, mentor & speaker",
         "hello": "Hello there!",
         "textOne": "I'm Mia Salazar, a Front-end developer, mentor, speaker and cookie monster.",
         "textTwo": "I started my journey in tech back in 2018 and I’ve been in love with it ever since. Today, I work as a Front-end Developer with experience in Angular, React, and Vue, and I’m currently specializing in web accessibility, a field I’m truly passionate about.",
@@ -85,6 +104,7 @@
         "comment": "Write here your message"
     },
     "portfolio": {
+        "filterLegend": "Filter by:",
         "text": "Here you can see some of the projects I've worked on professionally, and many of the personal projects I've done.",
         "textTwo": "Before being a cookie monster, I was an intergalactic traveler and a superheroine. You can see my projects here.",
         "past": "My past",
@@ -123,6 +143,7 @@
         "dragonBall": "Dragon Ball Character Finder"
     },
     "awards": {
+        "edd26": "Extremadura Digital Day. October 3rd. Caceres. Accessibility and neurodivergence: Not everyone navigates the same way",
         "guarandinga": "GuarandingaTECH, Tenerife Summer Sessions 2026. July 4th. Online. Accessibility and neurodivergence: Not everyone navigates the same way",
         "lechazo": "LechazoConf. 30 mayo. Valladolid. From allergy to deployment: Lessons learned with Foodiesaurus..",
         "commitSpeed": "CommitConf 2026. June 5th. Madrid. Speed dating, mentorship 1:1",

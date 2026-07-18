@@ -17,6 +17,7 @@ export const LinkButton = ({ href, isExternal, text, styles }) => {
 				rel="noopener noreferrer"
 			>
 				{t(text)}
+				<span className="sr-only"> ({t("alt.opensNewTab")})</span>
 			</a>
 		);
 	}

@@ -6,9 +6,11 @@ import "./Collaborations.scss";
 import { gameArray } from "../../utils/ActivitiesElements";
 import { CollaborationItem } from "../../components/molecules/CollaborationItem/CollaborationItem";
 import { interviewArray, mentorArray, volunteerArray } from "../../utils/Collaborations";
+import usePageTitle from "../../utils/usePageTitle";
 
 export const Collaborations = () => {
     const { t } = useTranslation();
+    usePageTitle("collaborations");
 
     return (
         <Layout styles="activities">
@@ -29,9 +31,9 @@ export const Collaborations = () => {
             <Heading text="activities.game" size="medium" />
             <ul className="activities__list">
                 {
-                    gameArray.map(({aria, speechLink, icon, lang, text, year}, index) => {
+                    gameArray.map(({speechLink, icon, lang, text, year}, index) => {
                         return(
-                            <ActivityItem aria={aria} speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
+                            <ActivityItem speechLink={speechLink} icon={icon} lang={lang} text={text} year={year} key={index}/>
                         );
                     })
                 }

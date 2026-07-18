@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 import "./Modal.scss";
 
 const FOCUSABLE_SELECTOR = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
 const Modal = ({ isOpen, onClose, imageSrc, imageAlt }) => {
+  const { t } = useTranslation();
   const closeButtonRef = useRef(null);
   const modalRef = useRef(null);
   const previousActiveRef = useRef(null);
@@ -67,6 +69,8 @@ const Modal = ({ isOpen, onClose, imageSrc, imageAlt }) => {
     return null;
   }
 
+  const dialogLabel = imageAlt || t("alt.imageDialog");
+
   return (
     <div
       className="modal-overlay"
@@ -78,16 +82,16 @@ const Modal = ({ isOpen, onClose, imageSrc, imageAlt }) => {
         className="modal"
         role="dialog"
         aria-modal="true"
-        aria-label={imageAlt || "Ventana de imagen"}
+        aria-label={dialogLabel}
       >
         <button
           ref={closeButtonRef}
           type="button"
           className="modal__close"
           onClick={onClose}
-          aria-label="Cerrar"
+          aria-label={t("alt.close")}
         >
-          ×
+          <span aria-hidden="true">×</span>
         </button>
         <div className="modal__content">
           {imageSrc && (

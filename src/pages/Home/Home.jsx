@@ -3,10 +3,12 @@ import { useTranslation } from "react-i18next";
 
 import { speechesArray } from "../../utils/ActivitiesElements";
 import { TechItem, Heading, StrengthItem, Text, Layout } from "../../components";
+import usePageTitle from "../../utils/usePageTitle";
 import "./Home.scss";
 
 export const Home = () => {
     const { t } = useTranslation();
+    usePageTitle("home");
 
     // Speeches on schools where two
     const speechesNumber = speechesArray.length + 1;

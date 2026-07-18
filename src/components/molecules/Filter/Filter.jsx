@@ -1,14 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 import { portfolioFilter } from "../../../utils/PortfolioFilter"
 import FormElement from "../../molecules/FormElement/FormElement";
 import "./Filter.scss";
 
 export const Filter = ({ buttonFunctionality, filterActive }) => {
+	const { t } = useTranslation();
+
 	return (
 		<fieldset className="filter" aria-controls="filter-portoflio">
-			<legend>Filtrar por:</legend>
+			<legend>{t("portfolio.filterLegend")}</legend>
 			{
 				portfolioFilter.map((item) => {
 					return(

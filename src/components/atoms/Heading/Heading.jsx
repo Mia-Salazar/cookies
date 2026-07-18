@@ -11,10 +11,10 @@ const Types = {
 
 export const Heading = ({ text, size }) => {
 	const { t } = useTranslation();
-	const HeadingType = Types[size]
+	const HeadingType = Types[size] || Types.big;
 
 	return (
-		<HeadingType className={"heading " + (size > 'big' ? `heading--${size}` : '')}>{t(text)}</HeadingType>
+		<HeadingType className={`heading${size !== 'big' ? ` heading--${size}` : ''}`}>{t(text)}</HeadingType>
 	);
 };
 

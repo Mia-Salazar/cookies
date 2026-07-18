@@ -6,9 +6,11 @@ import { articlesArray, othersArray } from "../../utils/ArticlesElements";
 import "./Articles.scss";
 import { articleConstructor } from "../../models/ArticlesModel";
 import Tabs, { Tab } from "../../components/molecules/Tabs/Tabs";
+import usePageTitle from "../../utils/usePageTitle";
 
 export const Articles = () => {
     const { t } = useTranslation();
+    usePageTitle("articles");
     const [content, setContent] = useState({
         data: [],
         isLoading: true

@@ -30,6 +30,16 @@ import guarandinga from "../assets/img/eventos/guarandinga.png"
 export const speechesArray = [
 	{ 
 		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.edd26",
+		speechLink: "https://extremaduradigitalday.com/ponente/mia-salazar-edd26/"
+	},
+	{ 
+		isWorkshop: false, 
 		hasVideo: true, 
 		year: 2026, 
 		lang: "es", 
@@ -70,7 +80,7 @@ export const speechesArray = [
 		icon: "microphone", 
 		text: "awards.commit26",
 		imageSrc: commit26,
-		speechLink: "https://www.youtube.com/watch?v=oei9yb4WofI&list=PLGIcn1-k7gOk"
+		speechLink: "https://youtu.be/Eff6ZFL_6qQ?si=iA9uIpRmEtv2SMXu"
 	},
 	{ 
 		isWorkshop: false, 

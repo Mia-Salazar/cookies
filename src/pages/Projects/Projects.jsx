@@ -9,10 +9,12 @@ import {
         Text, 
         Layout
     } from "../../components";
+import usePageTitle from "../../utils/usePageTitle";
 import "./Projects.scss";
 
 export const Projects = () => {
     const { t } = useTranslation();
+    usePageTitle("projects");
 
 	return (
         <Layout>

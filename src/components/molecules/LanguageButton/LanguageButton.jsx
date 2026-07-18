@@ -29,7 +29,7 @@ export const LanguageButton = () => {
 			document.documentElement.lang = "es";
 			localStorage.setItem("i18nextLng", "es");
 		}
-	}, [language]);
+	}, []);
 	
 	return (
 		<form className="language">

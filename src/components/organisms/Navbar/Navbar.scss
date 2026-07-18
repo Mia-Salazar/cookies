@@ -172,7 +172,8 @@
         text-decoration: none;
         text-align: center;
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             background-color: $secondary;
         }
 

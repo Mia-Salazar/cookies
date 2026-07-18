@@ -40,7 +40,12 @@
     color: $primary;
   }
 
-  &__label[aria-selected="true"] {
+  &__radio:focus-visible + &__label {
+    outline: 4px solid $black;
+    outline-offset: 2px;
+  }
+
+  &__label--active {
     background-color: $primary;
     color: $white;
   }

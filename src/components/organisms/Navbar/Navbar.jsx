@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -7,12 +7,17 @@ import "./Navbar.scss";
 
 export const Navbar = () => {
     const { t } = useTranslation();
+    const menuButtonRef = useRef(null);
 
     const [toggle, setToggle] = useState(false);
 
+    const closeMenu = () => {
+        setToggle(false);
+    };
+
     const handleClick = () => {
-        setToggle(!toggle)
-    }
+        setToggle((prev) => !prev);
+    };
 
     const isSticky = (e) => {
         const header = document.querySelector('.navbar');
@@ -25,7 +30,21 @@ export const Navbar = () => {
         return () => {
             window.removeEventListener('scroll', isSticky);
         };
-    });
+    }, []);
+
+    useEffect(() => {
+        if (!toggle) return;
+
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                closeMenu();
+                menuButtonRef.current?.focus();
+            }
+        };
+
+        document.addEventListener("keydown", handleKeyDown);
+        return () => document.removeEventListener("keydown", handleKeyDown);
+    }, [toggle]);
 
 	return (
 		<nav
@@ -33,8 +52,9 @@ export const Navbar = () => {
             aria-label={t("alt.navigation")}
         >
             <button
+                ref={menuButtonRef}
                 type="button"
-                aria-label="Abrir y cerrar menú"
+                aria-label={t("alt.menuToggle")}
                 aria-expanded={toggle}
                 aria-controls="navbar-menu"
                 className={toggle ? "navbar__hamburguer navbar__hamburguer--is-open": "navbar__hamburguer"}
@@ -52,19 +72,19 @@ export const Navbar = () => {
                 <div className="navbar__border navbar__border--bottom" aria-hidden="true" />
                 <ul className="navbar__list">
                     <li>
-                        <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" } to="/home">{t("home.about")}</NavLink>
+                        <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" } to="/home">{t("home.about")}</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/articles">{t('nav.articles')}</NavLink>
+                        <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/articles">{t('nav.articles')}</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/activities">{t('activities.speeches')}</NavLink>
+                        <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/activities">{t('activities.speeches')}</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/collaborations">{t('home.collaborations')}</NavLink>
+                        <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/collaborations">{t('home.collaborations')}</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/contact">{t('nav.contact')}</NavLink>
+                        <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/contact">{t('nav.contact')}</NavLink>
                     </li>
                 </ul>
                 <LanguageButton />
