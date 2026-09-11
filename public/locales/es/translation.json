@@ -57,7 +57,9 @@
         "textFour": "En 2024 di un paso más y comencé a impartir charlas y talleres. Desde entonces he dado más de 30 charlas y he participado en más de 15 eventos, entre ellos conferencias como T3chFest, CommitConf, SalmorejoTech, Extremadura Digital Day o MadVue, donde además tuve la oportunidad de dar mi primera charla en inglés.",
         "textFive": "Aquí puedes ver algunas de las tecnologías con las que he trabajado.",
         "textSix": "Fuera del código, soy friki por naturaleza: me encantan las series, los videojuegos,  los juegos de mesa y de rol, y perderme en una buena sesión de cine.",
-        "textSeven": "La mayor parte de mi experiencia está centrada en el desarrollo Front-end, sin embargo, el desarrollo back-end también es un área que llama mi atención y en el que me sigo desarrollando."
+        "textSeven": "La mayor parte de mi experiencia está centrada en el desarrollo Front-end, sin embargo, el desarrollo back-end también es un área que llama mi atención y en el que me sigo desarrollando.",
+        "downloadCvEn": "Descargar CV en inglés",
+        "downloadCvEs": "Descargar CV en español"
     },
     "nav": {
         "home": "Inicio",
@@ -119,7 +121,8 @@
         "rick": "Rick and Morty personajes",
         "zityhub": "Zityhub, PWA de reservas en coworkings",
         "zityhubBackOffice": "Zityhub Backoffice",
-        "foodiesaurus": "Foodiesaurus, restaurantes sin alergias",
+        "newFoodiesaurus": "Foodiesaurus, restaurantes sin alergias. Versión 2.0. En progreso",
+        "foodiesaurus": "Foodiesaurus, restaurantes sin alergias. Versión 2.0. Discontinuada en 2024",
         "enthec": "Enthec home page",
         "enthecHome": "Kartos by Enthec",
         "xcj": "Portfolio XCJGames",
@@ -143,6 +146,8 @@
         "dragonBall": "Buscador de personajes de Dragon Ball"
     },
     "awards": {
+        "a11yconf26": "a11yconf 2026. 28 noviembre. Zaragoza. Infinity war: Accesibilidad vs ciberseguridad",
+        "wp": "Wordpress Accessibility Day. 8 octubre. Online. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "edd26": "Extremadura Digital Day. 3 octubre. Caceres. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "guarandinga": "GuarandingaTECH, Tenerife Summer Sessions 2026. 4 julio. Online. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "lechazo": "LechazoConf. 30 mayo. Valladolid. De la alergia al despliegue: Lecciones aprendidas con Foodiesaurus.",
@@ -213,10 +218,16 @@
         "codemotionThree": "Fui la presentadora del escenario principal de la Codemotion 2026 el 21 de abril en la sesión de tarde, presentando a ponentes y sus charlas tanto en inglés como en español",
         "text": "Disfruto mucho aportando a la comunidad, por ello he colaborado con algunas asociaciones mentorizando, participando en entrevistas, en game jams o de voluntaria",
         "mentorship": "Mentorizaje",
-        "volunteering": "Voluntariado",
+        "volunteering": "Colaboraciones y premios",
+        "sirviendoAwardOne": "Finalista Premio Sirviendo Código 2026",
+        "sirviendoAwardTwo": "2 octubre 2026",
+        "sirviendoAwardThree": "Soy una de las 6 finalistas, en la categoría de charlas de accesibilidad Access Mother, en los Premios de Sirviendo Código",
+        "sirviendoOne": "Embajadora Premio Sirviendo Código 2026",
+        "sirviendoTwo": "2 octubre 2026",
+        "sirviendoThree": "El día 2 de octubre, en los premios Sirviendo Código, fui la presentadora de la categoría Codemami, presentando junto a David Gómez a las tres personas finalistas de la categoría",
         "a11yOne": "Organizadora a11yconf",
         "a11yTwo": "marzo 2026 - actualidad",
-        "a11yThree": "Formo parte de la organización de la 2º edición de la conferencia más importante de accesibilidad de España, a11yconf. Principalmente mi función es la de dar vida a todas las redes sociales: linkedin, twitter, bluesky, mastodon e instagram, con ayudas en otras áreas de la organización",
+        "a11yThree": "Formo parte de la organización de la 2º edición de la conferencia más importante de accesibilidad de España, a11yconf. Principalmente mi función es la de dar vida a todas las redes sociales: linkedin, twitter, bluesky, mastodon e instagram, con ayudas en otras áreas de la organización, como la selección de charlas.",
         "techOne": "Mentorizada en techSHEssions",
         "techTwo": "octubre 2023 - enero 2024",
         "techThree": "Fui mentorizada en este programa, siendo mi mentora Marisa Martín Serrano, y realicé 3 charlas, una de 10 minutas, una de 15 minutos y una de 20 minutos.", 

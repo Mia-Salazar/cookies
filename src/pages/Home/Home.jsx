@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import cvEn from "../../assets/CV_EN_Mia_Salazar_2026.pdf";
+import cvEs from "../../assets/CV_ES_Mia_Salazar_2026.pdf";
 import { speechesArray } from "../../utils/ActivitiesElements";
 import { TechItem, Heading, StrengthItem, Text, Layout } from "../../components";
 import usePageTitle from "../../utils/usePageTitle";
@@ -26,6 +28,14 @@ export const Home = () => {
                 <Text>{t('home.textThree')}</Text>
                 <Text>{t('home.textFour')}</Text>
                 <Text>{t('home.textSix')}</Text>
+                <div className="home__cv-buttons">
+                    <a className="link" href={cvEn} download="CV_Mia_Salazar_EN.pdf">
+                        {t('home.downloadCvEn')}
+                    </a>
+                    <a className="link" href={cvEs} download="CV_Mia_Salazar_ES.pdf">
+                        {t('home.downloadCvEs')}
+                    </a>
+                </div>
             </section>
             <section>
                 <Heading text="home.activities" size="medium" />

@@ -84,6 +84,9 @@ export const Navbar = () => {
                         <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/collaborations">{t('home.collaborations')}</NavLink>
                     </li>
                     <li>
+                        <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/projects">{t('nav.portfolio')}</NavLink>
+                    </li>
+                    <li>
                         <NavLink onClick={closeMenu} className={({ isActive }) => isActive  ? "navbar__link navbar__link--is-active" : "navbar__link" }  to="/contact">{t('nav.contact')}</NavLink>
                     </li>
                 </ul>

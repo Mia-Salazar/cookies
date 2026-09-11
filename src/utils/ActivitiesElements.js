@@ -26,8 +26,30 @@ import weaaareNeuro from "../assets/img/eventos/neuroweaare.JPG"
 import commitSpeed from "../assets/img/eventos/speed.JPG"
 import lechazo from "../assets/img/eventos/lechazo.jpeg"
 import guarandinga from "../assets/img/eventos/guarandinga.png"
+import wp from "../assets/img/eventos/wp.png"
 
 export const speechesArray = [
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.a11yconf26",
+		speechLink: "https://2026.a11yconf.com/"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.wp",
+		imageSrc: wp,
+		speechLink: "https://wpaccessibility.day/2026/schedule/"
+	},
 	{ 
 		isWorkshop: false, 
 		hasVideo: false, 

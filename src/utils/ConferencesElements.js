@@ -17,6 +17,7 @@ import codemotion from "../assets/img//logos/codemotion.png";
 import uoc from "../assets/img//logos/uoc.png";
 import lechazo from "../assets/img//logos/lechazologo.png";
 import guarandinga from "../assets/img//logos/guarandinga.JPG";
+import wp from "../assets/img//logos/wp.png";
 
 export const conferencesArray  = [
     { alt: "CommitConf", href: "https://commit-conf.com/", image: commit },
@@ -27,6 +28,7 @@ export const conferencesArray  = [
     { alt: "Talent Arena", href: "https://talentarena.tech/es/", image: talent },
     { alt: "Universitat Oberta Catalunya", href: "https://www.uoc.edu/", image: uoc },
     { alt: "Google Developers Group", href: "https://gdg.community.dev/gdg-madrid/", image: gdg },
+    { alt: "Wordpress Accessibility Day", href: "https://wpaccessibility.day/2026/", image: wp },
     { alt: "MadVue", href: "https://madvue.es/", image: madvue },
     { alt: "LechazoConf", href: "https://lechazoconf.com/", image: lechazo },
     { alt: "Women Tech Makers Madrid", href: "https://wtmgdgmadrid.github.io/", image: wtm },

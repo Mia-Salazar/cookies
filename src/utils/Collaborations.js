@@ -10,6 +10,7 @@ import op from "../assets/img/logos/opground.jfif"
 import a11y from "../assets/img/logos/a11y.png";
 import codemotion from "../assets/img//logos/codemotion.png";
 import commit from "../assets/img/logos/commit.png";
+import sirviendo from "../assets/img/logos/sirviendo.svg";
 
 export const mentorArray = [
     {
@@ -54,6 +55,22 @@ export const volunteerArray = [
         title: "collaborations.a11yOne",
         year: "collaborations.a11yTwo",
         description: "collaborations.a11yThree",
+    },
+    {
+        alt:"Sirviendo código",
+        imageSrc: sirviendo,
+        imageHref: "https://sirviendocodigoawards.com/",
+        title: "collaborations.sirviendoOne",
+        year: "collaborations.sirviendoTwo",
+        description: "collaborations.sirviendoThree",
+    },
+        {
+        alt:"Sirviendo código",
+        imageSrc: sirviendo,
+        imageHref: "https://sirviendocodigoawards.com/",
+        title: "collaborations.sirviendoAwardOne",
+        year: "collaborations.sirviendoAwardTwo",
+        description: "collaborations.sirviendoAwardThree",
     },
     {
         alt:"CommitConf",

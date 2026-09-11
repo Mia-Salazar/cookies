@@ -2,6 +2,13 @@
 @import "../../assets/stylesheets/settings/variables";
 
 .home {
+    &__cv-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: toRem(8);
+        margin-top: toRem(16);
+    }
+
     &__list {
         list-style: none;
         padding-left: 0;
