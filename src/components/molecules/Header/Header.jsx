@@ -15,8 +15,8 @@ export const Header = ({ isIntro = false }) => {
 				alt={t("alt.profilePhoto")}
 				src={me}
 				className="header__image"
-				width="200"
-				height="200"
+				width="175"
+				height="175"
 			/>
             <TitleTag className="header__title">Mia Salazar</TitleTag>
             <p className="header__subtitle">{t("home.headerSubtitle")}</p>

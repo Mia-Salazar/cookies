@@ -38,7 +38,7 @@
         "collaborations": "Colaboraciones",
         "about": "Sobre mí",
         "continue": "Continuar",
-        "headerSubtitle": "Front-end developer, mentora y speaker",
+        "headerSubtitle": "Front-end developer, Accessibility lover, mentor Step4ward, international speaker",
         "hello": "¡Hola hola!",
         "textOne": "Soy Mia Salazar, Front-end developer, mentora, speaker y gran amante de las galletas de chocolate.",
         "textTwo": "Empecé mi camino en el mundo de la informática en 2018 y, desde entonces, no he dejado de disfrutarlo. Actualmente trabajo como Front-end developer, con experiencia en Angular, React y Vue, y me estoy especializando en accesibilidad web, un ámbito que me apasiona.",
@@ -146,6 +146,7 @@
         "dragonBall": "Buscador de personajes de Dragon Ball"
     },
     "awards": {
+        "freson": "fresON Fest, Google Developers Group Aranjuez. 24 octubre. Aranjuez. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "a11yconf26": "a11yconf 2026. 28 noviembre. Zaragoza. Infinity war: Accesibilidad vs ciberseguridad",
         "wp": "Wordpress Accessibility Day. 8 octubre. Online. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "edd26": "Extremadura Digital Day. 3 octubre. Caceres. Accesibilidad y neurodivergencia: No todo el mundo navega igual",

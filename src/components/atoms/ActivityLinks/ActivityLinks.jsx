@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useId, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
@@ -7,9 +7,18 @@ import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
 import "./ActivityLinks.scss";
 
-export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc, imageAlt }) => {
+export const ActivityLinks = ({
+    text,
+    speechLink = "",
+    slidesLink = "",
+    hasVideo = true,
+    imageSrc = "",
+    imageAlt = "",
+}) => {
     const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const imageButtonRef = useRef(null);
+    const modalTitleId = useId();
 
     const renderTextWithBoldFirstSentence = () => {
         const translated = t(text);
@@ -30,76 +39,66 @@ export const ActivityLinks = ({ text, speechLink, slidesLink, hasVideo, imageSrc
         );
     };
 
-    const renderImageButton = () => {
-        if (!imageSrc) return null;
+    const handleOpenModal = () => setIsModalOpen(true);
 
-        return (
-            <>
-                <Button
-                    styles="ghost small"
-                    text="activities.image"
-                    functionality={() => setIsModalOpen(true)}
-                />
-                <Modal
-                    isOpen={isModalOpen}
-                    onClose={() => setIsModalOpen(false)}
-                    imageSrc={imageSrc}
-                    imageAlt={imageAlt ?? ""}
-                />
-            </>
-        );
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        // Devuelve el foco al elemento que abrió el diálogo (patrón WAI-ARIA dialog).
+        imageButtonRef.current?.focus();
     };
 
-    if (slidesLink) {
-        return (
-            <div className="activity-wrapper">
-                <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
-                <div className="activity-wrapper__container">
-                    {speechLink && (
-                        <LinkButton
-                            isExternal
-                            styles="ghost small secondary"
-                            text={hasVideo ? 'activities.speech' : 'activities.event'}
-                            href={speechLink}
-                        />
-                    )}
-                    {renderImageButton()}
-                </div>
-            </div>
-        );
-    }
+    const linkHref = speechLink;
+    const linkLabel = hasVideo ? "activities.speech" : "activities.event";
+    const hasAnyLink = Boolean(slidesLink || speechLink || imageSrc);
 
-    if (speechLink || imageSrc) {
+    if (!hasAnyLink) {
         return (
-            <div className="activity-wrapper">
-                <p className="activity-wrapper__text">{renderTextWithBoldFirstSentence()}</p>
-                <div className="activity-wrapper__container">
-                    {speechLink && (
-                        <LinkButton
-                            isExternal
-                            styles="ghost small secondary"
-                            text={hasVideo ? 'activities.speech' : 'activities.event'}
-                            href={speechLink}
-                        />
-                    )}
-                    {renderImageButton()}
-                </div>
-            </div>
+            <p className="activity-link activity-link--no-link">
+                {renderTextWithBoldFirstSentence()}
+            </p>
         );
     }
 
     return (
-        <p className="activity-link activity-link--no-link">
-            {renderTextWithBoldFirstSentence()}
-        </p>
-    );
-};
+        <div className="activity-wrapper">
+            <p className="activity-wrapper__text">
+                {renderTextWithBoldFirstSentence()}
+            </p>
+            <div className="activity-wrapper__container">
+                {linkHref && (
+                    <LinkButton
+                        isExternal
+                        styles="ghost small secondary"
+                        text={linkLabel}
+                        href={linkHref}
+                        aria-label={`${t(linkLabel)} (${t("common.opensInNewTab", "se abre en una pestaña nueva")})`}
+                    />
+                )}
 
-ActivityLinks.defaultProps = {
-	hasVideo: true,
-    speechLink: "",
-    imageSrc: "",
-    imageAlt: "",
+                {imageSrc && (
+                    <>
+                        <Button
+                            ref={imageButtonRef}
+                            styles="ghost small"
+                            text="activities.image"
+                            functionality={handleOpenModal}
+                            aria-haspopup="dialog"
+                            aria-expanded={isModalOpen}
+                        />
+                        <Modal
+                            isOpen={isModalOpen}
+                            onClose={handleCloseModal}
+                            imageSrc={imageSrc}
+                            imageAlt={imageAlt}
+                            aria-labelledby={modalTitleId}
+                            role="dialog"
+                            aria-modal="true"
+                        />
+                    </>
+                )}
+            </div>
+        </div>
+    );
 };
 
 ActivityLinks.propTypes = {

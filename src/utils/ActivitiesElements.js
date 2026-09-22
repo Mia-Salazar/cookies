@@ -27,8 +27,19 @@ import commitSpeed from "../assets/img/eventos/speed.JPG"
 import lechazo from "../assets/img/eventos/lechazo.jpeg"
 import guarandinga from "../assets/img/eventos/guarandinga.png"
 import wp from "../assets/img/eventos/wp.png"
+import edd26 from "../assets/img/eventos/eed26.jpg"
 
 export const speechesArray = [
+	// { 
+	// 	isWorkshop: false, 
+	// 	hasVideo: false, 
+	// 	year: 2026, 
+	// 	lang: "es", 
+	// 	aria: "awards.talks", 
+	// 	icon: "microphone", 
+	// 	text: "awards.a11yconf26",
+	// 	speechLink: "https://2026.a11yconf.com/"
+	// },
 	{ 
 		isWorkshop: false, 
 		hasVideo: false, 
@@ -36,8 +47,8 @@ export const speechesArray = [
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
-		text: "awards.a11yconf26",
-		speechLink: "https://2026.a11yconf.com/"
+		text: "awards.freson",
+		speechLink: "https://fresonfest.gdg-aranjuez.com/"
 	},
 	{ 
 		isWorkshop: false, 
@@ -58,6 +69,7 @@ export const speechesArray = [
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.edd26",
+		image: edd26,
 		speechLink: "https://extremaduradigitalday.com/ponente/mia-salazar-edd26/"
 	},
 	{ 
