@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import cvEn from "../../assets/CV_EN_Mia_Salazar_2026.pdf";
 import cvEs from "../../assets/CV_ES_Mia_Salazar_2026.pdf";
 import { speechesArray } from "../../utils/ActivitiesElements";
+import { collaborationsArray, mentorArray, volunteerArray } from "../../utils/Collaborations";
 import { TechItem, Heading, StrengthItem, Text, Layout } from "../../components";
 import usePageTitle from "../../utils/usePageTitle";
 import "./Home.scss";
@@ -12,12 +13,16 @@ export const Home = () => {
     const { t } = useTranslation();
     usePageTitle("home");
 
-    // Speeches on schools where two
-    const speechesNumber = speechesArray.length + 1;
+
     const yearActual = new Date().getFullYear();
     const yearsOfExperience = yearActual - 2018;
     const talks = speechesArray.filter(talk => !talk.isWorkshop)
     const workshop = speechesArray.filter(talk => talk.isWorkshop)
+    const actualCollabroations = 3
+    const mentoree = 1
+    const awards = 1
+    const pastCollaborations = 
+    collaborationsArray.length + mentorArray.length + volunteerArray.length - mentoree - actualCollabroations - awards
 
 	return (
         <Layout>
@@ -41,16 +46,20 @@ export const Home = () => {
                 <Heading text="home.activities" size="medium" />
                 <ul className="home__container">
                     <StrengthItem 
-                        title={yearsOfExperience.toString()}
-                        subtitle="home.experience"
-                    />
-                    <StrengthItem 
                         title="home.accesibility"
                         subtitle="home.specialized"
                     />
                     <StrengthItem 
-                        title="home.mentor"
+                        title="home.ambassador"
+                        subtitle="home.wtm"
+                    />
+                    <StrengthItem 
+                        title="home.collaborator"
                         subtitle="home.step4ward"
+                    />
+                    <StrengthItem 
+                        title={yearsOfExperience.toString()}
+                        subtitle="home.experience"
                     />
                     <StrengthItem 
                         title={talks.length + 1}
@@ -60,21 +69,18 @@ export const Home = () => {
                         title={workshop.length}
                         subtitle="home.workshops"
                     />
-                    <StrengthItem 
-                        title="4"
-                        subtitle="home.university"
-                    />
+
                     <StrengthItem 
                         title="+60"
                         subtitle="home.articles"
                     />
                     <StrengthItem 
-                        title="14"
+                        title={actualCollabroations}
                         subtitle="home.collaborationsActive"
                     />
                     <StrengthItem 
-                        title="2"
-                        subtitle="home.lang"
+                        title={pastCollaborations}
+                        subtitle="home.volunteering"
                     />
                 </ul>
             </section>

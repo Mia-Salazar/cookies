@@ -31,10 +31,14 @@
         "projects": "Projects"
     },
     "home": {
+        "volunteering": "past collaborations",
+        "collaborator": "Collaborator",
+        "wtm": "Women TechMaker",
+        "ambassador": "Ambasador",
         "dev": "Published in Dev.to",
         "others": "Published in other platforms",
         "university": "talks with universities",
-        "collaborationsActive": "collaborations",
+        "collaborationsActive": "active collaborations",
         "collaborations": "Collaborations",
         "about": "About me",
         "continue": "Continue",
