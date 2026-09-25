@@ -11,6 +11,7 @@ import a11y from "../assets/img/logos/a11y.png";
 import codemotion from "../assets/img//logos/codemotion.png";
 import commit from "../assets/img/logos/commit.png";
 import sirviendo from "../assets/img/logos/sirviendo.svg";
+import wtm from "../assets/img/logos/wtmambassador.png";
 
 export const mentorArray = [
     {
@@ -55,6 +56,14 @@ export const volunteerArray = [
         title: "collaborations.a11yOne",
         year: "collaborations.a11yTwo",
         description: "collaborations.a11yThree",
+    },
+    {
+        alt:"wtm",
+        imageSrc: wtm,
+        imageHref: "https://www.technovation.org/women-techmakers",
+        title: "collaborations.wtmOne",
+        year: "collaborations.wtmTwo",
+        description: "collaborations.wtmThree",
     },
     {
         alt:"Sirviendo código",
