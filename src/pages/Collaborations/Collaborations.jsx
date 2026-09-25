@@ -5,7 +5,7 @@ import { Heading, Text, Layout, ActivityItem } from "../../components";
 import "./Collaborations.scss";
 import { gameArray } from "../../utils/ActivitiesElements";
 import { CollaborationItem } from "../../components/molecules/CollaborationItem/CollaborationItem";
-import { interviewArray, mentorArray, volunteerArray } from "../../utils/Collaborations";
+import { collaborationsArray, interviewArray, mentorArray, volunteerArray } from "../../utils/Collaborations";
 import usePageTitle from "../../utils/usePageTitle";
 
 export const Collaborations = () => {
@@ -16,6 +16,10 @@ export const Collaborations = () => {
         <Layout styles="activities">
             <Heading text="home.collaborations" />
             <Text>{t('collaborations.text')}</Text>
+            <Heading text="collaborations.collaboration" size="medium" />
+            {
+                collaborationsArray.map(collab => <CollaborationItem {...collab} />)
+            }
             <Heading text="collaborations.mentorship" size="medium" />
             {
                 mentorArray.map(collab => <CollaborationItem {...collab} />)
@@ -24,6 +28,8 @@ export const Collaborations = () => {
             {
                 volunteerArray.map(collab => <CollaborationItem {...collab} />)
             }
+
+
             <Heading text="activities.interview" size="medium" />
             {
                 interviewArray.map(collab => <CollaborationItem {...collab} />)

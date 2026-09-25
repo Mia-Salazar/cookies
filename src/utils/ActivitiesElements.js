@@ -28,6 +28,7 @@ import lechazo from "../assets/img/eventos/lechazo.jpeg"
 import guarandinga from "../assets/img/eventos/guarandinga.png"
 import wp from "../assets/img/eventos/wp.png"
 import edd26 from "../assets/img/eventos/eed26.jpg"
+import gdgRol from "../assets/img/eventos/gdg-rol.jpeg"
 
 export const speechesArray = [
 	// { 
@@ -49,6 +50,17 @@ export const speechesArray = [
 		icon: "microphone", 
 		text: "awards.freson",
 		speechLink: "https://fresonfest.gdg-aranjuez.com/"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.gdgRol",
+		imageSrc: gdgRol,
+		speechLink: "https://gdg.community.dev/events/details/google-gdg-madrid-presents-seguridad-en-ia-juegos-de-rol-y-soft-skills/"
 	},
 	{ 
 		isWorkshop: false, 

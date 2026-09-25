@@ -13,42 +13,7 @@ import commit from "../assets/img/logos/commit.png";
 import sirviendo from "../assets/img/logos/sirviendo.svg";
 import wtm from "../assets/img/logos/wtmambassador.png";
 
-export const mentorArray = [
-    {
-        alt:"Step4ward",
-        imageSrc: step,
-        imageHref: "https://step4ward.es/",
-        title: "collaborations.stepOne",
-        year: "collaborations.stepTwo",
-        description: "collaborations.stepThree",
-    },
-    {
-        alt:"TechSHEssions",
-        imageSrc: techSHE,
-        imageHref: "https://techshessions.com/",
-        title: "collaborations.techMOne",
-        year: "collaborations.techMTwo",
-        description: "collaborations.techMThree",
-    },
-    {
-        alt:"TechSHEssions",
-        imageSrc: techSHE,
-        imageHref: "https://techshessions.com/",
-        title: "collaborations.techOne",
-        year: "collaborations.techTwo",
-        description: "collaborations.techThree",
-    },
-    {
-        alt:"Adalab",
-        imageSrc: adalab,
-        imageHref: "https://adalab.es/",
-        title: "collaborations.adalabOne",
-        year: "collaborations.adalabTwo",
-        description: "collaborations.adalabThree",
-    },
-]
-
-export const volunteerArray = [
+export const collaborationsArray = [
     {
         alt:"a11yConf",
         imageSrc: a11y,
@@ -56,6 +21,14 @@ export const volunteerArray = [
         title: "collaborations.a11yOne",
         year: "collaborations.a11yTwo",
         description: "collaborations.a11yThree",
+    },
+    {
+        alt:"Step4ward",
+        imageSrc: step,
+        imageHref: "https://step4ward.es/",
+        title: "collaborations.stepOne",
+        year: "collaborations.stepTwo",
+        description: "collaborations.stepThree",
     },
     {
         alt:"wtm",
@@ -98,6 +71,37 @@ export const volunteerArray = [
         year: "collaborations.codemotionTwo",
         description: "collaborations.codemotionThree",
     },
+]
+
+export const mentorArray = [
+        {
+        alt:"TechSHEssions",
+        imageSrc: techSHE,
+        imageHref: "https://techshessions.com/",
+        title: "collaborations.techMOne",
+        year: "collaborations.techMTwo",
+        description: "collaborations.techMThree",
+    },
+    {
+        alt:"TechSHEssions",
+        imageSrc: techSHE,
+        imageHref: "https://techshessions.com/",
+        title: "collaborations.techOne",
+        year: "collaborations.techTwo",
+        description: "collaborations.techThree",
+    },
+    {
+        alt:"Adalab",
+        imageSrc: adalab,
+        imageHref: "https://adalab.es/",
+        title: "collaborations.adalabOne",
+        year: "collaborations.adalabTwo",
+        description: "collaborations.adalabThree",
+    },
+]
+
+export const volunteerArray = [
+
     {
         alt:"Ludo Ergo Sum",
         imageSrc: les,

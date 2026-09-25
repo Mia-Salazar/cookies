@@ -146,6 +146,7 @@
         "dragonBall": "Buscador de personajes de Dragon Ball"
     },
     "awards": {
+        "gdgRol": "Google Developer Groups Madrid. 8 octubre. Madrid. Dungeons, dragons y desarrollo: Como jugar a rol mejoró mis soft skills ",
         "freson": "fresON Fest, Google Developers Group Aranjuez. 24 octubre. Aranjuez. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "a11yconf26": "a11yconf 2026. 28 noviembre. Zaragoza. Infinity war: Accesibilidad vs ciberseguridad",
         "wp": "Wordpress Accessibility Day. 8 octubre. Online. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
@@ -190,7 +191,7 @@
         "interviewTwo": "IT Gals. Entrevista sobre mi evolución en el mundo de la tecnología",
         "techshessionsOne": "TechSHEssions primera charla. 15 noviembre. Madrid. Que la alergia te acompañe",
         "otherOne": "Telemadrid. Participación en un evento de juegos de mesa",
-        "mentor": "Mentora actual en Step4Ward",
+        "mentor": "Colaboradora en Step4Ward",
         "mentorTechSHE": "Mentora en TechSHEssions Madrid de octubre 2024 a enero",
         "interview": "IT Gals. Entrevista sobre mujeres en el sector tecnológico",
         "mentorTwo": "Pulpocon. 8 septiembre. Vigo. Mini charla en el Open Space",
@@ -211,6 +212,7 @@
         "freak": "Voluntaria en las jornadas de wargames Freak wars"
     },
     "collaborations": {
+        "volunteering": "Voluntariado",
         "wtmOne": "Embajadora Women TechMaker",
         "wtmTwo": "Septiembre 2026 - actualidad",
         "wtmThree": "Formo parte de Women TechMakers, un grupo de 512 mujeres en todo el mundo apasionadas en empoderar las comunidades organizando eventos, dando charlas, creando cotnenido y mentorizando, con acceso a una comunidad global de recursos, otras embajadras y con el objetivo d ayudar a contruir un mundo en el que las mujeres prosperes en el mundo tecnológico.",
@@ -222,7 +224,7 @@
         "codemotionThree": "Fui la presentadora del escenario principal de la Codemotion 2026 el 21 de abril en la sesión de tarde, presentando a ponentes y sus charlas tanto en inglés como en español",
         "text": "Disfruto mucho aportando a la comunidad, por ello he colaborado con algunas asociaciones mentorizando, participando en entrevistas, en game jams o de voluntaria",
         "mentorship": "Mentorizaje",
-        "volunteering": "Colaboraciones y premios",
+        "collaboration": "Colaboraciones y distinciones",
         "sirviendoAwardOne": "Finalista Premio Sirviendo Código 2026",
         "sirviendoAwardTwo": "2 octubre 2026",
         "sirviendoAwardThree": "Soy una de las 6 finalistas, en la categoría de charlas de accesibilidad Access Mother, en los Premios de Sirviendo Código",
@@ -241,9 +243,9 @@
         "adalabOne": "Mentora en Adalab",
         "adalabTwo": "julio 2021 - agosto 2022",
         "adalabThree": "Fui mentora de adalab durante dos de sus promociones, la Olguin y la Mileva, mentorizando durante 6 meses a 3 y 2 mentorizadas respectivamente",
-        "stepOne": "Mentora en Step4ward",
+        "stepOne": "Colaboradora en Step4ward",
         "stepTwo": "septiembre 2023 - actualidad",
-        "stepThree": "Actualmente he mentorizado a más de 16 mujeres bajo esta iniciativa. Principalmente me especializo en mentorizadas que quieren dar sus primeros pasos en el mundo de la tecnología y necesiten orientación. Asimismo, el año pasado empecé a hacer los procesos de selección de nuevas mentoras, habiendo añadido a la iniciativa un total de 14 mentoras nuevas. Por otro lado, también ayudo a organizar talleres y eventos para la comunidad.",
+        "stepThree": "Como persona activa en Step4ward, he acompañado a más de 16 mujeres en sus primeros pasos y transición al sector tecnológico. Además de gestionar la incorporación de 14 nuevas mentoras liderando sus procesos de selección, impulso activamente el crecimiento de la comunidad creando contenido, impartiendo charlas y organizando eventos y talleres prácticos.",
         "lesOne": "Ludo Ergo Sum",
         "lesTwo": "23 septiembre 2023",
         "lesThree": "Fui voluntaria en el evento de juegos de mesa Ludo Ergo Sum (LES), llevando a cabo funciones de control de aforo, información, vigilancia, gestión de juegos, montaje",
