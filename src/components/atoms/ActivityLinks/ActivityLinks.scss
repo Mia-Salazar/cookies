@@ -1,7 +1,8 @@
 @import '../../../assets/stylesheets/settings/toRem';
 @import '../../../assets/stylesheets/settings/variables';
 
-.activity-link, .activity-wrapper {
+.activity-link,
+.activity-wrapper {
     margin-left: toRem(8);
 
     color: $black;
@@ -14,6 +15,7 @@
 .activity-link {
     display: flex;
     flex-direction: column;
+
     font-size: toRem(19);
 
     &:hover {
@@ -23,6 +25,7 @@
     &--no-link {
         margin-top: 0;
         margin-bottom: 0;
+
         &:hover {
             color: $black;
         }
@@ -33,23 +36,60 @@
     &__text {
         display: flex;
         flex-direction: column;
+
         margin-top: 0;
         margin-bottom: toRem(4);
+
         font-size: toRem(18);
     }
 
-    &__container {
-        max-width: toRem(250);
-
+    &__first-line {
         display: flex;
-        grid-gap: toRem(10);
+        align-items: center;
+        flex-wrap: wrap;
+        gap: toRem(8);
+
+        width: 100%;
+        margin-bottom: toRem(8);
+    }
+
+    &__description {
+        display: block;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: toRem(10);
+
+        width: fit-content;
+        max-width: 100%;
 
         font-size: toRem(16);
+    }
+
+    &__language {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        padding: toRem(4) toRem(8);
+
+        background-color: $black;
+        color: $white;
+
+        font-size: toRem(12);
+        font-weight: 600;
+        line-height: 1.2;
+        white-space: nowrap;
+
+        border-radius: toRem(4);
     }
 }
 
 .activity-highlight {
-    font-weight: bold;
     font-size: toRem(23);
-    margin-bottom: 0.5rem;
+    font-weight: bold;
 }

@@ -150,6 +150,10 @@
         "dragonBall": "Dragon Ball Character Finder"
     },
     "awards": {
+        "language": {
+            "es": "Talk in Spanish",
+            "en": "Talk in English"
+        },
         "ghdRol": "Google Developer Groups Madrid. October 8. Madrid. Dungeons, Dragons, and Development: How playing RPGs improved my soft skills",
         "freson": "fresONFest, Google Developers Group Aranjuez. Octubre 24th. Aranjuez. Accessibility and neurodivergence: Not everyone navigates the same way",
         "a11yconf26": "a11yconf 2026. November 28th. Zaragoza. Infinity war: Accessibility vs cybersegurity",

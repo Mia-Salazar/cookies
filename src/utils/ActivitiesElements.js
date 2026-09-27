@@ -66,7 +66,7 @@ export const speechesArray = [
 		isWorkshop: false, 
 		hasVideo: false, 
 		year: 2026, 
-		lang: "es", 
+		lang: "en", 
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.wp",
@@ -324,11 +324,11 @@ export const speechesArray = [
 		slidesLink: "https://docs.google.com/presentation/d/1oQGhAbdc14DeFpxkL3Onl4Ugh8tBvINLD-A9Fmq01HE/edit?usp=sharing",
 	    imageSrc: adopta
 	},
-		{ 
+	{ 
 		isWorkshop: false,
 		hasVideo: true, 
 		year: 2025, 
-		lang: "es", 
+		lang: "en", 
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.madvue", 

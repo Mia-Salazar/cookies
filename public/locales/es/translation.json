@@ -150,6 +150,10 @@
         "dragonBall": "Buscador de personajes de Dragon Ball"
     },
     "awards": {
+        "language": {
+            "es": "Charla en español",
+            "en": "Charla en inglés"
+        },
         "gdgRol": "Google Developer Groups Madrid. 8 octubre. Madrid. Dungeons, dragons y desarrollo: Como jugar a rol mejoró mis soft skills ",
         "freson": "fresON Fest, Google Developers Group Aranjuez. 24 octubre. Aranjuez. Accesibilidad y neurodivergencia: No todo el mundo navega igual",
         "a11yconf26": "a11yconf 2026. 28 noviembre. Zaragoza. Infinity war: Accesibilidad vs ciberseguridad",

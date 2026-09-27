@@ -14,27 +14,67 @@ export const ActivityLinks = ({
     hasVideo = true,
     imageSrc = "",
     imageAlt = "",
+    lang = "es",
+    languageLabel = "Español",
 }) => {
     const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const imageButtonRef = useRef(null);
     const modalTitleId = useId();
 
+    const renderLanguage = () => {
+        if (!languageLabel) {
+            return null;
+        }
+
+        return (
+            <span
+                className="activity-wrapper__language"
+                lang={lang}
+            >
+                {languageLabel}
+            </span>
+        );
+    };
+
     const renderTextWithBoldFirstSentence = () => {
         const translated = t(text);
         const firstDotIndex = translated.indexOf(".");
 
         if (firstDotIndex === -1) {
-            return translated;
+            return (
+                <span className="activity-wrapper__first-line">
+                    <span className="activity-highlight">
+                        {translated}
+                    </span>
+
+                    {renderLanguage()}
+                </span>
+            );
         }
 
-        const firstSentence = translated.slice(0, firstDotIndex + 1);
+        const firstSentence = translated.slice(
+            0,
+            firstDotIndex + 1
+        );
+
         const rest = translated.slice(firstDotIndex + 1);
 
         return (
             <>
-                <span className="activity-highlight">{firstSentence}</span>
-                {rest}
+                <span className="activity-wrapper__first-line">
+                    <span className="activity-highlight">
+                        {firstSentence}
+                    </span>
+
+                    {renderLanguage()}
+                </span>
+
+                {rest && (
+                    <span className="activity-wrapper__description">
+                        {rest}
+                    </span>
+                )}
             </>
         );
     };
@@ -43,27 +83,38 @@ export const ActivityLinks = ({
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
-        // Devuelve el foco al elemento que abrió el diálogo (patrón WAI-ARIA dialog).
         imageButtonRef.current?.focus();
     };
 
     const linkHref = speechLink;
-    const linkLabel = hasVideo ? "activities.speech" : "activities.event";
-    const hasAnyLink = Boolean(slidesLink || speechLink || imageSrc);
+    const linkLabel = hasVideo
+        ? "activities.speech"
+        : "activities.event";
+
+    const hasAnyLink = Boolean(
+        slidesLink || speechLink || imageSrc
+    );
 
     if (!hasAnyLink) {
         return (
-            <p className="activity-link activity-link--no-link">
+            <p
+                className="activity-link activity-link--no-link"
+                lang={lang}
+            >
                 {renderTextWithBoldFirstSentence()}
             </p>
         );
     }
 
     return (
-        <div className="activity-wrapper">
+        <div
+            className="activity-wrapper"
+            lang={lang}
+        >
             <p className="activity-wrapper__text">
                 {renderTextWithBoldFirstSentence()}
             </p>
+
             <div className="activity-wrapper__container">
                 {linkHref && (
                     <LinkButton
@@ -71,7 +122,10 @@ export const ActivityLinks = ({
                         styles="ghost small secondary"
                         text={linkLabel}
                         href={linkHref}
-                        aria-label={`${t(linkLabel)} (${t("common.opensInNewTab", "se abre en una pestaña nueva")})`}
+                        aria-label={`${t(linkLabel)} (${t(
+                            "common.opensInNewTab",
+                            "se abre en una pestaña nueva"
+                        )})`}
                     />
                 )}
 
@@ -85,6 +139,7 @@ export const ActivityLinks = ({
                             aria-haspopup="dialog"
                             aria-expanded={isModalOpen}
                         />
+
                         <Modal
                             isOpen={isModalOpen}
                             onClose={handleCloseModal}
@@ -102,12 +157,14 @@ export const ActivityLinks = ({
 };
 
 ActivityLinks.propTypes = {
-    hasVideo: PropTypes.bool,
     text: PropTypes.string.isRequired,
     speechLink: PropTypes.string,
     slidesLink: PropTypes.string,
+    hasVideo: PropTypes.bool,
     imageSrc: PropTypes.string,
     imageAlt: PropTypes.string,
+    lang: PropTypes.string,
+    languageLabel: PropTypes.string,
 };
 
 export default ActivityLinks;

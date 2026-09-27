@@ -2,13 +2,14 @@
 @import "../../../assets/stylesheets/settings/variables";
 
 .list-item {
+    display: flex;
     list-style-type: none;
     margin-bottom: toRem(32);
 
     &--with-icon {
         display: grid;
         align-items: center;
-        grid-template-columns: toRem(16) 1fr;
+        grid-template-columns: toRem(16) 1fr toRem(50);
         grid-gap: toRem(8);
 
         @media (min-width: 768px) {
