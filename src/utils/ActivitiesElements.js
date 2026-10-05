@@ -48,6 +48,16 @@ export const speechesArray = [
 		lang: "es", 
 		aria: "awards.talks", 
 		icon: "microphone", 
+		text: "awards.nerdearla",
+		speechLink: "https://nerdearla.com/en/speakers/mia-salazar/"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
 		text: "awards.freson",
 		speechLink: "https://fresonfest.gdg-aranjuez.com/"
 	},
