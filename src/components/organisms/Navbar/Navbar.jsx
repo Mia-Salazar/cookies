@@ -5,9 +5,12 @@ import { useTranslation } from "react-i18next";
 import LanguageButton from "../../molecules/LanguageButton/LanguageButton";
 import "./Navbar.scss";
 
+const FOCUSABLE_SELECTOR = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
 export const Navbar = () => {
     const { t } = useTranslation();
     const menuButtonRef = useRef(null);
+    const menuRef = useRef(null);
 
     const [toggle, setToggle] = useState(false);
 
@@ -35,10 +38,44 @@ export const Navbar = () => {
     useEffect(() => {
         if (!toggle) return;
 
+        const menu = menuRef.current;
+        const firstFocusable = menu?.querySelector(FOCUSABLE_SELECTOR);
+        firstFocusable?.focus();
+
+        const getFocusableElements = () => {
+            const elements = [];
+            if (menuButtonRef.current) {
+                elements.push(menuButtonRef.current);
+            }
+            if (menu) {
+                elements.push(...menu.querySelectorAll(FOCUSABLE_SELECTOR));
+            }
+            return elements;
+        };
+
         const handleKeyDown = (event) => {
             if (event.key === "Escape") {
                 closeMenu();
                 menuButtonRef.current?.focus();
+                return;
+            }
+
+            if (event.key !== "Tab") return;
+
+            const focusables = getFocusableElements();
+            if (focusables.length === 0) return;
+
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+
+            if (event.shiftKey) {
+                if (document.activeElement === first) {
+                    last.focus();
+                    event.preventDefault();
+                }
+            } else if (document.activeElement === last) {
+                first.focus();
+                event.preventDefault();
             }
         };
 
@@ -54,7 +91,7 @@ export const Navbar = () => {
             <button
                 ref={menuButtonRef}
                 type="button"
-                aria-label={t("alt.menuToggle")}
+                aria-label={toggle ? t("alt.menuClose") : t("alt.menuOpen")}
                 aria-expanded={toggle}
                 aria-controls="navbar-menu"
                 className={toggle ? "navbar__hamburguer navbar__hamburguer--is-open": "navbar__hamburguer"}
@@ -65,6 +102,7 @@ export const Navbar = () => {
                 <span aria-hidden="true" className={toggle ? "navbar__hamburguer-icon navbar__hamburguer-icon--is-open": "navbar__hamburguer-icon"}></span>
             </button>
             <div
+                ref={menuRef}
                 className={toggle ? "navbar__container navbar__container--is-open": "navbar__container"}
                 id="navbar-menu"
             >

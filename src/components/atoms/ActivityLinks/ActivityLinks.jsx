@@ -1,4 +1,4 @@
-import React, { useId, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
@@ -7,164 +7,108 @@ import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
 import "./ActivityLinks.scss";
 
+const LANGUAGE_LABELS = {
+	es: "Español",
+	en: "English",
+};
+
+const isVideoUrl = (url = "") =>
+	/youtube\.com|youtu\.be|vimeo\.com/i.test(url);
+
+const splitHighlight = (text) => {
+	const dotIndex = text.indexOf(".");
+	if (dotIndex === -1) {
+		return { title: text, description: "" };
+	}
+	return {
+		title: text.slice(0, dotIndex + 1),
+		description: text.slice(dotIndex + 1),
+	};
+};
+
 export const ActivityLinks = ({
-    text,
-    speechLink = "",
-    slidesLink = "",
-    hasVideo = true,
-    imageSrc = "",
-    imageAlt = "",
-    lang = "es",
-    languageLabel = "Español",
+	text,
+	speechLink = "",
+	imageSrc = "",
+	imageAlt = "",
+	lang = "es",
 }) => {
-    const { t } = useTranslation();
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const imageButtonRef = useRef(null);
-    const modalTitleId = useId();
+	const { t } = useTranslation();
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const imageButtonRef = useRef(null);
 
-    const renderLanguage = () => {
-        if (!languageLabel) {
-            return null;
-        }
+	const languageCode = lang === "en" ? "en" : "es";
+	const { title, description } = splitHighlight(t(text));
+	const hasActions = Boolean(speechLink || imageSrc);
 
-        return (
-            <span
-                className="activity-wrapper__language"
-                lang={lang}
-            >
-                {languageLabel}
-            </span>
-        );
-    };
+	const content = (
+		<>
+			<span className="activity-wrapper__first-line">
+				<span className="activity-highlight">{title}</span>
+				<span className="activity-wrapper__language" lang={languageCode}>
+					{LANGUAGE_LABELS[languageCode]}
+				</span>
+			</span>
+			{description && (
+				<span className="activity-wrapper__description">{description}</span>
+			)}
+		</>
+	);
 
-    const renderTextWithBoldFirstSentence = () => {
-        const translated = t(text);
-        const firstDotIndex = translated.indexOf(".");
+	const closeModal = () => {
+		setIsModalOpen(false);
+		imageButtonRef.current?.focus();
+	};
 
-        if (firstDotIndex === -1) {
-            return (
-                <span className="activity-wrapper__first-line">
-                    <span className="activity-highlight">
-                        {translated}
-                    </span>
+	if (!hasActions) {
+		return (
+			<p className="activity-link activity-link--no-link" lang={languageCode}>
+				{content}
+			</p>
+		);
+	}
 
-                    {renderLanguage()}
-                </span>
-            );
-        }
-
-        const firstSentence = translated.slice(
-            0,
-            firstDotIndex + 1
-        );
-
-        const rest = translated.slice(firstDotIndex + 1);
-
-        return (
-            <>
-                <span className="activity-wrapper__first-line">
-                    <span className="activity-highlight">
-                        {firstSentence}
-                    </span>
-
-                    {renderLanguage()}
-                </span>
-
-                {rest && (
-                    <span className="activity-wrapper__description">
-                        {rest}
-                    </span>
-                )}
-            </>
-        );
-    };
-
-    const handleOpenModal = () => setIsModalOpen(true);
-
-    const handleCloseModal = () => {
-        setIsModalOpen(false);
-        imageButtonRef.current?.focus();
-    };
-
-    const linkHref = speechLink;
-    const linkLabel = hasVideo
-        ? "activities.speech"
-        : "activities.event";
-
-    const hasAnyLink = Boolean(
-        slidesLink || speechLink || imageSrc
-    );
-
-    if (!hasAnyLink) {
-        return (
-            <p
-                className="activity-link activity-link--no-link"
-                lang={lang}
-            >
-                {renderTextWithBoldFirstSentence()}
-            </p>
-        );
-    }
-
-    return (
-        <div
-            className="activity-wrapper"
-            lang={lang}
-        >
-            <p className="activity-wrapper__text">
-                {renderTextWithBoldFirstSentence()}
-            </p>
-
-            <div className="activity-wrapper__container">
-                {linkHref && (
-                    <LinkButton
-                        isExternal
-                        styles="ghost small secondary"
-                        text={linkLabel}
-                        href={linkHref}
-                        aria-label={`${t(linkLabel)} (${t(
-                            "common.opensInNewTab",
-                            "se abre en una pestaña nueva"
-                        )})`}
-                    />
-                )}
-
-                {imageSrc && (
-                    <>
-                        <Button
-                            ref={imageButtonRef}
-                            styles="ghost small"
-                            text="activities.image"
-                            functionality={handleOpenModal}
-                            aria-haspopup="dialog"
-                            aria-expanded={isModalOpen}
-                        />
-
-                        <Modal
-                            isOpen={isModalOpen}
-                            onClose={handleCloseModal}
-                            imageSrc={imageSrc}
-                            imageAlt={imageAlt}
-                            aria-labelledby={modalTitleId}
-                            role="dialog"
-                            aria-modal="true"
-                        />
-                    </>
-                )}
-            </div>
-        </div>
-    );
+	return (
+		<div className="activity-wrapper" lang={languageCode}>
+			<p className="activity-wrapper__text">{content}</p>
+			<div className="activity-wrapper__container">
+				{speechLink && (
+					<LinkButton
+						isExternal
+						styles="ghost small secondary"
+						text={isVideoUrl(speechLink) ? "activities.speech" : "activities.event"}
+						href={speechLink}
+					/>
+				)}
+				{imageSrc && (
+					<>
+						<Button
+							ref={imageButtonRef}
+							styles="ghost small"
+							text="activities.image"
+							functionality={() => setIsModalOpen(true)}
+							aria-haspopup="dialog"
+							aria-expanded={isModalOpen}
+						/>
+						<Modal
+							isOpen={isModalOpen}
+							onClose={closeModal}
+							imageSrc={imageSrc}
+							imageAlt={imageAlt}
+						/>
+					</>
+				)}
+			</div>
+		</div>
+	);
 };
 
 ActivityLinks.propTypes = {
-    text: PropTypes.string.isRequired,
-    speechLink: PropTypes.string,
-    slidesLink: PropTypes.string,
-    hasVideo: PropTypes.bool,
-    imageSrc: PropTypes.string,
-    imageAlt: PropTypes.string,
-    lang: PropTypes.string,
-    languageLabel: PropTypes.string,
+	text: PropTypes.string.isRequired,
+	speechLink: PropTypes.string,
+	imageSrc: PropTypes.string,
+	imageAlt: PropTypes.string,
+	lang: PropTypes.string,
 };
 
 export default ActivityLinks;

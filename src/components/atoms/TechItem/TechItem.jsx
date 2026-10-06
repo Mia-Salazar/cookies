@@ -13,9 +13,9 @@ export const TechItem = ({ href, size, text }) => {
 				href={href}
 				target="_blank"
 				rel="noopener noreferrer"
-				aria-label={t("alt.openResource", { text })}
 			>
 				{text}
+				<span className="sr-only"> ({t("alt.opensNewTab")})</span>
 			</a>
 		</li>
 	);

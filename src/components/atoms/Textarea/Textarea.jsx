@@ -14,7 +14,7 @@ export const Textarea = ({ functionality, id, name, placeholder, required, value
 			value={value}
 			required={required}
 			onChange={functionality}
-			placeholder={t(placeholder)}
+			placeholder={placeholder ? t(placeholder) : undefined}
 			aria-describedby={ariaDescribedBy}
 			aria-invalid={ariaInvalid}
 		></textarea>
@@ -25,7 +25,7 @@ Textarea.propTypes = {
 	functionality: PropTypes.func,
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
-	placeholder: PropTypes.string.isRequired,
+	placeholder: PropTypes.string,
 	required: PropTypes.bool,
 	value: PropTypes.string,
 	"aria-describedby": PropTypes.string,

@@ -4,13 +4,12 @@
         "loading": "Loading content",
         "skip": "Skip to content",
         "navigation": "Main navigation",
-        "menuToggle": "Open and close navigation menu",
+        "menuOpen": "Open navigation menu",
+        "menuClose": "Close navigation menu",
         "close": "Close",
         "imageDialog": "Enlarged image dialog",
         "profilePhoto": "Portrait of Mia Salazar",
         "opensNewTab": "Opens in a new tab",
-        "openArticle": "Open article \"{{title}}\" in new tab",
-        "openResource": "Open resource {{text}} in new tab",
         "openConference": "Visit {{name}} website in new tab",
         "openCollaboration": "Visit {{name}} in new tab",
         "projectImage": "Screenshot of project {{title}}",
@@ -37,7 +36,6 @@
         "ambassador": "Ambasador",
         "dev": "Published in Dev.to",
         "others": "Published in other platforms",
-        "university": "talks with universities",
         "collaborationsActive": "active collaborations",
         "collaborations": "Collaborations",
         "about": "About me",
@@ -51,11 +49,9 @@
         "experience": "years of experience",
         "accesibility": "Accessibility",
         "specialized": "specialization",
-        "mentor": "Mentor",
         "step4ward": "at Step4ward",
         "articles": "articles",
         "speeches": "talks",
-        "lang": "languages",
         "tech": "Technologies",
         "textFour": "In 2024, I took another step forward and started giving talks and workshops. Since then, I’ve spoken at more than 30 events, including amazing conferences such as T3chFest, CommitConf, SalmorejoTech, and MadVue, where I also gave my first talk in English.",
         "textFive": "Here you can see some of the technologies I've worked with.",
@@ -66,14 +62,12 @@
         "downloadCvEs": "Download CV in Spanish"
     },
     "nav": {
-        "home": "Home",
         "portfolio": "Projects",
         "articles": "Articles",
-        "activities": "Challenges",
         "contact": "Contact",
         "lang": "Choose language"
     },
-    "activities":  {
+    "activities": {
         "image": "Poster",
         "choose": "Choose activity type",
         "textTwo": "The topics I'm most passionate about giving talks on are those related to accessibility, although I'm also drawn to talking about the value of mentoring, soft skills, and front-end development in general.",
@@ -82,10 +76,8 @@
         "text": "I have currently given more than 30 talks and workshops at conferences, events, and associations. Some of these workshops have been thanks to my colleagues.",
         "interview": "Interviews",
         "game": "Game Jams",
-        "others": "Others",
         "speeches": "Talks",
         "speech": "Video",
-        "slide": "Slides",
         "event": "Event"
     },
     "contact": {
@@ -94,10 +86,6 @@
         "send": "Send",
         "email": "Email",
         "name": "Name",
-        "country": "Country",
-        "street": "Street",
-        "province": "Province",
-        "city": "City",
         "comment": "What do you want to tell me?",
         "success": "Message sent successfully. Thank you for writing.",
         "error": "Could not send the message. Please try again later.",
@@ -115,7 +103,9 @@
         "textTwo": "Before being a cookie monster, I was an intergalactic traveler and a superheroine. You can see my projects here.",
         "past": "My past",
         "visit": "Visit",
+        "visitLabel": "Visit {{title}}",
         "info": "More info",
+        "infoLabel": "More information about {{title}}",
         "load": "Load more",
         "all": "All",
         "vue": "Vuejs",
@@ -147,15 +137,11 @@
         "home": "Fleeet Homepage",
         "catalog": "Fleeet Catalog",
         "slot": "Slot Machine Game",
-        "dragonBall": "Dragon Ball Character Finder"
+        "dragonBall": "Dragon Ball Character Finder",
+        "trains": "Train data finder"
     },
     "awards": {
-        "nerdearla": "Nerdearla Mexico. November 20. Online. 'Hi, Mom!': Accessibility for those not born digital",
-        "language": {
-            "es": "Talk in Spanish",
-            "en": "Talk in English"
-        },
-        "ghdRol": "Google Developer Groups Madrid. October 8. Madrid. Dungeons, Dragons, and Development: How playing RPGs improved my soft skills",
+        "nerdearla": "Nerdearla Mexico. November 18. Online. 'Hi, Mom!': Accessibility for those not born digital",
         "freson": "fresONFest, Google Developers Group Aranjuez. Octubre 24th. Aranjuez. Accessibility and neurodivergence: Not everyone navigates the same way",
         "a11yconf26": "a11yconf 2026. November 28th. Zaragoza. Infinity war: Accessibility vs cybersegurity",
         "wp": "Wordpress Accessibility Day. Octuber 8th. Online. Accessibility and neurodivergence: Not everyone navigates the same way",
@@ -186,7 +172,7 @@
         "wtmInternational": "Women Tecmakers Madrid, International Women's Day. April 25th. Madrid. Web Accessibility: A Survival Guide for Noobies",
         "commit": "CommitConf. April 5th. Madrid. I occasionally see ARIA attributes",
         "commitSpace": "CommitConf. April 5th. Madrid. Mom, when I grow up I want to be a speaker",
-       "t3ch25": "T3ch Fest. March 13rd. Soft Skills: How role-playing made me a better programmer",
+        "t3ch25": "T3ch Fest. March 13rd. Soft Skills: How role-playing made me a better programmer",
         "gdg": "Google Developer Groups. November 22nd. Madrid. Legacy code and accessibility: Improving our projects",
         "presentation": "TechSHEssions presentation. October 3rd. Madrid. Talk about my experience as a mentee",
         "wtm": "Women Tecmakers Madrid. September 12th. Madrid. Foodiesauru, a project with sticks and stones",
@@ -206,21 +192,18 @@
         "interview": "IT Gals. Interview about women in the technology sector",
         "videogame": "'Treeventure', a Christmas tree farm simulator",
         "videogameTwo": "Spain Game Devs Jam II: 'Damng, la balada del capitán'",
-        "others": "Others",
-        "articles": "Articles",
-        "programming": "Programming article",
-        "cybersecurity": "Cybersecurity article",
         "interviewText": "Interview",
         "videogames": "Participant in a Game Jam",
         "paper": "Paper",
         "handshake": "Volunteer",
         "talks": "Talks",
         "coreaThree": "University of Costa Rica. Paper reviewers",
-"talksOne": "Carlos III University. Madrid. Two talks in the Science and Technology in Feminine Program in two different secondary schools",
+        "talksOne": "Carlos III University. Madrid. Two talks in the Science and Technology in Feminine Program in two different secondary schools",
         "talksTwo": "Discovering Tech Stories: Interview on Opground",
         "mentorAdalab": "Mentor at Adalab during two promotions",
         "les": "Volunteer at Ludo Ergo Sum, an event of board and role-playing games",
-        "freak": "Volunteer at Freak Wars, a wargames event"
+        "freak": "Volunteer at Freak Wars, a wargames event",
+        "gdgRol": "Google Developer Groups Madrid. October 8. Madrid. Dungeons, Dragons, and Development: How playing RPGs improved my soft skills"
     },
     "collaborations": {
         "volunteering": "Volunteering",
@@ -274,15 +257,16 @@
         "discoThree": "I had a conversation with Disco Duro de Roer in which we talked about web accessibility",
         "opOne": "Opground",
         "opTwo": "March 30, 2022",
-        "opThree": "I was interviewed on Opground about my first steps and the development of my career."
-
+        "opThree": "I was interviewed on Opground about my first steps and the development of my career.",
+        "lesOne": "Ludo Ergo Sum",
+        "lesTwo": "September 23, 2023"
     },
     "articles": {
         "30": "Here you can check my latest 30 articles.",
         "all": "See all articles",
         "choose": "Choose article type",
         "text": "I really enjoy writing articles on various topics. My favorite is accessibility, but I also write about front-end development, programming, and soft skills.",
-       "textTwo": "I publish most of my articles on Dev.to, however, I have some on Medium and I have collaborated with various initiatives by publishing articles for them, such as weAAAre and Manfred.",
-       "textThree": "Most of my articles are written in English, although you can also find some written in Spanish"
+        "textTwo": "I publish most of my articles on Dev.to, however, I have some on Medium and I have collaborated with various initiatives by publishing articles for them, such as weAAAre and Manfred.",
+        "textThree": "Most of my articles are written in English, although you can also find some written in Spanish"
     }
-} 
+}

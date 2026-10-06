@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import "./LinkButton.scss";
 
-export const LinkButton = ({ href, isExternal, text, styles }) => {
+export const LinkButton = ({ href, isExternal, text, styles, ...rest }) => {
 	const { t } = useTranslation();
 
 	if (isExternal) {
@@ -15,6 +15,7 @@ export const LinkButton = ({ href, isExternal, text, styles }) => {
 				href={href}
 				target="_blank"
 				rel="noopener noreferrer"
+				{...rest}
 			>
 				{t(text)}
 				<span className="sr-only"> ({t("alt.opensNewTab")})</span>
@@ -23,7 +24,7 @@ export const LinkButton = ({ href, isExternal, text, styles }) => {
 	}
 
 	return (
-		<Link className={`link ${styles ? styles : ''}`} to={href}>{t(text)}</Link>
+		<Link className={`link ${styles ? styles : ''}`} to={href} {...rest}>{t(text)}</Link>
 	);
 };
 

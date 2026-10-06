@@ -11,9 +11,9 @@ export const StrengthItem = ({ subtitle, title }) => {
 		: t(title);
 
 	return (
-		<li className="strength-item" aria-label={`${displayTitle} ${t(subtitle)}`}>
-			<p className="strength-item__title" aria-hidden="true">{displayTitle}</p>
-			<p className="strength-item__subtitle" aria-hidden="true">{t(subtitle)}</p>
+		<li className="strength-item">
+			<p className="strength-item__title">{displayTitle}</p>
+			<p className="strength-item__subtitle">{t(subtitle)}</p>
 		</li>
 	);
 };

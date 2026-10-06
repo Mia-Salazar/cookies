@@ -20,9 +20,9 @@ export const ArticleItem = ({ date, href, source, tags, title }) => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t("alt.openArticle", { title })}
             >
                 <span className="article-item__title">{title}</span>
+                <span className="sr-only"> ({t("alt.opensNewTab")})</span>
             </a>
             
             {tags &&

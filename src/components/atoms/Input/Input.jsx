@@ -16,7 +16,7 @@ export const Input = ({ checked, functionality, id, name, placeholder, required,
 			required={required}
 			onChange={functionality}
 			checked={checked}
-			placeholder={t(placeholder)}
+			placeholder={placeholder ? t(placeholder) : undefined}
 			aria-describedby={ariaDescribedBy}
 			aria-invalid={ariaInvalid}
 		/>
@@ -28,7 +28,7 @@ Input.propTypes = {
 	functionality: PropTypes.func,
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
-	placeholder: PropTypes.string.isRequired,
+	placeholder: PropTypes.string,
 	required: PropTypes.bool,
 	type: PropTypes.string.isRequired,
 	value: PropTypes.string,

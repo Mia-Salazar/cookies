@@ -58,7 +58,7 @@ FormElement.propTypes = {
 	functionality: PropTypes.func,
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
-	placeholder: PropTypes.string.isRequired,
+	placeholder: PropTypes.string,
 	required: PropTypes.bool,
 	text: PropTypes.string.isRequired,
 	type: PropTypes.string,
