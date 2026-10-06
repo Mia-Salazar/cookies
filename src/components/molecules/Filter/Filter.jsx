@@ -10,7 +10,7 @@ export const Filter = ({ buttonFunctionality, filterActive }) => {
 	const { t } = useTranslation();
 
 	return (
-		<fieldset className="filter" aria-controls="filter-portoflio">
+		<fieldset className="filter">
 			<legend>{t("portfolio.filterLegend")}</legend>
 			{
 				portfolioFilter.map((item) => {

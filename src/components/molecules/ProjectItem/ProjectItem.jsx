@@ -50,7 +50,7 @@ export const ProjectItem = ({ href, image, text, title }) => {
           styles="ghost"
           text="portfolio.visit"
           href={href}
-          aria-label={t("portfolio.visitLabel", { title: projectTitle })}
+          aria-label={`${t("portfolio.visitLabel", { title: projectTitle })} (${t("alt.opensNewTab")})`}
         />
       </div>
     </li>

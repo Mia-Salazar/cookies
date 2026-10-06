@@ -38,7 +38,7 @@ export const Articles = () => {
                     <Text>{t("articles.30")}</Text>
                     <ArticlesList data={content.data} isLoading={content.isLoading} />
                     <div className="articles__wrapper">
-                        <LinkButton href="https://dev.to/miasalazar" text={t("articles.all")} />
+                        <LinkButton isExternal href="https://dev.to/miasalazar" text="articles.all" />
                     </div>
                     
                 </Tab>

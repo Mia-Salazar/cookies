@@ -4,7 +4,8 @@
 .input {
     @include input-styles;
     
-    &:focus {
-        outline: 1px solid $primary;
+    &:focus-visible {
+        outline: 4px solid $black;
+        outline-offset: 2px;
     }
 }

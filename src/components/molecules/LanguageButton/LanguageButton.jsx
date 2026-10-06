@@ -32,9 +32,9 @@ export const LanguageButton = () => {
 	}, []);
 	
 	return (
-		<form className="language">
+		<div className="language">
 			<fieldset className="language__fieldset">
-				<legend className="language__title" aria-hidden="false">{t('nav.lang')}</legend>
+				<legend className="language__title">{t('nav.lang')}</legend>
 				<div className="language__container">
 					<input checked={language === "en"} className="language__input"
 						id="en" type="radio" name="lang" onChange={() => changeLanguage("en")}/>
@@ -49,7 +49,7 @@ export const LanguageButton = () => {
 					</label>
 				</div>
 			</fieldset>
-		</form>
+		</div>
 	);
 };
 

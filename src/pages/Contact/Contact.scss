@@ -40,13 +40,13 @@
     text-decoration: none;
     word-break: break-all;
 
-    &:hover,
-    &:focus {
+    &:hover {
         color: $secondary;
     }
 
-    &:focus {
-        outline: 2px solid $secondary;
+    &:focus-visible {
+        color: $secondary;
+        outline: 4px solid $black;
         outline-offset: toRem(2);
     }
 }
