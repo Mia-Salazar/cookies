@@ -29,6 +29,9 @@ import guarandinga from "../assets/img/eventos/guarandinga.png"
 import wp from "../assets/img/eventos/wp.png"
 import edd26 from "../assets/img/eventos/eed26.jpg"
 import gdgRol from "../assets/img/eventos/gdg-rol.jpeg"
+import nerdearla from "../assets/img/eventos/nerdearla.png"
+import a11yconf26 from "../assets/img/eventos/mia-es.jpg"
+import freson from "../assets/img/eventos/freson.jpg"
 
 export const speechesArray = [
 	{ 
@@ -39,6 +42,7 @@ export const speechesArray = [
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.a11yconf26",
+		imageSrc: a11yconf26,
 		speechLink: "https://2026.a11yconf.com/"
 	},
 	{ 
@@ -49,6 +53,7 @@ export const speechesArray = [
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.nerdearla",
+		imageSrc: nerdearla,
 		speechLink: "https://nerdearla.com/en/speakers/mia-salazar/"
 	},
 	{ 
@@ -59,6 +64,7 @@ export const speechesArray = [
 		aria: "awards.talks", 
 		icon: "microphone", 
 		text: "awards.freson",
+		imageSrc: freson,
 		speechLink: "https://fresonfest.gdg-aranjuez.com/"
 	},
 	{ 
