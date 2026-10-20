@@ -78,7 +78,21 @@
         "game": "Game Jams",
         "speeches": "Charlas",
         "speech": "Vídeo",
-        "event": "Evento"
+        "event": "Evento",
+        "summary": "Resumen de charlas y talleres",
+        "givenTalks": "charlas dadas",
+        "givenWorkshops": "talleres",
+        "inSpanish": "en español",
+        "inEnglish": "en inglés",
+        "filterByYear": "Escoger por año",
+        "talkBadge": "Charla",
+        "workshopBadge": "Taller",
+        "allYears": "Todos",
+        "yearTalks_one": "{{count}} charla",
+        "yearTalks_other": "{{count}} charlas",
+        "yearWorkshops_one": "{{count}} taller",
+        "yearWorkshops_other": "{{count}} talleres",
+        "emptyYear": "No hay actividades de este tipo en el año seleccionado."
     },
     "contact": {
         "text": "Si tienes algo que contarme o algún fregao interesante, no te cortes y ¡escríbeme!",

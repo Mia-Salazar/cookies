@@ -32,6 +32,7 @@ export const ActivityLinks = ({
 	imageSrc = "",
 	imageAlt = "",
 	lang = "es",
+	isWorkshop,
 }) => {
 	const { t } = useTranslation();
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,8 +46,15 @@ export const ActivityLinks = ({
 		<>
 			<span className="activity-wrapper__first-line">
 				<span className="activity-highlight">{title}</span>
-				<span className="activity-wrapper__language" lang={languageCode}>
-					{LANGUAGE_LABELS[languageCode]}
+				<span className="activity-wrapper__badges">
+					<span className="activity-wrapper__language" lang={languageCode}>
+						{LANGUAGE_LABELS[languageCode]}
+					</span>
+					{typeof isWorkshop === "boolean" && (
+						<span className={`activity-wrapper__kind activity-wrapper__kind--${isWorkshop ? "workshop" : "talk"}`}>
+							{t(isWorkshop ? "activities.workshopBadge" : "activities.talkBadge")}
+						</span>
+					)}
 				</span>
 			</span>
 			{description && (
@@ -75,7 +83,7 @@ export const ActivityLinks = ({
 				{speechLink && (
 					<LinkButton
 						isExternal
-						styles="ghost small secondary"
+						styles="activity small"
 						text={isVideoUrl(speechLink) ? "activities.speech" : "activities.event"}
 						href={speechLink}
 					/>
@@ -84,7 +92,7 @@ export const ActivityLinks = ({
 					<>
 						<Button
 							ref={imageButtonRef}
-							styles="ghost small"
+							styles="ghost-secondary small"
 							text="activities.image"
 							functionality={() => setIsModalOpen(true)}
 							aria-haspopup="dialog"
@@ -109,6 +117,7 @@ ActivityLinks.propTypes = {
 	imageSrc: PropTypes.string,
 	imageAlt: PropTypes.string,
 	lang: PropTypes.string,
+	isWorkshop: PropTypes.bool,
 };
 
 export default ActivityLinks;

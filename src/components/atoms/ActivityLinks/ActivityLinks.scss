@@ -69,6 +69,13 @@
         font-size: toRem(16);
     }
 
+    &__badges {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+        gap: toRem(8);
+    }
+
     &__language {
         display: inline-flex;
         align-items: center;
@@ -86,6 +93,32 @@
         white-space: nowrap;
 
         border-radius: toRem(4);
+    }
+
+    &__kind {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        padding: toRem(4) toRem(8);
+
+        color: $white;
+
+        font-size: toRem(12);
+        font-weight: 600;
+        line-height: 1.2;
+        white-space: nowrap;
+
+        border-radius: toRem(4);
+
+        &--talk {
+            background-color: $primary;
+        }
+
+        &--workshop {
+            background-color: $secondary;
+        }
     }
 }
 

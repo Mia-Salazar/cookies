@@ -11,8 +11,20 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 1rem;
-        margin-bottom: 4rem;
+        gap: toRem(12);
+        margin-bottom: toRem(32);
+        @media (min-width: 768px) {
+            gap: toRem(8);
+            max-width: toRem(500);
+        }
+    
+        @media (min-width: 1100px) {
+            max-width: toRem(800); 
+        }
+    
+        @media (min-width: 1300px) {
+            max-width: toRem(950); 
+        }
 
         li {
             &:first-child {
@@ -22,20 +34,165 @@
         
 
         img {
-            height: 2rem;
+            height: toRem(24);
 
-            @media(min-width: 768px) {
-                height: 4rem;
+            @media (min-width: 768px) {
+                height: toRem(44);
             }
         }
     }
 
     &__year {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: toRem(8);
         width: fit-content;
-        padding: 0 toRem(6);
+        margin: toRem(8) 0 toRem(16);
+        padding: toRem(2) toRem(10);
         background-color: $secondary;
         color: $white;
         font-family: $font-family-secondary;
         font-size: toRem(32);
+    }
+
+    &__empty {
+        margin: toRem(16) 0 toRem(48);
+    }
+
+    &__year-count {
+        font-size: toRem(16);
+        font-weight: 400;
+    }
+
+    &__summary {
+        margin-bottom: toRem(24);
+    }
+
+    &__stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: toRem(12);
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: toRem(16);
+        }
+    }
+
+    &__stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: toRem(4);
+        padding: toRem(12) toRem(12);
+        border-radius: toRem(10);
+        background-color: $secondary;
+        color: $white;
+        text-align: center;
+    }
+
+    &__stat-value {
+        font-family: $font-family-primary;
+        font-size: toRem(32);
+        line-height: 1;
+    }
+
+    &__stat-label {
+        font-family: $font-family-secondary;
+        font-size: toRem(14);
+        line-height: 1.3;
+    }
+
+    &__years {
+        margin: toRem(20) 0 toRem(30);
+        padding: 0;
+        border: 0;
+    }
+
+    &__years-legend {
+        margin-bottom: toRem(16);
+        color: $primary;
+        font-family: $font-family-primary;
+        font-size: toRem(28);
+
+        @media (min-width: 768px) {
+            font-size: toRem(36);
+        }
+    }
+
+    &__years-options {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap: toRem(8);
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(auto-fit, minmax(#{toRem(125)}, 1fr));
+        }
+    }
+
+    &__year-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: toRem(4);
+        min-height: toRem(44);
+        padding: toRem(4);
+        border: 0;
+        background: transparent;
+        color: $gray;
+        cursor: pointer;
+        font-family: $font-family-secondary;
+        text-align: center;
+
+        &:hover .activities__year-mark {
+            border-color: $primary;
+            color: $primary;
+        }
+
+        &--active .activities__year-mark {
+            border-color: $secondary;
+            background-color: $secondary;
+            color: $white;
+        }
+
+        &--active:hover .activities__year-mark {
+            border-color: $secondary;
+            background-color: $secondary;
+            color: $white;
+        }
+
+        &--active .activities__year-meta {
+            color: $primary;
+            font-weight: 700;
+        }
+
+        &:focus-visible {
+            outline: 4px solid $black;
+            outline-offset: 2px;
+        }
+    }
+
+    &__year-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: toRem(76);
+        min-height: toRem(40);
+        padding: 0 toRem(8);
+        border: 2px solid $secondary;
+        border-radius: toRem(999);
+        color: $secondary;
+        font-family: $font-family-primary;
+        font-size: toRem(20);
+        line-height: 1;
+    }
+
+    &__year-meta {
+        display: block;
+        font-size: toRem(13);
+        font-weight: 400;
+        line-height: 1.3;
     }
 }
