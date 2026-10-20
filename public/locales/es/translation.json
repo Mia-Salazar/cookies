@@ -27,7 +27,8 @@
         "activities": "Charlas",
         "collaborations": "Colaboraciones",
         "contact": "Contacto",
-        "projects": "Proyectos"
+        "projects": "Proyectos",
+        "foodiesaurus": "Foodiesaurus"
     },
     "home": {
         "volunteering": "colaboraciones pasadas",
@@ -63,6 +64,7 @@
     },
     "nav": {
         "portfolio": "Proyectos",
+        "foodiesaurus": "Foodiesaurus",
         "articles": "Artículos",
         "contact": "Contacto",
         "lang": "Escoger idioma"
@@ -110,6 +112,34 @@
         "email": "example@example.com",
         "name": "Taylor Alison Swift",
         "comment": "Escribe aquí tu mensaje"
+    },
+    "foodiesaurus": {
+        "whyTitle": "Por qué lo creé",
+        "whyPersonal": "Lo creé sobre todo por mi propia experiencia con intolerancias y alergias alimentarias. Quería un sitio para encontrar restaurantes con cartas de alérgenos fiables y comer fuera con más tranquilidad.",
+        "whyDataBefore": "También me apoyé en unos datos. Entre un 20% y un 25% de las personas tiene alguna enfermedad alérgica (",
+        "whyLactose": "), un 68% tiene problemas para digerir la lactosa (",
+        "whyCeliac": ") y un 1% es celíaca (",
+        "whyRegulation": "). Desde 2014, la norma europea",
+        "regulation": "1169/2011",
+        "whyRegulationAfter": " pide a los restaurantes una carta de alérgenos.",
+        "oldTitle": "Foodiesaurus, la primera versión",
+        "oldYears": "2022–2024",
+        "oldStart": "Empecé en 2022 y la discontinué en 2024.",
+        "oldTalkBefore": "Lo dejé por muchos problemas, de los que hablo en esta",
+        "oldTalkLink": "charla de la LechazoConf",
+        "oldTalkAfter": ".",
+        "oldTech": "Usé tecnologías muy poco escalables. Empecé como un MVP, pero le fui añadiendo funcionalidades sin hacer un verdadero refactor, y los bugs se volvieron un dolor.",
+        "oldScope": "Además necesitaba mucho movimiento para que la gente crease los restaurantes, y crearlos era complejo. Fui muy ambiciosa y metí cosas antes de tenerlo todo pulido, así que lo abandoné. El código sigue abierto.",
+        "currentTitle": "Foodiesaurus, la versión actual",
+        "currentStatus": "En progreso",
+        "currentSimple": "Estoy partiendo de una idea más sencilla y de hacerlo todo bien, con tecnologías mejores, más sencillas y más escalables.",
+        "currentOpen": "Lo anterior me costaba dinero. Esto lo estoy haciendo gratis y en código abierto: cualquiera puede ayudar. Lo estoy construyendo como un ejercicio, sin pretensiones, y planeo hacer una app cuando lo termine.",
+        "code": "Código",
+        "codeLabel": "Código de {{name}} (se abre en una pestaña nueva)",
+        "video": "Vídeo",
+        "videoLabel": "Vídeo de {{name}} (se abre en una pestaña nueva)",
+        "live": "Ver en vivo",
+        "liveLabel": "Ver {{name}} en vivo (se abre en una pestaña nueva)"
     },
     "portfolio": {
         "filterLegend": "Filtrar por:",

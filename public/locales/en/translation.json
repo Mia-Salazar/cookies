@@ -27,7 +27,8 @@
         "activities": "Talks",
         "collaborations": "Collaborations",
         "contact": "Contact",
-        "projects": "Projects"
+        "projects": "Projects",
+        "foodiesaurus": "Foodiesaurus"
     },
     "home": {
         "volunteering": "past collaborations",
@@ -63,6 +64,7 @@
     },
     "nav": {
         "portfolio": "Projects",
+        "foodiesaurus": "Foodiesaurus",
         "articles": "Articles",
         "contact": "Contact",
         "lang": "Choose language"
@@ -110,6 +112,34 @@
         "email": "example@example.com",
         "name": "Taylor Alison Swift",
         "comment": "Write here your message"
+    },
+    "foodiesaurus": {
+        "whyTitle": "Why I created it",
+        "whyPersonal": "I created it above all because of my own experience with food intolerances and allergies. I wanted a place to find restaurants with reliable allergen charts and eat out with more peace of mind.",
+        "whyDataBefore": "I also leaned on a few figures. Between 20% and 25% of people have some kind of allergic disease (",
+        "whyLactose": "), 68% have trouble digesting lactose (",
+        "whyCeliac": ") and 1% have celiac disease (",
+        "whyRegulation": "). Since 2014, European Regulation",
+        "regulation": "1169/2011",
+        "whyRegulationAfter": " asks restaurants for an allergen chart.",
+        "oldTitle": "Foodiesaurus, the first version",
+        "oldYears": "2022–2024",
+        "oldStart": "I started it in 2022 and discontinued it in 2024.",
+        "oldTalkBefore": "I left it because of many problems, which I talk about in this",
+        "oldTalkLink": "LechazoConf talk",
+        "oldTalkAfter": ".",
+        "oldTech": "I used technologies that did not scale well. It started as an MVP, but I kept adding features without a real refactor, and the bugs became painful.",
+        "oldScope": "It also needed a lot of momentum for people to create the restaurants, and creating them was complex. I was too ambitious and added things before everything was polished, so I abandoned it. The code is still open.",
+        "currentTitle": "Foodiesaurus, the current version",
+        "currentStatus": "In progress",
+        "currentSimple": "I'm starting from a simpler idea and doing it properly, with better technologies that are simpler and more scalable.",
+        "currentOpen": "The previous one cost me money. This one I'm building for free and open source: anyone can help. I'm building it as an exercise, without pretensions, and I plan to make an app when I finish it.",
+        "code": "Code",
+        "codeLabel": "Code for {{name}} (opens in a new tab)",
+        "video": "Video",
+        "videoLabel": "Video of {{name}} (opens in a new tab)",
+        "live": "See it live",
+        "liveLabel": "See {{name}} live (opens in a new tab)"
     },
     "portfolio": {
         "filterLegend": "Filter by:",
