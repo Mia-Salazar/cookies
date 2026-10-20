@@ -11,6 +11,7 @@ export const ActivityItem = ({
 	imageSrc,
 	imageAlt,
 	lang = "es",
+	isWorkshop,
 }) => (
 	<li className={`list-item ${icon ? "list-item--with-icon" : "list-item--full"}`}>
 		{icon && (
@@ -24,6 +25,7 @@ export const ActivityItem = ({
 			imageSrc={imageSrc}
 			imageAlt={imageAlt}
 			lang={lang}
+			isWorkshop={isWorkshop}
 		/>
 	</li>
 );
@@ -35,6 +37,7 @@ ActivityItem.propTypes = {
 	imageSrc: PropTypes.string,
 	imageAlt: PropTypes.string,
 	lang: PropTypes.string,
+	isWorkshop: PropTypes.bool,
 };
 
 export default ActivityItem;

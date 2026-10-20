@@ -78,7 +78,21 @@
         "game": "Game Jams",
         "speeches": "Talks",
         "speech": "Video",
-        "event": "Event"
+        "event": "Event",
+        "summary": "Talks and workshops summary",
+        "givenTalks": "talks given",
+        "givenWorkshops": "workshops",
+        "inSpanish": "in Spanish",
+        "inEnglish": "in English",
+        "filterByYear": "Choose by year",
+        "talkBadge": "Talk",
+        "workshopBadge": "Workshop",
+        "allYears": "All",
+        "yearTalks_one": "{{count}} talk",
+        "yearTalks_other": "{{count}} talks",
+        "yearWorkshops_one": "{{count}} workshop",
+        "yearWorkshops_other": "{{count}} workshops",
+        "emptyYear": "There are no activities of this type in the selected year."
     },
     "contact": {
         "text": "If you have something to tell me or an interesting challenge, don't hesitate to write to me!",
