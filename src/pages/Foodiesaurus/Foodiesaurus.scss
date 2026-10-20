@@ -1,0 +1,63 @@
+@import "../../assets/stylesheets/settings/toRem";
+@import "../../assets/stylesheets/settings/variables";
+
+.foodiesaurus {
+    &__project {
+        margin-top: toRem(32);
+    }
+
+    &__origin {
+        margin-top: toRem(24);
+    }
+
+    &__link {
+        color: $secondary;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        max-width: toRem(420);
+        height: toRem(150);
+        object-fit: cover;
+        object-position: top center;
+        margin-bottom: toRem(16);
+        border-radius: toRem(10);
+    }
+
+    &__years {
+        margin: 0 0 toRem(8);
+        color: $secondary;
+        font-family: $font-family-primary;
+        font-size: toRem(20);
+    }
+
+    &__techs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: toRem(8);
+        margin: toRem(16) 0;
+
+        li {
+            padding: toRem(4) toRem(8);
+            border: 2px solid $secondary;
+            border-radius: toRem(999);
+            color: $secondary;
+            font-family: $font-family-secondary;
+            font-size: toRem(14);
+            line-height: 1.3;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: toRem(8);
+    }
+
+    &__project:last-child {
+        @media (min-width: 768px) {
+            margin-bottom: toRem(40);
+        }
+    }
+}
