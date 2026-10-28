@@ -21,6 +21,7 @@ const SOURCES = {
 };
 
 const TALK = "https://www.youtube.com/watch?v=uOLKPGIAVWw";
+const APP = "https://github.com/Mia-Salazar/foodiesaurus-app";
 
 const toTechList = (text = "") => text.split(",").map((tech) => tech.trim()).filter(Boolean);
 
@@ -127,6 +128,11 @@ export const Foodiesaurus = () => {
 				<p className="foodiesaurus__years">{t("foodiesaurus.currentStatus")}</p>
 				<Text>{t("foodiesaurus.currentSimple")}</Text>
 				<Text>{t("foodiesaurus.currentOpen")}</Text>
+				<Text>
+					{t("foodiesaurus.currentAppBefore")}{" "}
+					<ExternalLink href={APP}>{t("foodiesaurus.currentAppLink")}</ExternalLink>
+					{t("foodiesaurus.currentAppAfter")}
+				</Text>
 				<ul className="foodiesaurus__techs">
 					{toTechList(currentProject.text).map((tech) => (
 						<li key={tech}>{tech}</li>
@@ -144,6 +150,11 @@ export const Foodiesaurus = () => {
 							href: "https://foodiesaurus.vercel.app/",
 							text: "foodiesaurus.live",
 							label: "foodiesaurus.liveLabel",
+						},
+						{
+							href: APP,
+							text: "foodiesaurus.app",
+							label: "foodiesaurus.appLabel",
 						},
 					]}
 				/>
