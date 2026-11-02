@@ -42,6 +42,14 @@ export const articlesArray = [
 
 export const othersArray = [
     { 
+        source: "weAAAre",
+        date: "2026-11-01",
+        tags: ["events", "Accesibility", "culture"],
+        lang: "es",
+        title: "Las cosas que nadie te cuenta sobre organizar un evento accesible",
+        href: "https://weaaare.com/blog/organizar-evento-accesible" 
+    },
+    { 
         source: "Manfred",
         date: "2026-05-14",
         tags: ["role", "Accesibility", "culture"],

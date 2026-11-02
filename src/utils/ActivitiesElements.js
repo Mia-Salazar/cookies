@@ -32,8 +32,20 @@ import gdgRol from "../assets/img/eventos/gdg-rol.jpeg"
 import nerdearla from "../assets/img/eventos/nerdearla.png"
 import a11yconf26 from "../assets/img/eventos/mia-es.jpg"
 import freson from "../assets/img/eventos/freson.jpg"
+import weaaareinfinity from "../assets/img/eventos/weaaareinfinity.png"
 
 export const speechesArray = [
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.weaaareinfinity",
+		imageSrc: weaaareinfinity,
+		speechLink: "https://www.weaaare.com/"
+	},
 	{ 
 		isWorkshop: false, 
 		hasVideo: false, 
@@ -44,6 +56,16 @@ export const speechesArray = [
 		text: "awards.a11yconf26",
 		imageSrc: a11yconf26,
 		speechLink: "https://2026.a11yconf.com/"
+	},
+	{ 
+		isWorkshop: false, 
+		hasVideo: false, 
+		year: 2026, 
+		lang: "es", 
+		aria: "awards.talks", 
+		icon: "microphone", 
+		text: "awards.clau",
+		speechLink: "https://clau.global/agenda#programa"
 	},
 	{ 
 		isWorkshop: false, 
